@@ -134,6 +134,21 @@ a:hover {
   text-align: justify;
 }
 
+article {
+  *zoom: 1;
+}
+
+article:before,
+article:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+article:after {
+  clear: both;
+}
+
 article header {
   *zoom: 1;
   border-bottom: 1px solid black;
@@ -300,21 +315,20 @@ article header:hover .categories {
   -o-transition: height 0.5s;
 }
 
+article .post p:last-child {
+  margin-bottom: 0;
+}
+
 article footer {
   position: relative;
 }
 
 .readMore {
-  position: absolute;
-  right: 0;
   text-transform: lowercase;
   font-size: 9pt;
   background: white;
   z-index: 2;
-}
-
-.readMore.full {
-  display: none;
+  float: right;
 }
 
 .readMore:after {
