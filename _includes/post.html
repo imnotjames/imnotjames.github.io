@@ -1,0 +1,48 @@
+<article>
+	<header>
+		{% if include.title %}
+			<h2>{{ include.title }}</h2>
+		{% endif %}
+
+		{% if include.date %}
+		<h2 class="timestamp">
+			<span class="date">
+				{{ include.date | date: "%Y/%m/%d" }}
+			</span>
+			<span class="time">
+				{{ include.date | date: "%H:%M %Z" }}
+			</span>
+		</h2>
+		{% endif %}
+
+		{% if include.categories %}
+		<div class="categories">
+			{% for category in include.categories %}
+				<span class="category">{{ category }}</span> 
+			{% endfor %}
+		</div>
+		{% endif %}
+	</header>
+
+	{% if include.excerpt %}
+	<div class="post excertpt">
+		{{ include.excerpt | markdownify }}
+	</div>
+	{% else %}
+	<div class="post">
+		{{ include.content | markdownify }}
+	</div>
+	{% endif %}
+
+	{% if include.excerpt %}
+	<footer>
+		<span class="readMore">
+			<a href="{{ include.url }}">
+				Read More
+			</a>
+		</span>
+
+	</footer>
+	{% endif %}
+
+</article>
