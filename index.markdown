@@ -4,7 +4,7 @@ title: About Me
 ---
 
 I'm not _the_ James, just a James.  Many people would suggest to go to
-my [resume](/about/resume) to learn who I am, but it's rather short and
+my [resume](/resume.html) to learn who I am, but it's rather short and
 uninteresting.
 
 What's more interesting are logic problems, retro science fiction, video

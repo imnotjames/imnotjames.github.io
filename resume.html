@@ -1,0 +1,129 @@
+---
+layout: default
+title: Resume
+---
+<div id="resume">
+	<header class="clear">
+		<div class="rightColumn">
+			<h1>James Ward</h1>
+			<span class="level">Level 7</span>
+			<span class="position">Programmer</span>
+		</div>
+		<div class="leftColumn">
+			<div class="contact email"><a href="mailto:wnzrf@abgwnz.rf" id="email">wnzrf@abgwnz.rf</a></div>
+			<noscript>This email address is encoded with rot13, javascript is required to decrypt it.</noscript>
+		</div>
+	</header>
+
+	<div class="rightColumn" >
+		<article id="skills_tools">
+			<header title="In order of what makes the list visually pleasing">
+				<h2 class="title">
+					Tools I Use
+				</h2>
+			</header>
+			<ul>
+				<li>Perl</li>
+				<li>PHP</li>
+				<li>Java</li>
+				<li>Pascal</li>
+				<li>Python</li>
+				<li>Objective C</li>
+				<li>Javascript</li>
+				<li>RegEx</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>SQL</li>
+				<li>C++</li>
+				<li>C</li>
+			</ul>
+		</article>
+		<article id="skills_platforms">
+			<header>
+				<h2 class="title">
+					Platforms
+				</h2>
+			</header>
+			<ul>
+				<li title="Gentoo, Arch Linux, Ubuntu, CentOS">GNU/Linux</li>
+				<li>Mac OS X</li>
+				<li>Windows</li>
+			</ul>
+		</article>
+	</div>
+
+	<div class="leftColumn">
+		<article id="about_experience">
+			<header>
+				<h2 class="title">
+					Experience Points
+				</h2>
+			</header>
+
+			<ul>
+				<li>
+					<h3 class="title">Software Engineer</h3>
+					<h4 class="organization">Limestone Networks</h4>
+					<h5 class="timeframe">2012 &mdash; Current</h5>
+					<blockquote>
+						Fighting dragons in legacy codebases continues on for this
+						adventurer.  This time the hero is given a new ability,
+						refactoring.  With refactoring as his blade and unit testing
+						his shield, he slowly but surely is defeating the beastly
+						bugs within.
+					</blockquote>
+				</li>
+				<li>
+					<h3 class="title">Software Architect</h3>
+					<h4 class="organization">Accrisoft, Corp</h4>
+					<h5 class="timeframe">2011 &mdash; 2012</h5>
+					<blockquote>
+						Development of Accrisoft's Freedom CMS is the task at hand.
+						A never ending quest of solid feature implementation and an
+						overhaul of old, legacy code have been undertaken.
+						A side tale of integration with a multitude of other products
+						has been assigned, as well as vanquishing bugs, increasing
+						performance and decreasing memory footprint wherever possible.
+						Produce stable code to be used by tens of thousands of
+						clients using PHP and MySQL.
+					</blockquote>
+				</li>
+			</ul>
+		</article>
+		<article id="about_education">
+			<header>
+				<h2 class="title">
+					Education
+				</h2>
+			</header>
+			
+			<ul>
+				<li>
+					<h3 class="title">Computer Security</h3>
+					<h4 class="organization">Norwich University</h4>
+					<h5 class="aboutItemLocation">Northfield, Vermont</h5>
+					<h5 class="aboutItemTimeframe">2008 &mdash; 2010</h5>
+				</li>
+			</ul>
+		</article>
+		<article id="about_hobbies">
+			<header>
+				<h2 class="title">
+					Hobbies
+				</h2>
+			</header>
+			<blockquote>
+				In my free time I often find myself still programming - I like to think of it as an art form.
+				I enjoy creating on other mediums, including on canvas and paper, as well as with musical instruments.
+				I tinker and tool with everything I own, trying to push it to and past its limits.
+				I have attempted to use a home brew EKG to watch myself think about watching myself think.  Results were "shocking" but not useful.
+			</blockquote>
+		</article>
+	</div>
+</div>
+<script type="text/javascript">
+	String.prototype.rot13 = rot13 = function(s) { return (s = (s) ? s : this).split('').map(function(_) { if (!_.match(/[A-Za-z]/)) return _; c = _.charCodeAt(0)>=96; k = (_.toLowerCase().charCodeAt(0) - 96 + 12) % 26 + 1; return String.fromCharCode(k + (c ? 96 : 64)); }).join(''); };
+	var email = document.getElementById('email');
+	email.innerHTML = email.innerHTML.rot13();
+	email.href = 'mailto:' + email.innerHTML;
+</script>
