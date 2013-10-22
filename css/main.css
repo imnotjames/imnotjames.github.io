@@ -348,6 +348,19 @@ article footer {
   -o-transition: width 0.3s, opacity 0.2s 0.05s;
 }
 
+.pagination {
+  clear: both;
+}
+
+
+.pagination .previous {
+  float: left;
+}
+
+.pagination .next {
+  float: right;
+}
+
 p {
   line-height: 1.6em;
   margin: 1em 0;
