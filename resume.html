@@ -10,7 +10,9 @@ title: Resume
 			<span class="position">Programmer</span>
 		</div>
 		<div class="leftColumn">
-			<div class="contact email"><a href="mailto:wnzrf@abgwnz.rf" id="email">wnzrf@abgwnz.rf</a></div>
+			<div class="contact email">
+				<a href="{{ site.contact.email }}" id="email">Email</a>
+			</div>
 			<noscript>This email address is encoded with rot13, javascript is required to decrypt it.</noscript>
 		</div>
 	</header>
@@ -121,9 +123,3 @@ title: Resume
 		</article>
 	</div>
 </div>
-<script type="text/javascript">
-	String.prototype.rot13 = rot13 = function(s) { return (s = (s) ? s : this).split('').map(function(_) { if (!_.match(/[A-Za-z]/)) return _; c = _.charCodeAt(0)>=96; k = (_.toLowerCase().charCodeAt(0) - 96 + 12) % 26 + 1; return String.fromCharCode(k + (c ? 96 : 64)); }).join(''); };
-	var email = document.getElementById('email');
-	email.innerHTML = email.innerHTML.rot13();
-	email.href = 'mailto:' + email.innerHTML;
-</script>
