@@ -7,14 +7,17 @@ title: Blog
 	{% include post.html title=post.title url=post.url excerpt=post.excerpt categories=post.categories %}
 {% endfor %}
 
-<hr />
+{% if paginator.total_pages > 1 %}
 
-<div class="pagination clear">
-  {% if paginator.previous_page_path %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Newer</a>
-  {% endif %}
+	<hr />
 
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Older</a>
-  {% endif %}
-</div>
+	<div class="pagination clear">
+	  {% if paginator.previous_page_path %}
+	    <a href="{{ paginator.previous_page_path }}" class="previous">Newer</a>
+	  {% endif %}
+
+	  {% if paginator.next_page %}
+	    <a href="{{ paginator.next_page_path }}" class="next">Older</a>
+	  {% endif %}
+	</div>
+{% endif %}
