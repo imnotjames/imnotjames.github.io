@@ -4,7 +4,7 @@ title: Blog
 ---
 
 {% for post in paginator.posts %}
-	{% include post.html title=post.title url=post.url excerpt=post.excerpt categories=post.categories %}
+	{% include post.html title=post.title url=post.url excerpt=post.excerpt categories=post.categories date=post.date %}
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
