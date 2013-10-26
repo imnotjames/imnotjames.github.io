@@ -82,7 +82,10 @@ header#site-title h1 .myName {
 nav {
   *zoom: 1;
   margin-bottom: 2em;
-  text-transform: lowercase;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 9pt;
 }
 
 nav:before, nav:after {
