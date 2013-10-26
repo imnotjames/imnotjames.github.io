@@ -15,7 +15,7 @@
 		</h2>
 		{% endif %}
 
-		{% if include.categories %}
+		{% if include.categories != empty and include.categories.length > 0 %}
 		<div class="categories">
 			{% for category in include.categories %}
 				<span class="category">{{ category }}</span> 
