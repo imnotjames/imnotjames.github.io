@@ -176,7 +176,7 @@ article header:after {
 article header * {
   background-color: #ffffff;
 }
-article header .categories {
+article header .tags {
   height: 0px;
   overflow: hidden;
   clear: both;
@@ -191,16 +191,16 @@ article header .categories {
   -webkit-transition: height 0.5s, border-bottom-color 0.5s, border-bottom-width 0s 0.5s;
   -o-transition: height 0.5s, border-bottom-color 0.5s, border-bottom-width 0s 0.5s;
 }
-article header .categories .category {
+article header .tags .tag {
   font-size: 9pt;
 }
-article header .categories .category:after {
+article header .tags .tag:after {
   content: ', ';
 }
-article header .categories .category:first-child:before {
+article header .tags .tag:first-child:before {
   content: 'tags: ';
 }
-article header .categories .category:last-child:after {
+article header .tags .tag:last-child:after {
   content: '';
 }
 article header .timestamp {
