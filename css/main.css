@@ -176,13 +176,17 @@ article header:after {
 article header * {
   background-color: #ffffff;
 }
+article header:hover .tags {
+  height: 2em;
+  border-bottom-color: #222222;
+}
 article header .tags {
   height: 0px;
   overflow: hidden;
   clear: both;
   font-size: 9pt;
   padding-left: 2em;
-  border-bottom: 0px solid white;
+  border-bottom: 1px solid #ffffff;
   z-index: 5;
   position: relative;
   transition: height 0.5s, border-bottom-color 0.5s, border-bottom-width 0s 0.5s;
