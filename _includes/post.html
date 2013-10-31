@@ -1,7 +1,11 @@
 <article>
 	<header>
 		{% if include.title %}
-			<h2>{{ include.title }}</h2>
+			{% if include.url %}
+				<h2><a href="{{ include.url }}">{{ include.title }}</a></h2>
+			{% else %}
+				<h2>{{ include.title }}</h2>
+			{% endif %}
 		{% endif %}
 
 		{% if include.date %}
