@@ -1,7 +1,6 @@
 ---
 layout: post
 title: RFC&#58; Engine Exception; Erroneous Exceptional Errors
-categories: PHP, test
 tags:
   - PHP
 ---
