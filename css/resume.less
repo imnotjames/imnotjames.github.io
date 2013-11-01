@@ -1,0 +1,79 @@
+#resume {
+	margin: 0 auto;
+	position: relative;
+	text-align: left;
+
+	ul {
+		padding-left: 0px;
+		list-style-type: none;
+	}
+
+	.resumeHeader {
+		margin-bottom: 2em;
+
+		.level {
+			font-size: 10pt;
+		}
+		
+		.position {
+			font-size: 14pt;
+		}
+		
+		.phone {
+			font-size: 10pt;
+			margin-left: 2em;
+		}
+	}
+
+	article {
+		margin-bottom: 4em;
+
+		h3 {
+			font-size: 16pt;
+			margin-right: 0.5em;
+			display: inline-block;
+		}
+
+		.organization {
+			height: 16pt;
+			display: inline-block;
+		}
+		
+		.location {
+			font-size: 9pt;
+			text-transform: uppercase;
+		}
+		
+		blockquote {
+			margin: 1em 0;
+			line-height: 1.6em;
+			font-size: 11pt;
+			text-align: justify;
+		}
+	}
+}
+
+@media screen and (min-width: 590px) {
+	#resume {
+		width: 590px;
+
+		left: -45px;
+
+		.resumeHeader {
+			.leftColumn, .rightColumn {
+				width: 49%;
+			}
+		}
+
+		.leftColumn {
+			width: 415px;
+			float: left;
+		}
+
+		.rightColumn {
+			width: 135px;
+			text-align: right;
+			float: right;
+		}
+	}
+}
