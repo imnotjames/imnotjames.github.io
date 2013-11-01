@@ -53,6 +53,7 @@
   }
   #resume .leftColumn {
     width: 415px;
+    float: left;
   }
   #resume .rightColumn {
     width: 135px;
