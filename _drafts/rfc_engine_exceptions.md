@@ -18,6 +18,34 @@ of the error conditions just end a running script without allowing any cleanup, 
 For example, the `finally` construct and `__deconstruct` methods are always ran before PHP shuts down - unless of course a fatal error ends
 it early.  There are some hacks to handle these behaviors slightly better using `register_shutdown_function`, but they are just that.
 
+```php
+set_error_handler(function($errno, $errstr, $errfile, $errline) {
+	if (E_RECOVERABLE_ERROR === $errno) {
+		return true;
+	}
+
+	return false;
+});
+
+class A {
+	public $datetime;
+
+	public function __construct(DateTime $datetime) {
+		$this->datetime = $datetime;
+	}
+}
+
+// A timestamp instead of a datetime object.
+$a = new A(1383329451);
+
+// int(1383329451) - we've bypassed the hinting
+var_dump($a->datetime);
+```
+
+Catching a recoverable fatal error may be even worse than handling an `E_ERROR`.  The code continues on once it is caught as if nothing happened.
+Situations like type hinting errors caught will allow input of the wrong type to be allowed through.  Even if you set an empty error handler that
+does not return anything, `E_RECOVERABLE_ERROR` will be silently ignored and PHP will blunder onward.
+
 `EngineException` is the proposed solution to this problem, by Nikita Popov.  It is a move away from the errors of the past, towards catch-able
 Exceptions where possible.  The RFC includes `E_ERROR` and `E_RECOVERABLE_ERROR` in the purge, though the attached patch as of this writing
 mostly only delves into a small portion of the errors, but it does include wording for developers to avoid using fatal errors, and instead
