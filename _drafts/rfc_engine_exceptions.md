@@ -5,16 +5,16 @@ tags:
   - PHP
 ---
 
-One of the flaws with PHP happens to be the ways in which it handles engine errors.  However, this might change in PHP 5.6.
+One of the flaws with PHP is the ways in which it handles engine errors.  However, might change in PHP 5.6.
 
-Most of the  in PHP will emit a small amount of text, call the error handler, and allow the engine to continue on its merry way.
-However, there are a few errors which are emitted that do not call the error handler, and instead kill the entire application.
+Most of the errors in PHP will emit a small amount of text, call the error handler, and allow the engine to continue.
+However, there are a few errors which are emitted that do not call the error handler, and instead terminate the application.
 Specifically, these are `E_ERROR`, `E_CORE_ERROR`, `E_COMPILE_ERROR`, `E_PARSE`, `E_USER_ERROR`, and `E_RECOVERABLE_ERROR`.  Of these,
 only `E_RECOVERABLE_ERROR` calls the error handler, but it still will abort the running script if not handled correctly.
 
 Some of these errors are from seemingly innocuous conditions, such as calling methods on null values, creating incorrect SimpleXML, or
 trying to load an invalid WSDL in SoapClient.  (If you're using the SoapClient, though, you have other problems.)  Not only can one
-of the error conditions just end a running script without allowing any cleanup, it also breaks several assumptions programmers can have.
+of the error conditions end a running script without allowing any cleanup, it also breaks several assumptions programmers can have.
 For example, the `finally` construct and `__deconstruct` methods are always ran before PHP shuts down - unless of course a fatal error ends
 it early.  There are some hacks to handle these behaviors slightly better using `register_shutdown_function`, but they are just that.
 
