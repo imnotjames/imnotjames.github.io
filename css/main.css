@@ -33,7 +33,6 @@ code {
 .highlight {
   position: relative;
   padding-top: 1em;
-  padding-bottom: 1em;
   border-top: 1px solid #222222;
   border-bottom: 1px solid #222222;
 }
@@ -53,6 +52,7 @@ code {
 }
 .highlight pre {
   overflow-x: auto;
+  padding-bottom: 1em;
 }
 hr {
   height: 1px;
