@@ -61,3 +61,18 @@
     float: right;
   }
 }
+@media print {
+  #resume article {
+    margin-bottom: 2em;
+  }
+  #resume .leftColumn {
+    float: left;
+    margin-right: 16em;
+  }
+  #resume .rightColumn {
+    float: right;
+    text-align: right;
+    width: 14em;
+    margin-left: -16em;
+  }
+}

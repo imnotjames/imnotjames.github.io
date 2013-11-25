@@ -378,3 +378,17 @@ p a {
     right: 0em;
   }
 }
+@media print {
+  header#site-title,
+  nav {
+    display: none;
+  }
+  body {
+    margin-top: 0;
+    width: auto;
+    max-width: none;
+  }
+  #resume {
+    width: auto;
+  }
+}
