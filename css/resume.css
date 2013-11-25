@@ -65,17 +65,21 @@
   }
 }
 @media print {
+  #resume header .leftColumn,
+  #resume header .rightColumn {
+    width: 49%;
+  }
   #resume article {
     margin-bottom: 2em;
   }
   #resume .leftColumn {
     float: left;
-    margin-right: 16em;
+    margin-right: 12em;
   }
   #resume .rightColumn {
     float: right;
     text-align: right;
-    width: 14em;
-    margin-left: -16em;
+    width: 10em;
+    margin-left: -12em;
   }
 }
