@@ -3,6 +3,9 @@
   position: relative;
   text-align: left;
 }
+#resume #email:after {
+  content: ": " attr(title);
+}
 #resume ul {
   padding-left: 0px;
   list-style-type: none;
