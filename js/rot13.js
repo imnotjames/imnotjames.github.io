@@ -41,6 +41,10 @@ window.addEventListener(
 			function(_) {
 				_.href = derot13(_.href);
 				_.innerHTML = derot13(_.innerHTML);
+
+				if (_.href.substring(0, 7) == 'mailto:' && !_.title) {
+					_.title = _.href.substring(7);
+				}
 			}
 		);
 	})
