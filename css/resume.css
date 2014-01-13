@@ -46,20 +46,16 @@
   text-align: justify;
 }
 @media screen and (min-width: 590px) {
-  #resume {
-    width: 590px;
-    left: -45px;
-  }
   #resume header .leftColumn,
   #resume header .rightColumn {
     width: 49%;
   }
   #resume .leftColumn {
-    width: 415px;
+    width: 35em;
     float: left;
   }
   #resume .rightColumn {
-    width: 135px;
+    width: 10em;
     text-align: right;
     float: right;
   }
