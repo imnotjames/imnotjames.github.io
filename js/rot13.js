@@ -42,8 +42,14 @@ window.addEventListener(
 				_.href = derot13(_.href);
 				_.innerHTML = derot13(_.innerHTML);
 
-				if (_.href.substring(0, 7) == 'mailto:' && !_.title) {
-					_.title = _.href.substring(7);
+				if (!_.title) {
+					if (_.href.substring(0, 7) == 'mailto:') {
+						_.title = _.href.substring(7);
+					} else if (_.href.indexOf('github.com/') !== -1) {
+						_.title = _.href.substring(_.href('github.com/') + 11)
+					} else {
+						_.title = _.href;
+					}
 				}
 			}
 		);
