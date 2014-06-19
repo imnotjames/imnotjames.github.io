@@ -4,6 +4,7 @@ layout: post
 title: RFC&#58; Engine Exception; Erroneous Exceptional Errors
 tags:
   - PHP
+  - RFC
 ---
 
 One of the flaws with PHP is the ways in which it handles engine errors.  However, might change in PHP 5.6.
