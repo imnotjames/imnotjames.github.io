@@ -1,7 +1,7 @@
 ---
 date: 2014-06-18 19:51:11 -0500
 layout: post
-title: The Problem with Long Running PHP scripts
+title: The Problems with Long Running PHP scripts
 tags:
   - PHP
   - Daemon
