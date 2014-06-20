@@ -24,7 +24,7 @@ while (true) {
 
 	if (!empty($data)) {
 		try {
-			MyGreatProcessor::proces($data);
+			MyGreatProcessor::process($data);
 
 			$data->ack();
 		} catch (Exception $e) {
