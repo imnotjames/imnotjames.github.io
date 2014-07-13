@@ -71,6 +71,12 @@
   #resume article blockquote {
     font-size: 9pt;
   }
+  #resume article:last-child {
+    margin-bottom: 0em;
+  }
+  #resume article:last-child blockquote:last-child {
+    margin-bottom: 0;
+  }
   #resume .leftColumn {
     float: left;
     margin-right: 12em;
