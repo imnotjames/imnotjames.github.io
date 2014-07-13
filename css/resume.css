@@ -45,7 +45,7 @@
   font-size: 11pt;
   text-align: justify;
 }
-@media screen and (min-width: 590px) {
+@media screen and (min-width: 46em) {
   #resume header .leftColumn,
   #resume header .rightColumn {
     width: 49%;
