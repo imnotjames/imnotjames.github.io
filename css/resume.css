@@ -66,15 +66,18 @@
     width: 49%;
   }
   #resume article {
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
   }
   #resume article blockquote {
     font-size: 9pt;
   }
-  #resume article:last-child {
-    margin-bottom: 0em;
+  #resume article header {
+    margin-bottom: 1.4em;
   }
-  #resume article:last-child blockquote:last-child {
+  #resume article li:last-child {
+    margin-bottom: 0;
+  }
+  #resume article li:last-child blockquote:last-child {
     margin-bottom: 0;
   }
   #resume .leftColumn {
