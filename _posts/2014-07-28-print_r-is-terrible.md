@@ -126,6 +126,7 @@ array(3) {
 }
 ```
 
-Just use [`var_dump`][php_var_dump].  (Or be sane and set up xdebug.)
+Just use [`var_dump`][php_var_dump].  (Or be sane and set up [xdebug][xdebug].)
 
 [php_var_dump]: http://php.net/var_dump
+[xdebug]: http://xdebug.org/
