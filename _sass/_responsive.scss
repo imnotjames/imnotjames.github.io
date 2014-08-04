@@ -1,0 +1,29 @@
+@media screen and (max-width: 480px) {
+	#site-title h1 {
+		text-align: center;
+
+		.long-word {
+			display: none;
+		}
+
+		.myName {
+			right: 0em;
+		}
+	}
+}
+
+@media print {
+	header#site-title, nav {
+		display: none;
+	}
+
+	body {
+		margin-top: 0;
+		width: auto;
+		max-width: none;
+	}
+
+	#resume {
+		width: auto;
+	}
+}
