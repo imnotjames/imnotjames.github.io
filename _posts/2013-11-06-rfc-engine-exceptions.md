@@ -20,7 +20,8 @@ of the error conditions end a running script without allowing any cleanup, it al
 For example, the `finally` construct and `__deconstruct` methods are always ran before PHP shuts down - unless of course a fatal error ends
 it early.  There are some hacks to handle these behaviors slightly better using `register_shutdown_function`, but they are just that.
 
-```php
+{% highlight php startinline %}
+
 set_error_handler(function($errno, $errstr, $errfile, $errline) {
 	if (E_RECOVERABLE_ERROR === $errno) {
 		return true;
@@ -42,7 +43,8 @@ $a = new A(1383329451);
 
 // int(1383329451) - we've bypassed the hinting
 var_dump($a->datetime);
-```
+
+{% endhighlight %}
 
 Catching a recoverable fatal error may be even worse than handling an `E_ERROR`.  The code continues on once it is caught as if nothing happened.
 Situations like type hinting errors caught will allow input of the wrong type to be allowed through.  Even if you set an empty error handler that
@@ -53,7 +55,8 @@ Exceptions where possible.  The RFC includes `E_ERROR` and `E_RECOVERABLE_ERROR`
 mostly only delves into a small portion of the errors, but it does include wording for developers to avoid using fatal errors, and instead
 use exceptions where possible.  The following code would now work, where as of PHP 5.5, it does not.  
 
-```php
+
+{% highlight php startinline %}
 
 $object = null;
 
@@ -69,7 +72,8 @@ if (flock($h, LOCK_EX)) {
 
 fclose($h);
 
-```
+{% endhighlight %}
+
 This is a win for anyone who has written any long living PHP application, as well as for those who don't want to rely on error handlers to
 make an attempt to hastily exit from what should not be a catastrophic engine shutdown.
 
