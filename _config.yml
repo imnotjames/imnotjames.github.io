@@ -1,6 +1,6 @@
 name: NOT JAMES
 markdown: redcarpet
-highlighter: true
+highlighter: pygments
 
 permalink: /blog/:year/:month/:day/:title.html
 
