@@ -43,7 +43,7 @@
 }
 
 nav {
-	@include clear-fix();
+	@include clearfix();
 
 	margin-bottom: 2em;
 	text-transform: uppercase;

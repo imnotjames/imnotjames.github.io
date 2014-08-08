@@ -1,5 +1,5 @@
 article {
-	@include clear-fix();
+	@include clearfix();
 	margin-bottom: 2.5em;
 
 	.post p:last-child {
@@ -7,7 +7,7 @@ article {
 	}
 
 	header {
-		@include clear-fix();
+		@include clearfix();
 
 		border-bottom: 1px solid $foreground-color;
 		line-height: 16pt;
@@ -207,7 +207,7 @@ article {
 }
 
 .pagination {
-	@include clear-fix();
+	@include clearfix();
 
 	.previous {
 		float: left;
