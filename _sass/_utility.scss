@@ -1,0 +1,7 @@
+.clear-fix {
+	@include clear-fix();
+}
+
+.hidden {
+	@include hidden();
+}
