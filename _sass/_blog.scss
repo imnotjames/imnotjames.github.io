@@ -165,6 +165,34 @@ article {
 	footer {
 		position: relative;
 	}
+
+	.highlight {
+		position: relative;
+		padding-top: 1em;
+		border-top: 1px solid $foreground-color;
+		border-bottom: 1px solid $foreground-color;
+
+		&:before {
+			font-family: $font-family;
+			content: 'Code';
+			display: inline-block;
+			position: absolute;
+			top: -1em;
+			background-color: $background-color;
+			padding-right: 0.5em;
+			font-size: 7pt;
+			line-height: 2em;
+			text-transform: uppercase;
+			font-weight: bold;
+			letter-spacing: 2px;
+		}
+
+		pre {
+			overflow-x: auto;
+			padding-bottom: 1em;
+		}
+	}
+
 }
 
 .readMore {
