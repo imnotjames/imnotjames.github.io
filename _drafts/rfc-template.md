@@ -43,10 +43,10 @@ List the proposed PHP versions that the feature will be included in.  Use relati
 #### To SAPIs
 Describe the impact to CLI, Development web server, embedded PHP etc.
 
-#### To Existing Extensions ====
+#### To Existing Extensions
 Will existing extensions be affected?
 
-#### To Opcache ====
+#### To Opcache
 It is necessary to develop RFC's with opcache in mind, since opcache is a core extension distributed with PHP.
 
 Please explain how you have verified your RFC's compatibility with opcache.
