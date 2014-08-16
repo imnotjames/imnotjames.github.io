@@ -2,6 +2,8 @@ name: NOT JAMES
 markdown: redcarpet
 highlighter: pygments
 
+url: http://notjam.es
+
 permalink: /blog/:year/:month/:day/:title.html
 
 paginate: 10
