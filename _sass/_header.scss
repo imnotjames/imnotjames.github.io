@@ -1,4 +1,5 @@
 #site-title h1 {
+	margin: 0;
 	left: 0;
 	top: 0;
 	z-index: 500;
@@ -53,6 +54,8 @@ nav {
 
 	ul {
 		text-align: center;
+		margin: 0;
+		padding: 0;
 
 		&:before {
 			content: "";
@@ -75,6 +78,4 @@ nav {
 			}
 		}
 	}
-
-
 }
