@@ -1,3 +1,14 @@
+---
+date: 2012-01-01 00:00:00 -0000
+layout: post
+title: 'PHP RFC: Template'
+tags:
+  - PHP
+  - RFC
+  - Template Draft
+---
+
+
 ## PHP RFC: Your Title Here
   * Version: 0.9
   * Date: 2013-02-24 (use today's date here)
