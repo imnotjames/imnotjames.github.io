@@ -61,6 +61,10 @@
 			text-align: justify;
 		}
 	}
+
+	.resume-link {
+		@include arrow-after();
+	}
 }
 
 @media screen and (min-width: 46em) {
