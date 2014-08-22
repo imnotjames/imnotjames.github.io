@@ -59,7 +59,6 @@ TOOLS I USE
  Pascal
  Python
  Javascript
- RegEx
  HTML
  CSS
  SQL
