@@ -2,150 +2,97 @@
 layout: default
 title: Resume
 ---
+
+{% assign resume = site.data.resume %}
+
 <!-- You're actually reading the raw HTML..? -->
 
 <div id="resume">
 	<header class="clearfix">
 		<div class="rightColumn">
-			<h1>James Ward</h1>
+			<h1>
+				{{ resume.basics.name }}
+			</h1>
 			<span class="level">Level 7</span>
-			<span class="position">Programmer</span>
+			<span class="position">{{ resume.basics.label }}</span>
 		</div>
 		<div class="leftColumn">
-			<div class="contact email">
+			<div class="contact contact-email">
 				<a href="{{ site.contact.email }}" id="email">Email</a>
 				<noscript>This email address is encoded with rot13, javascript is required to decrypt it.</noscript>
 			</div>
-			<div class="contact github">
-				<a href="{{ site.contact.github }}" id="github">Github</a>
-				<noscript>This github address is encoded with rot13 too, javascript is required to decrypt it.</noscript>
+			{% for profile in resume.basics.profiles %}
+			<div class="contact contact-{{ profile.network | lowercase }}">
+				<a href="{{ profile.url | escape }}">{{ profile.network }}: {{ profile.username}}</a>
 			</div>
+			{% endfor %}
 		</div>
 	</header>
 
-	<div class="rightColumn" >
-		<article id="skills_tools">
-			<header title="In order of what makes the list visually pleasing">
-				<h2 class="title">
-					Tools I Use
-				</h2>
-			</header>
-			<ul>
-				<li>Perl</li>
-				<li>PHP</li>
-				<li>Java</li>
-				<li title="Including Delphi.">Pascal</li>
-				<li>Python</li>
-				<li title="Also libraries: jQuery, underscore, backbone..">Javascript</li>
-				<li title="Enough to know the difference between XHTML and HTML5.">HTML</li>
-				<li title="Some derivatives too: LESS, SCSS, SASS.">CSS</li>
-				<li title="MySQL, T-SQL, some Postgres..">SQL</li>
-				<li>C++</li>
-				<li>C</li>
-			</ul>
-		</article>
-		<article id="skills_platforms">
-			<header>
-				<h2 class="title">
-					Platforms
-				</h2>
-			</header>
-			<ul>
-				<li title="Gentoo, Arch Linux, Ubuntu, CentOS.">GNU/Linux</li>
-				<li title="It's just another nix derivative, anyway.">Mac OS X</li>
-				<li title="Sure, I can do some stuff with GPO.">Windows</li>
-			</ul>
-		</article>
-	</div>
+	<div class="clearfix">
+		<div class="rightColumn" >
+			<article id="skills_tools">
+				<header title="In order of what makes the list visually pleasing">
+					<h2 class="title">
+						Tools I Use
+					</h2>
+				</header>
+				<ul>
+					{% for skill in resume.skills %}
+						<li title="{{ skill.keywords | join: ', ' }}">{{ skill.name }}</li>
+					{% endfor %}
+				</ul>
+			</article>
+		</div>
 
-	<div class="leftColumn">
-		<article id="about_hobbies">
-			<header>
-				<h2 class="title">
-					Summary
-				</h2>
-			</header>
-			<blockquote>
-				I am an Engineer through and through - I solve practical problems.  I get things done,
-				ship amazing software, and create a superb user experience - all while hitting every
-				specification and business requirement.  Unit tests and general test driven
-				development are some of my go-to tools for crafting supreme code in a multitude of
-				languages, and I've also dabbled in some end-to-end testing frameworks.
-				<br />
-				<br />
-				This isn't just a day job to me, it's a passion.
-			</blockquote>
-		</article>
+		<div class="leftColumn">
+			<article id="about_summary">
+				<header>
+					<h2 class="title">
+						Summary
+					</h2>
+				</header>
+				<blockquote>
+					{{ resume.basics.summary | markdownify }}
+				</blockquote>
+			</article>
 
-		<article id="about_experience">
-			<header>
-				<h2 class="title">
-					Experience Points
-				</h2>
-			</header>
+			<article id="about_experience">
+				<header>
+					<h2 class="title">
+						Experience Points
+					</h2>
+				</header>
 
-			<ul>
-				<li>
-					<h3 class="title">Software Engineer</h3>
-					<h4 class="organization">WayFair</h4>
-					<h5 class="timeframe">
-						<span title="February 17th, 2014">
-							2014
-						</span>
-						&mdash;
-						<span>
-							Current
-						</span>
-					</h5>
-					<blockquote>
-						Worked with a team to create PHP and Java interoperating systems to handle large throughput of data based on
-						various user generated rules.
-
-						Extensively used backbone.js and other tools to create a maintainable highly interactive client side experience.
-
-						Rewrote small portions of a legacy codebase in PHP from classic ASP, as well as refactored procedural PHP to a more object oriented approach.
-					</blockquote>
-				</li>
-
-				<li>
-					<h3 class="title">Software Engineer</h3>
-					<h4 class="organization">Limestone Networks</h4>
-					<h5 class="timeframe">
-						<span title="April 24th, 2012">
-							2012
-						</span>
-						&mdash;
-						<span title="February 7th, 2014">
-							2014
-						</span>
-					</h5>
-					<blockquote>
-						Refactored of large portions of legacy PHP codebases to implement new features, working with several hundred thousands of lines of code managed on GitHub.
-
-						Implemented encryption and password hashing systems to meet industry standards and ensure PCI-DSS compliance.
-
-						Created unit and integration tests to verify changes would not break existing legacy code.
-
-						Performed database administration, systems administration, upkeep of internal perl tools, created tools for automation, and optimized the web stack to scale as the company did.
-
-						Maintained basic mitigation of denial of service attacks on services through caching, network optimization and reverse proxies.
-					</blockquote>
-				</li>
-				<li>
-					<h3 class="title">Software Architect</h3>
-					<h4 class="organization">Accrisoft, Corp</h4>
-					<h5 class="timeframe">2011 &mdash; 2012</h5>
-					<blockquote>
-						Designed and implemented new features, bug fixes, and reduced the memory footprint for Accrisoft's flagship Freedom CMS.
-
-						Integrated the CMS with several SOAP and RESTful APIs.
-
-						Worked alongside a team of talented programmers, using subversion and an in-house ticketing system.
-
-						Optimized the standard web stack and configuration installed on application nodes, to minimize the required specifications.
-					</blockquote>
-				</li>
-			</ul>
-		</article>
+				<ul>
+					{% for experience in resume.work %}
+						<li>
+							<h3 class="title">{{ experience.position }}</h3>
+							<h4 class="organization">
+								<a href="{{ experience.website | default: '#' | escape }}">
+									{{ experience.company }}
+								</a>
+							</h4>
+							<h5 class="timeframe">
+								<span title="{{ experience.startDate | escape }}">
+									{{ experience.startDate | date: '%Y' }}
+								</span>
+								&mdash;
+								<span title="{{ experience.endDate | default: 'Current' | escape }}">
+									{% if experience.endDate %}
+										{{ experience.endDate | date: '%Y'' }}
+									{% else %}
+										Current
+									{% endif %}
+								</span>
+							</h5>
+							<blockquote>
+								{{ experience.summary | markdownify }}
+							</blockquote>
+						</li>
+					{% endfor %}
+				</ul>
+			</article>
+		</div>
 	</div>
 </div>
