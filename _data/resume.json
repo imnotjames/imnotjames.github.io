@@ -1,0 +1,229 @@
+{
+	"basics": {
+		"name": "James Ward",
+		"label": "Software Engineer",
+		"email": "james@notjam.es",
+		"website": "james@notjam.es",
+		"location": {
+			"city": "Boston",
+			"region": "Massachusetts",
+			"countryCode": "US"
+		},
+		"profiles": [
+			{
+				"network": "Github",
+				"username": "imnotjames",
+				"url": "http://github.com/imnotjames/"
+			}
+		],
+		"summary":
+			"I am an Engineer through and through - I solve practical problems.
+			I get things done, ship amazing software, and create a superb user
+			experience - all while hitting every specification and business
+			requirement.  Unit tests and general test driven development are
+			some of my go-to tools for crafting supreme code in a multitude of
+			languages, and I've also dabbled in some end-to-end testing
+			frameworks.
+
+
+			This isn't just a day job to me, it's a passion.",
+		"goofySummary":
+			"A mage of code, a warlock of operations, and an overall wizard for
+			building up the most fanastic systems you could ever imagine. The
+			ally you have dreamed to have. Winning countless battles of wits
+			against compilers and interpreters, accomplishing everything
+			regulation compliance of an impeccable detail to hardened systems
+			capable of withstanding even the most brutal of attacks. I ship
+			amazing software, and code I work with becomes stable -
+			just like magic. Some call it luck, a roll of the die. In my
+			experience, there is no such thing as luck."
+	},
+	"work": [
+		{
+			"company": "Wayfair",
+			"position": "Software Engineer",
+			"website": "http://wayfair.com",
+			"startDate": "February 17th, 2014",
+			"summary":
+				"Worked with a team to create PHP and Java interoperating
+				systems to handle large throughput of data based on various user
+				generated rules.
+
+				Extensively used backbone.js and other tools to create a
+				maintainable highly interactive client side experience.
+
+				Rewrote portions of a legacy codebase in PHP from classic ASP,
+				as well as refactored procedural PHP to a more structured object
+				oriented approach.",
+			"goofySummary":
+				"Battling alongside an armada of other skilled warriors to fend
+				off from hordes of network traffic and bugs.  Torrential rain of
+				requests from around the globe at a scale never seen before,
+				they must all stay courageous and face the eye of the storm.
+
+
+				Battle is not all in store, however.  In times of peace, the
+				hero pursues coding nirvana and encourages others to do so as
+				well.  To accept the silence of passing unit tests is to know
+				true peace of mind. To code with hidden information is to
+				protect against future attacks.  To master the use of XDebug is
+				to open the mind's eye and see into the stack itself.
+
+				These are the disciplines our hero teaches.",
+			"highlights": []
+		},
+		{
+			"company": "Limestone Networks",
+			"position": "Software Engineer",
+			"website": "http://limestonenetworks.com",
+			"startDate": "April 24th, 2012",
+			"endDate": "February 7th, 2014",
+			"summary":
+				"Refactored of large portions of legacy PHP codebases to
+				implement new features, working with several hundred thousands
+				of lines of code managed on GitHub.
+
+
+				Implemented encryption and password hashing systems to meet
+				industry standards and ensure PCI-DSS compliance.
+
+
+				Created unit and integration tests to verify changes would not
+				break existing legacy code.
+
+
+				Performed database administration, systems administration,
+				upkeep of internal perl tools, created tools for automation,
+				and optimized the web stack to scale as the company did.
+				Maintained basic mitigation of denial of service attacks on
+				services through caching, network optimization and reverse
+				proxies.",
+			"goofySummary":
+				"Fighting dragons in legacy codebases PHP continues on for this
+				adventurer. This time the hero is given ferocious new tools.
+				With refactoring as his blade and unit testing his shield, he
+				slowly but surely is defeating the beastly bugs within. Already
+				having defeated the PCI-DSS kraken, the and continuing the fight
+				with the the Denial of Service Hydra, learning new tricks with
+				caching and reverse proxies along the way, our handsome
+				swashbuckler has saved the kingdom from peril time and again.",
+			"highlights": []
+		},
+		{
+			"company": "Accrisoft",
+			"position": "Software Architect",
+			"website": "http://accrisoft.com",
+			"startDate": "February 11th, 2011",
+			"endDate": "April 4th, 2012",
+			"summary":
+				"Designed and implemented new features, bug fixes, and reduced
+				the memory footprint for Accrisoft's flagship Freedom CMS.
+
+
+				Integrated the CMS with several SOAP and REST APIs.
+
+
+				Worked alongside a team of talented programmers, using
+				subversion and an in-house ticketing system.
+
+
+				Optimized the standard web stack and configuration installed on
+				application nodes, to minimize the required specifications.",
+			"goofySummary":
+				"Development of Accrisoft's Freedom CMS is the task at hand. A
+				never ending quest of solid feature implementation and an
+				overhaul of old, legacy code have been undertaken. A side tale
+				of integration with a multitude of other products has been
+				assigned, as well as vanquishing bugs, increasing performance
+				and decreasing memory footprint wherever possible.",
+			"highlights": []
+		}
+	],
+	"skills": [
+		{
+			"name": "PHP",
+			"level": "Expert",
+			"keywords": [
+				"Object Oriented and Procedural",
+				"Extension Development"
+			]
+		},
+		{
+			"name": "Pascal",
+			"level": "Intermediate",
+			"keywords": [
+				"Delphi"
+			]
+		},
+		{
+			"name": "Python",
+			"level": "Intermediate",
+			"keywords": [
+				"Twisted"
+			]
+		},
+		{
+			"name": "Javascript",
+			"level": "Advanced",
+			"keywords": [
+				"jQuery",
+				"Underscore",
+				"Lo-dash",
+				"Angular",
+				"Backbone"
+			]
+		},
+		{
+			"name": "HTML",
+			"level": "Expert",
+			"keywords": [
+				"HTML5",
+				"XHTML"
+			]
+		},
+		{
+			"name": "CSS",
+			"level": "Expert",
+			"keywords": [
+				"CSS3",
+				"SASS",
+				"LESS",
+				"Responsive Design"
+			]
+		},
+		{
+			"name": "SQL",
+			"level": "Advanced",
+			"keywords": [
+				"MySQL",
+				"T-SQL",
+				"PostgreSQL"
+			]
+		},
+		{
+			"name": "Java",
+			"level": "Intermediate",
+			"keywords": [
+				"Spring",
+				"Hibernate",
+				"Storm"
+			]
+		},
+		{
+			"name": "Perl",
+			"level": "Intermediate",
+			"keywords": []
+		},
+		{
+			"name": "C++",
+			"level": "Intermediate",
+			"keywords": []
+		},
+		{
+			"name": "C",
+			"level": "Intermediate",
+			"keywords": []
+		}
+	],
+	"languages":
+}
