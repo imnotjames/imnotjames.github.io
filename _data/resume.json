@@ -225,5 +225,10 @@
 			"keywords": []
 		}
 	],
-	"languages":
+	"languages":[
+		{
+			"language": "English",
+			"fluency": "Fluent?"
+  		}
+  	]
 }
