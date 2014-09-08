@@ -44,9 +44,17 @@ var GameOfLifeController = function(gameOfLife, view) {
 		hooks.push(hook);
 	};
 
-	this.drawLines = function(xOffset, yOffset, lines) {
-		if (typeof lines == 'string') {
+	this.drawLines = function(lines, xOffset, yOffset) {
+		if (typeof lines === 'string') {
 			lines = [lines];
+		}
+
+		if (typeof xOffset === 'undefined') {
+			xOffset = Math.floor((gameOfLife.getWidth() / 2) - (lines[0].length / 2));
+		}
+
+		if (typeof yOffset === 'undefined') {
+			yOffset = Math.floor((gameOfLife.getHeight() / 2) - (lines.length / 2));
 		}
 
 		var x = xOffset;
@@ -74,10 +82,12 @@ var GameOfLifeController = function(gameOfLife, view) {
 	this.run = function() {
 		var tick = 0;
 
+		var that = this;
+
 		setInterval(
 			function() {
 				for (var i in hooks) {
-					hooks[i].call(this, tick);
+					hooks[i].call(that, tick);
 				}
 
 				tick++;
@@ -126,9 +136,9 @@ window.onload = function() {
 	var view = new GameOfLifeView(canvas);
 
 	var gameOfLife = new GameOfLife(32, 16);
-	var helper = new GameOfLifeController(gameOfLife, view);
+	var controller = new GameOfLifeController(gameOfLife, view);
 
-	helper.addHook(function(tick) {
+	controller.addHook(function(tick, controller) {
 		if (tick % 8 != 0) {
 			return;
 		}
@@ -143,12 +153,10 @@ window.onload = function() {
 			'     x   xxxx        x'
 		];
 
-		helper.drawLines(
-			Math.floor((gameOfLife.getWidth() / 2) - (notFound[0].length / 2)),
-			Math.floor((gameOfLife.getHeight() / 2) - (notFound.length / 2)),
+		this.drawLines(
 			notFound
 		);
 	});
 
-	helper.run();
+	controller.run();
 };
