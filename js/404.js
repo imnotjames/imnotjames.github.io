@@ -1,6 +1,9 @@
+'use strict';
 
-var GameOfLifeHelper = function(gameOfLife, canvas) {
+var GameOfLifeView = function(canvas) {
 	var context = canvas.getContext('2d');
+
+	canvas.style.width = '100%';
 
 	context.imageSmoothingEnabled = false;
 	context.webkitImageSmoothingEnabled = false;
@@ -9,13 +12,7 @@ var GameOfLifeHelper = function(gameOfLife, canvas) {
 	var width = canvas.width;
 	var height = canvas.height;
 
-	var hooks = [];
-
-	this.addHook = function(hook) {
-		hooks.push(hook);
-	};
-
-	this.render = function() {
+	this.render = function(gameOfLife) {
 		context.clearRect (0, 0, width, height);
 
 		context.fillStyle = 'rgb(30, 30, 30)';
@@ -37,6 +34,15 @@ var GameOfLifeHelper = function(gameOfLife, canvas) {
 			context.stroke();
 		}
 	};
+};
+
+var GameOfLifeController = function(gameOfLife, view) {
+
+	var hooks = [];
+
+	this.addHook = function(hook) {
+		hooks.push(hook);
+	};
 
 	this.drawLines = function(xOffset, yOffset, lines) {
 		if (typeof lines == 'string') {
@@ -47,7 +53,7 @@ var GameOfLifeHelper = function(gameOfLife, canvas) {
 		var y = yOffset;
 
 		for (var i in lines) {
-			line = lines[i].split("");
+			var line = lines[i].split("");
 
 			for (var j in line) {
 				if (line[j] == ' ') {
@@ -82,21 +88,21 @@ var GameOfLifeHelper = function(gameOfLife, canvas) {
 			600
 		);
 
-		var that = this;
+		var lastTick = 0;
 
 		(function renderLoop() {
+			view.render(gameOfLife);
+
 			var thisTick = Date.now();
 
-			var tickDelta = thisTick - this.lastTick;
+			var tickDelta = thisTick - lastTick;
 
 			var tickWait = (1000 / 15) - tickDelta;
 
-			this.lastTick = thisTick + (tickWait ? tickWait : 0);
+			lastTick = thisTick + (tickWait ? tickWait : 0);
 
 			setTimeout(
 				function() {
-					that.render();
-
 					(
 						window.requestAnimationFrame ||
 						window.webkitRequestAnimationFrame ||
@@ -117,10 +123,10 @@ window.onload = function() {
 
 	container.appendChild(canvas);
 
-	canvas.style.width = '100%';
+	var view = new GameOfLifeView(canvas);
 
 	var gameOfLife = new GameOfLife(32, 16);
-	var helper = new GameOfLifeHelper(gameOfLife, canvas);
+	var helper = new GameOfLifeController(gameOfLife, view);
 
 	helper.addHook(function(tick) {
 		if (tick % 8 != 0) {
