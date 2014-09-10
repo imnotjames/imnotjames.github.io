@@ -5,3 +5,7 @@
 .hidden {
 	@include hidden();
 }
+
+.text-center {
+	text-align: center;
+}
