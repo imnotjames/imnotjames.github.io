@@ -3,14 +3,22 @@
 var GameOfLifeView = function(canvas) {
 	var context = canvas.getContext('2d');
 
-	canvas.style.width = '100%';
-
-	context.imageSmoothingEnabled = false;
-	context.webkitImageSmoothingEnabled = false;
-	context.mozImageSmoothingEnabled = false;
-
 	var width = canvas.width;
 	var height = canvas.height;
+
+	canvas.style['image-rendering'] = 'optimizeSpeed';
+	canvas.style['image-rendering'] = 'crisp-edges';
+	canvas.style['image-rendering'] = '-moz-crisp-edges';
+	canvas.style['image-rendering'] = '-webkit-optimize-contrast';
+	canvas.style['image-rendering'] = 'optimize-contrast';
+	canvas.style['image-rendering'] = 'pixelated';
+	canvas.style['msInterpolationMode'] = 'nearest-neighbor';
+
+	context['imageSmoothingEnabled'] = false;
+	context['mozImageSmoothingEnabled'] = false;
+	context['oImageSmoothingEnabled'] = false;
+	context['webkitImageSmoothingEnabled'] = false;
+	context['msImageSmoothingEnabled'] = false;
 
 	this.render = function(gameOfLife) {
 		context.clearRect (0, 0, width, height);
@@ -24,8 +32,8 @@ var GameOfLifeView = function(canvas) {
 			context.beginPath();
 
 			context.rect(
-				(nodes[i].x / gameOfLife.getWidth()) * width,
-				(nodes[i].y / gameOfLife.getHeight()) * height,
+				Math.floor((nodes[i].x / gameOfLife.getWidth()) * width),
+				Math.floor((nodes[i].y / gameOfLife.getHeight()) * height),
 				Math.floor((1 / gameOfLife.getWidth()) * width),
 				Math.floor((1 / gameOfLife.getHeight()) * height)
 			);
@@ -128,6 +136,11 @@ var GameOfLifeController = function(gameOfLife, view) {
 
 window.onload = function() {
 	var canvas = document.createElement('canvas');
+
+	canvas.width = 640;
+	canvas.height = 320;
+
+	canvas.style['width'] = '100%';
 
 	var container = document.getElementById('gol-container');
 
