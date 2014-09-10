@@ -26,17 +26,7 @@
 			frameworks.
 
 
-			This isn't just a day job to me, it's a passion.",
-		"goofySummary":
-			"A mage of code, a warlock of operations, and an overall wizard for
-			building up the most fanastic systems you could ever imagine. The
-			ally you have dreamed to have. Winning countless battles of wits
-			against compilers and interpreters, accomplishing everything
-			regulation compliance of an impeccable detail to hardened systems
-			capable of withstanding even the most brutal of attacks. I ship
-			amazing software, and code I work with becomes stable -
-			just like magic. Some call it luck, a roll of the die. In my
-			experience, there is no such thing as luck."
+			This isn't just a day job to me, it's a passion."
 	},
 	"work": [
 		{
@@ -55,21 +45,6 @@
 				Rewrote portions of a legacy codebase in PHP from classic ASP,
 				as well as refactored procedural PHP to a more structured object
 				oriented approach.",
-			"goofySummary":
-				"Battling alongside an armada of other skilled warriors to fend
-				off from hordes of network traffic and bugs.  Torrential rain of
-				requests from around the globe at a scale never seen before,
-				they must all stay courageous and face the eye of the storm.
-
-
-				Battle is not all in store, however.  In times of peace, the
-				hero pursues coding nirvana and encourages others to do so as
-				well.  To accept the silence of passing unit tests is to know
-				true peace of mind. To code with hidden information is to
-				protect against future attacks.  To master the use of XDebug is
-				to open the mind's eye and see into the stack itself.
-
-				These are the disciplines our hero teaches.",
 			"highlights": []
 		},
 		{
@@ -98,15 +73,6 @@
 				Maintained basic mitigation of denial of service attacks on
 				services through caching, network optimization and reverse
 				proxies.",
-			"goofySummary":
-				"Fighting dragons in legacy codebases PHP continues on for this
-				adventurer. This time the hero is given ferocious new tools.
-				With refactoring as his blade and unit testing his shield, he
-				slowly but surely is defeating the beastly bugs within. Already
-				having defeated the PCI-DSS kraken, the and continuing the fight
-				with the the Denial of Service Hydra, learning new tricks with
-				caching and reverse proxies along the way, our handsome
-				swashbuckler has saved the kingdom from peril time and again.",
 			"highlights": []
 		},
 		{
@@ -129,13 +95,6 @@
 
 				Optimized the standard web stack and configuration installed on
 				application nodes, to minimize the required specifications.",
-			"goofySummary":
-				"Development of Accrisoft's Freedom CMS is the task at hand. A
-				never ending quest of solid feature implementation and an
-				overhaul of old, legacy code have been undertaken. A side tale
-				of integration with a multitude of other products has been
-				assigned, as well as vanquishing bugs, increasing performance
-				and decreasing memory footprint wherever possible.",
 			"highlights": []
 		}
 	],

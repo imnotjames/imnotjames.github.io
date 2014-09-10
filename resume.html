@@ -49,11 +49,11 @@ title: Resume
 			<article id="about_summary">
 				<header>
 					<h2 class="title">
-						Tome of Magic
+						Summary
 					</h2>
 				</header>
 				<blockquote>
-					{{ resume.basics.goofySummary | markdownify }}
+					{{ resume.basics.summary | markdownify }}
 				</blockquote>
 			</article>
 
@@ -87,18 +87,12 @@ title: Resume
 								</span>
 							</h5>
 							<blockquote>
-								{{ experience.goofySummary | markdownify }}
+								{{ experience.summary | markdownify }}
 							</blockquote>
 						</li>
 					{% endfor %}
 				</ul>
 			</article>
 		</div>
-	</div>
-
-	<div class="hidden-print">
-		<a class="resume-link" href="/resume_professional.html">
-			Looking for something those Human Resources Folk would like a little bit more?
-		</a>
 	</div>
 </div>
