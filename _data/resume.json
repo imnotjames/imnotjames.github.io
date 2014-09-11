@@ -103,7 +103,8 @@
 			"name": "PHP",
 			"level": "Expert",
 			"keywords": [
-				"Object Oriented and Procedural",
+				"Object Oriented",
+				"Procedural",
 				"Extension Development"
 			]
 		},
@@ -129,6 +130,7 @@
 				"Underscore",
 				"Lo-dash",
 				"Angular",
+				"Knockout",
 				"Backbone"
 			]
 		},
@@ -157,6 +159,14 @@
 				"MySQL",
 				"T-SQL",
 				"PostgreSQL"
+			]
+		},
+		{
+			"name": "NoSQL",
+			"level": "Intermediate",
+			"keywords": [
+				"MongoDB",
+				"Redis"
 			]
 		},
 		{
