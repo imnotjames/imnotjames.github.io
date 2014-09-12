@@ -1,1 +1,1 @@
-index.markdown
+../index.markdown
