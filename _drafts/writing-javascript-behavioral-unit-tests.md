@@ -17,9 +17,9 @@ but how would I know for sure that it did?  Behavioral unit tests to the rescue.
 * Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
 
 This is a good representation of the behavior that should be exhibited by
-Conway's Game of Life in plain, understandable English.  However, we are
-engineers!  We have to come up with some overly abstract and strict way to
-represent these behaviors.  We need a specification.
+[Conway's Game of Life][gameoflife_wiki] in plain, understandable English.
+However, we are engineers!  We have to come up with some overly abstract and
+strict way to represent these behaviors.  We need a specification.
 
 ## Behavioral Specifications
 
@@ -287,3 +287,4 @@ shunned as a failure.
 [travis_nodejs_integration]: http://docs.travis-ci.com/user/languages/javascript-with-nodejs/
 [travis_docs]: http://docs.travis-ci.com/
 [phantomjs]: http://phantomjs.org/
+[gameoflife_wiki]: http://wikipedia.org/wiki/Conway%27s_Game_of_Life
