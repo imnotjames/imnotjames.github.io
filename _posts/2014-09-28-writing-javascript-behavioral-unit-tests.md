@@ -8,7 +8,7 @@ tags:
 ---
 When going through some old projects I realized that I hadn't particularly kept
 up with my [game of life][gameoflifejs_github] implementation in JavaScript.
-In particular I never truly verified it worked.  Sure, it _looks_ like it worked
+I never truly verified it worked.  Sure, it _looks_ like it worked
 but how would I know for sure that it did?  Behavioral unit tests to the rescue.
 
 * Any live cell with fewer than two live neighbors dies, as if caused by under-population.
