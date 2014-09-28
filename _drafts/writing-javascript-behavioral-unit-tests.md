@@ -181,13 +181,14 @@ also bypasses the need of having a web browser open to run the tests by using
 [install node][install_node] now.
 
 If don't have a `package.json` file you can generate one with
-[`npm init`][npm_init_docs].  Opening up the `package.json` file you should add
-to the end of your `devDependencies` directive both `"grunt": "^0.4.5"` and
-`"grunt-contrib-jasmine": "^0.7.0"`.  If you need to know anything else about
-the `package.json` file, you can always consult the
+[`npm init`][npm_init_docs].  To add the `grunt` and `grunt-contrib-jasmine`
+dependencies you can run the command
+`npm install grunt grunt-contrib-jasmine --save-dev` or manually edit the
+package file. If you need to know anything else about the `package.json`
+file, you can always consult the
 [npm documentation on the subject][npm_package_json_docs].  Once you're
 satisfied with your `package.json` running `npm install` should fetch Jasmine,
-grunt, and the grunt Jasmine task.
+grunt, and the grunt Jasmine task if you haven't installed them already.
 
 However, you still need a `Gruntfile.js` to run the tests.  The `Gruntfile`
 initializes the various tasks including our test runner.  The following is an
