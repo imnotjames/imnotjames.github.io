@@ -14,11 +14,9 @@ project in my free time, various other open source projects, and idle around
 I have a passion for web technologies, and am always looking to learn
 something new.
 
-You can contact me online via [email][email], on [AIM][aim], or fork me on
-[github][github].
+You can contact me online via [email][email], or fork me on [github][github].
 
 [resume]: /resume.html
 [##php]: irc://irc.freenode.net/##php
 [email]: {{ site.contact.email }}
-[aim]: {{ site.contact.aim }}
 [github]: {{ site.contact.github }}
