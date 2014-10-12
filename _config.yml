@@ -16,4 +16,4 @@ contact:
 timezone: "America/New_York"
 
 gems:
-  - jekyll-sitemap
+ - jekyll-sitemap
