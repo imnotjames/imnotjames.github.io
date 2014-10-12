@@ -14,3 +14,6 @@ contact:
  github: "rot13://tvguho.pbz/vzabgwnzrf"
 
 timezone: "America/New_York"
+
+gems:
+  - jekyll-sitemap
