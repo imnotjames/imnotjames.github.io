@@ -17,9 +17,10 @@ I have a passion for technology, and am always looking to learn something new.
 
 
 
-You can contact me online via [email][email], or fork me on [github][github].
+You can contact me online via [email][email], [tweet at me][twitter], or fork me on [github][github].
 
 [resume]: /resume.html
 [##php]: irc://irc.freenode.net/##php
 [email]: {{ site.contact.email }}
 [github]: {{ site.contact.github }}
+[twitter]: {{ site.contact.twitter }}
