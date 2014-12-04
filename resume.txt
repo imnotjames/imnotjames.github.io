@@ -1,7 +1,7 @@
 ---
 ---
 {% assign resume = site.data.resume %}{{ resume.basics.name }}
-Level 7 {{ resume.basics..label }}
+Level 7 {{ resume.basics.label }}
 
 Site: {{ resume.basics.website}}
 Email: {{ resume.basics.email }}
@@ -10,21 +10,21 @@ Email: {{ resume.basics.email }}
 
 
 TOME OF MAGIC
-
-{{ resume.basics.goofySummary }}
+-------------
+{{ resume.basics.summary }}
 
 
 
 EXPERIENCE POINTS
-{% for experience in resume.work %}
-{{ experience.position }} - {{ experience.company }}
+-----------------
+{% for experience in resume.work %}{{ experience.position }} - {{ experience.company }}
 {{ experience.startDate | date: '%Y' }} - {% if experience.endDate %}{{ experience.endDate | date: '%Y' }}{% else %}Current{% endif %}
 
-{{ experience.goofySummary }}
+{{ experience.summary }}
 
 {% endfor %}
 
 TOOLS I USE
-
+-----------
 {% for skill in resume.skills %}{{ skill.name }}{% if skill.keywords.size > 0 %}: {{ skill.keywords | join: ', ' }}{% endif %}
 {% endfor %}
