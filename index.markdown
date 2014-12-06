@@ -9,8 +9,8 @@ uninteresting.
 
 What's more interesting are logic problems, retro science fiction, bad movies,
 video games, comics, ramen, and electronic music.  I contribute to various
-open source projects, including the PHP project.  I idle around
-##php on Freenode as well as a handful of other IRC channels helping people.
+open source projects, including the PHP project.  I idle around ##php on
+Freenode as well as a handful of other IRC channels helping people.
 
 I have a passion for technology, and am always looking to learn something new.
 
