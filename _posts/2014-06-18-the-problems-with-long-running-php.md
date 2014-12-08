@@ -41,15 +41,20 @@ while (true) {
 
 Oh yes.  Beautiful, we're in business!  What could possibly go wrong?
 
-Well, there are quite a few things, and even with those lucrative reasons to
-do it there are a couple not to.  The biggest being PHP's primary intent.  It's
-a language primarily designed to handle one request and then die, resetting
-itself to a pristine condition, like some sort of ElePHPhoenix.
+## PHP isn't meant to live forever
 
-When you take that glorious death of the process away from it, the interpreter
-hits code paths that haven't been as well tested as others, and a few issues
-can crop up from it.
+The biggest reason to let PHP die is that it is the intended use.  It's a
+system primarily designed to handle one request, die, and jump back up again,
+resetting itself to a pristine condition - like some sort of ElePHPhoenix.
 
+When you take that glorious death of the process away from it you're fighting
+what makes PHP so useful for the web - how it throws everything away after
+each request.  When you try to work around this, and force PHP into roles
+that it's not fit for you've subjugated yourself to be tormented.
+
+You also will be bypassing most knowledge that sane developers have
+accumulated, and the standard PHP documentation will not be able to save you.
+It's lacking and even non-existant in many cases.
 
 ## Memory Leaks and Garbage Collection Problems
 
