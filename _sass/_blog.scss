@@ -201,6 +201,11 @@ article {
 			margin-left: 0.8em;
 			padding-left: 1em;
 		}
+
+		table {
+			width: 100%;
+			table-layout: fixed;
+		}
 	}
 }
 
