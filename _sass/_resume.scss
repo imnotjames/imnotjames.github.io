@@ -4,7 +4,7 @@
 	position: relative;
 	text-align: left;
 
-	* {
+	article, blockquote, p, h1, h2, h3, h4, h5 {
 		margin: 0;
 		padding: 0;
 	}
@@ -14,8 +14,14 @@
 	}
 
 	ul {
-		padding-left: 0px;
-		list-style-type: none;
+
+	}
+
+	#skills_tools {
+		ul {
+			padding-left: 0px;
+			list-style-type: none;
+		}
 	}
 
 	header {
@@ -35,7 +41,7 @@
 		}
 	}
 
-	article {
+	section {
 		margin-bottom: 4em;
 
 		h3 {
@@ -97,7 +103,7 @@
 		}
 
 
-		article {
+		section {
 			blockquote {
 				font-size: 9pt;
 			}

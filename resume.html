@@ -31,7 +31,7 @@ title: Resume
 
 	<div class="clearfix">
 		<div class="rightColumn" >
-			<article id="skills_tools">
+			<section id="skills_tools">
 				<header title="In order of what makes the list visually pleasing">
 					<h2 class="title">
 						Tools I Use
@@ -46,7 +46,7 @@ title: Resume
 		</div>
 
 		<div class="leftColumn">
-			<article id="about_summary">
+			<section id="about_summary">
 				<header>
 					<h2 class="title">
 						Summary
@@ -55,44 +55,51 @@ title: Resume
 				<blockquote>
 					{{ resume.basics.summary | markdownify }}
 				</blockquote>
-			</article>
+			</section>
 
-			<article id="about_experience">
+			<section id="about_experience">
 				<header>
 					<h2 class="title">
 						Experience Points
 					</h2>
 				</header>
 
-				<ul>
-					{% for experience in resume.work %}
-						<li>
-							<h3 class="title">{{ experience.position }}</h3>
-							<h4 class="organization">
-								<a href="{{ experience.website | default: '#' | escape }}">
-									{{ experience.company }}
-								</a>
-							</h4>
-							<h5 class="timeframe">
-								<span title="{{ experience.startDate | escape }}">
-									{{ experience.startDate | date: '%Y' }}
-								</span>
-								&mdash;
-								<span title="{{ experience.endDate | default: 'Current' | escape }}">
-									{% if experience.endDate %}
-										{{ experience.endDate | date: '%Y'' }}
-									{% else %}
-										Current
-									{% endif %}
-								</span>
-							</h5>
-							<blockquote>
-								{{ experience.summary | markdownify }}
-							</blockquote>
-						</li>
-					{% endfor %}
-				</ul>
-			</article>
+				{% for experience in resume.work %}
+					<article>
+						<h3 class="title">{{ experience.position }}</h3>
+						<h4 class="organization">
+							<a href="{{ experience.website | default: '#' | escape }}">
+								{{ experience.company }}
+							</a>
+						</h4>
+						<h5 class="timeframe">
+							<span title="{{ experience.startDate | escape }}">
+								{{ experience.startDate | date: '%Y' }}
+							</span>
+							&mdash;
+							<span title="{{ experience.endDate | default: 'Current' | escape }}">
+								{% if experience.endDate %}
+									{{ experience.endDate | date: '%Y'' }}
+								{% else %}
+									Current
+								{% endif %}
+							</span>
+						</h5>
+						<blockquote>
+							{{ experience.summary | markdownify }}
+
+							{% if experience.highlights %}
+							<ul>
+								{% for highlight in experience.highlights %}
+									<li>{{ highlight }}</li>
+								{% endfor %}
+							</ul>
+							{% endif %}
+						</blockquote>
+
+					</article>
+				{% endfor %}
+			</section>
 		</div>
 	</div>
 </div>

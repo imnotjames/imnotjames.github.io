@@ -7,18 +7,6 @@ article {
 	}
 
 	header {
-		@include clearfix();
-
-		border-bottom: 1px solid $foreground-color;
-		line-height: 16pt;
-		height: 0.8em;
-		position: relative;
-		margin-bottom: 1.6em;
-
-		* {
-			background-color: $background-color;
-		}
-
 		&:hover .tags {
 			height: 2em;
 			border-bottom-color: $foreground-color;
@@ -111,59 +99,6 @@ article {
 			-webkit-transition: height 0.5s;
 			-o-transition: height 0.5s;
 		}
-
-
-		h1, h2, h3, h4, h5 {
-			padding-right: 0.5em;
-			margin: 0;
-
-			max-width: 70%;
-			width: auto !important;
-			width: 70%;
-
-			z-index: 2;
-
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			float: left;
-
-			position: relative;
-			transition: max-width 0.2s;
-			-moz-transition: max-width 0.2s;
-			-ms-transition: max-width 0.2s;
-			-webkit-transition: max-width 0.2s;
-			-o-transition: max-width 0.2s;
-
-			font-size: 9pt;
-			line-height: 2.1em;
-			text-transform: uppercase;
-			font-weight: bold;
-			letter-spacing: 2px;
-
-			&:hover {
-				max-width: 100%;
-				transition: max-width 0.2s;
-				-moz-transition: max-width 0.2s;
-				-ms-transition: max-width 0.2s;
-				-webkit-transition: max-width 0.2s;
-				-o-transition: max-width 0.2s;
-			}
-		}
-
-		a {
-			color: #111;
-			text-decoration: none;
-
-			&:hover {
-				color: #111;
-				text-decoration: underline;
-			}
-		}
-	}
-
-	footer {
-		position: relative;
 	}
 
 	.post {
