@@ -31,21 +31,20 @@
 	"work": [
 		{
 			"company": "Wayfair",
-			"position": "Software Engineer",
+			"position": "Senior Software Engineer",
 			"website": "http://wayfair.com",
 			"startDate": "February 17th, 2014",
 			"summary":
-				"Worked with a team to create PHP and Java interoperating
-				systems to handle large throughput of data based on various user
-				generated rules.
-
-				Extensively used backbone.js and other tools to create a
-				maintainable highly interactive client side experience.
-
-				Rewrote portions of a legacy codebase in PHP from classic ASP,
-				as well as refactored procedural PHP to a more structured object
-				oriented approach.",
-			"highlights": []
+				"Became a leader of the Wayfair Engineering Community, and grew to
+				manage a diverse team of engineers to develop services for scalable,
+				customizable, and personalized interactions with customers.",
+			"highlights": [
+				"Managed the engineering team that enabled tens of millions of
+				emails to send daily, connecting other teams to generate 15% of company revenue.",
+				"Used Storm and Dropwizard to ingest and act upon a large throughput of
+				data, based upon user definable rule sets.",
+				"Extensively used backbone.js to create a highly interactive client side experience."
+			]
 		},
 		{
 			"company": "Limestone Networks",
@@ -56,24 +55,14 @@
 			"summary":
 				"Refactored of large portions of legacy PHP codebases to
 				implement new features, working with several hundred thousands
-				of lines of code managed on GitHub.
-
-
-				Implemented encryption and password hashing systems to meet
-				industry standards and ensure PCI-DSS compliance.
-
-
-				Created unit and integration tests to verify changes would not
-				break existing legacy code.
-
-
-				Performed database administration, systems administration,
-				upkeep of internal perl tools, created tools for automation,
-				and optimized the web stack to scale as the company did.
-				Maintained basic mitigation of denial of service attacks on
-				services through caching, network optimization and reverse
-				proxies.",
-			"highlights": []
+				of lines of code managed on GitHub.",
+			"highlights": [
+				"Implemented encryption and password hashing systems to meet industry standards and ensure PCI-DSS compliance.",
+				"Wrote unit and integration tests to verify changes would not break existing legacy code.",
+				"Created tools for NOC automation.",
+				"Performed database administration, systems administration, upkeep of internal perl tools, and optimized the web stack to scale as the company did.",
+				"Maintained basic mitigation of denial of service attacks on services through caching, network optimization and reverse proxies."
+			]
 		},
 		{
 			"company": "Accrisoft",
@@ -83,19 +72,14 @@
 			"endDate": "April 4th, 2012",
 			"summary":
 				"Designed and implemented new features, bug fixes, and reduced
-				the memory footprint for Accrisoft's flagship Freedom CMS.
-
-
-				Integrated the CMS with several SOAP and REST APIs.
-
-
-				Worked alongside a team of talented programmers, using
-				subversion and an in-house ticketing system.
-
-
-				Optimized the standard web stack and configuration installed on
-				application nodes, to minimize the required specifications.",
-			"highlights": []
+				the memory footprint for Accrisoft's flagship Freedom CMS.",
+			"highlights": [
+				"Integrated the CMS with several SOAP and REST APIs.",
+				"Worked alongside a team of talented programmers, using subversion and
+				an in-house ticketing system.",
+				"Optimized the standard web stack and configuration installed on
+				application nodes, to reduce server costs."
+			]
 		}
 	],
 	"skills": [
@@ -109,6 +93,13 @@
 			]
 		},
 		{
+			"name": "Cobol",
+			"level": "Beginner",
+			"keywords": [
+				"GnuCOBOL"
+			]
+		},
+		{
 			"name": "Pascal",
 			"level": "Intermediate",
 			"keywords": [
@@ -119,6 +110,7 @@
 			"name": "Python",
 			"level": "Intermediate",
 			"keywords": [
+				"Django",
 				"Twisted"
 			]
 		},
@@ -165,6 +157,7 @@
 			"name": "NoSQL",
 			"level": "Intermediate",
 			"keywords": [
+				"HBase",
 				"MongoDB",
 				"Redis"
 			]
@@ -175,7 +168,8 @@
 			"keywords": [
 				"Spring",
 				"Hibernate",
-				"Storm"
+				"Storm",
+				"Spark"
 			]
 		},
 		{
