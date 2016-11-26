@@ -17,16 +17,7 @@
 			}
 		],
 		"summary":
-			"I am an Engineer through and through - I solve practical problems.
-			I get things done, ship amazing software, and create a superb user
-			experience - all while hitting every specification and business
-			requirement.  Unit tests and general test driven development are
-			some of my go-to tools for crafting supreme code in a multitude of
-			languages, and I've also dabbled in some end-to-end testing
-			frameworks.
-
-
-			This isn't just a day job to me, it's a passion."
+			"I am an Engineer through and through - I solve practical problems. I get things done, ship amazing software, and create a superb user experience - all while hitting every specification and business requirement.  Unit tests and general test driven development are some of my go-to tools for crafting supreme code in a multitude of languages, and I've also dabbled in some end-to-end testing frameworks.\n\nThis isn't just a day job to me, it's a passion."
 	},
 	"work": [
 		{
@@ -34,15 +25,10 @@
 			"position": "Senior Software Engineer",
 			"website": "http://wayfair.com",
 			"startDate": "February 17th, 2014",
-			"summary":
-				"Became a leader in the Wayfair Engineering Community, and grew to
-				manage a diverse team of engineers to develop services for scalable,
-				customizable, and personalized interactions with customers.",
+			"summary": "Became a leader in the Wayfair Engineering Community, and grew to manage a diverse team of engineers to develop services for scalable, customizable, and personalized interactions with customers.",
 			"highlights": [
-				"Managed the engineering team that enabled tens of millions of
-				emails to send daily, connecting other teams to generate 15% of company revenue.",
-				"Used Storm and Dropwizard to ingest and act upon a large throughput of
-				data, based upon user definable rule sets.",
+				"Managed the engineering team that enabled tens of millions of emails to send daily, connecting other teams to generate 15% of company revenue.",
+				"Used Storm and Dropwizard to ingest and act upon a large throughput of data, based upon user definable rule sets.",
 				"Extensively used backbone.js to create a highly interactive client side experience."
 			]
 		},
@@ -53,9 +39,7 @@
 			"startDate": "April 24th, 2012",
 			"endDate": "February 7th, 2014",
 			"summary":
-				"Refactored of large portions of legacy PHP codebases to
-				implement new features, working with several hundred thousands
-				of lines of code managed on GitHub.",
+				"Refactored of large portions of legacy PHP codebases to implement new features, working with several hundred thousands of lines of code managed on GitHub.",
 			"highlights": [
 				"Implemented encryption and password hashing systems to meet industry standards and ensure PCI-DSS compliance.",
 				"Wrote unit and integration tests to verify changes would not break existing legacy code.",
@@ -71,14 +55,11 @@
 			"startDate": "February 11th, 2011",
 			"endDate": "April 4th, 2012",
 			"summary":
-				"Designed and implemented new features, bug fixes, and reduced
-				the memory footprint for Accrisoft's flagship Freedom CMS.",
+				"Designed and implemented new features, bug fixes, and reduced the memory footprint for Accrisoft's flagship Freedom CMS.",
 			"highlights": [
 				"Integrated the CMS with several SOAP and REST APIs.",
-				"Worked alongside a team of talented programmers, using subversion and
-				an in-house ticketing system.",
-				"Optimized the standard web stack and configuration installed on
-				application nodes, to reduce server costs."
+				"Worked alongside a team of talented programmers, using subversion and an in-house ticketing system.",
+				"Optimized the standard web stack and configuration installed on application nodes, to reduce server costs."
 			]
 		}
 	],
