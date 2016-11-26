@@ -84,12 +84,31 @@
 	],
 	"skills": [
 		{
+			"name": "Java",
+			"level": "Advanced",
+			"keywords": [
+				"Spring",
+				"Hibernate",
+				"Storm",
+				"Spark"
+			]
+		},
+		{
 			"name": "PHP",
 			"level": "Expert",
 			"keywords": [
 				"Object Oriented",
 				"Procedural",
 				"Extension Development"
+			]
+		},
+		{
+			"name": "SQL",
+			"level": "Advanced",
+			"keywords": [
+				"MySQL",
+				"T-SQL",
+				"PostgreSQL"
 			]
 		},
 		{
@@ -151,25 +170,6 @@
 				"SASS",
 				"LESS",
 				"Responsive Design"
-			]
-		},
-		{
-			"name": "SQL",
-			"level": "Advanced",
-			"keywords": [
-				"MySQL",
-				"T-SQL",
-				"PostgreSQL"
-			]
-		},
-		{
-			"name": "Java",
-			"level": "Advanced",
-			"keywords": [
-				"Spring",
-				"Hibernate",
-				"Storm",
-				"Spark"
 			]
 		},
 		{
