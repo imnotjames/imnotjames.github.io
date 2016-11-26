@@ -96,7 +96,7 @@
 			"name": "Cobol",
 			"level": "Beginner",
 			"keywords": [
-				"GnuCOBOL"
+				"COBOL-85"
 			]
 		},
 		{
@@ -127,6 +127,15 @@
 			]
 		},
 		{
+			"name": "NoSQL",
+			"level": "Intermediate",
+			"keywords": [
+				"HBase",
+				"MongoDB",
+				"Redis"
+			]
+		},
+		{
 			"name": "HTML",
 			"level": "Expert",
 			"keywords": [
@@ -151,15 +160,6 @@
 				"MySQL",
 				"T-SQL",
 				"PostgreSQL"
-			]
-		},
-		{
-			"name": "NoSQL",
-			"level": "Intermediate",
-			"keywords": [
-				"HBase",
-				"MongoDB",
-				"Redis"
 			]
 		},
 		{
