@@ -27,7 +27,7 @@
 			"startDate": "February 17th, 2014",
 			"summary": "Became a leader in the Wayfair Engineering Community, and grew to manage a diverse team of engineers to develop services for scalable, customizable, and personalized interactions with customers.",
 			"highlights": [
-				"Managed the engineering team that enabled tens of millions of emails to send daily, connecting other teams to generate 15% of company revenue.",
+				"Managed engineering teams that enabled open communication with tens of millions of customers daily, connecting other teams to generate over 15% of company revenue.",
 				"Used Storm and Dropwizard to ingest and act upon a large throughput of data, based upon user definable rule sets.",
 				"Extensively used backbone.js to create a highly interactive client side experience."
 			]
