@@ -20,6 +20,8 @@ Email: {{ resume.basics.email }}
 
 {{ experience.summary }}
 
+{% for highlight in experience.highlights %}* {{ highlight }}
+{% endfor %}
 {% endfor %}
 
 ## TOOLS I USE
