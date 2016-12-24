@@ -17,7 +17,7 @@
 			}
 		],
 		"summary":
-			"I am an Engineer through and through - I solve practical problems. I get things done, ship amazing software, and create a superb user experience - all while hitting every specification and business requirement.  Unit tests and general test driven development are some of my go-to tools for crafting supreme code in a multitude of languages, and I've also dabbled in some end-to-end testing frameworks.\n\nThis isn't just a day job to me, it's a passion."
+			"I am an Engineer through and through - I solve practical problems. I get things done, ship amazing software, and create a superb user experience - all while hitting every specification and business requirement.  Unit tests and general test driven development are some of my go-to tools for crafting code in a multitude of languages, and I've also dabbled in some end-to-end testing frameworks.\n\nThis isn't just a day job to me, it's a passion."
 	},
 	"work": [
 		{
@@ -29,7 +29,7 @@
 			"highlights": [
 				"Managed engineering teams that enabled open communication with tens of millions of customers daily, connecting other teams to generate over 15% of company revenue.",
 				"Used Storm and Dropwizard to ingest and act upon a large throughput of data, based upon user definable rule sets.",
-				"Extensively used backbone.js to create a highly interactive client side experience."
+				"Extensively utilized multiple frontend frameworks to create a highly interactive user experience."
 			]
 		},
 		{
@@ -43,7 +43,7 @@
 			"highlights": [
 				"Implemented encryption and password hashing systems to meet industry standards and ensure PCI-DSS compliance.",
 				"Wrote unit and integration tests to verify changes would not break existing legacy code.",
-				"Created tools for NOC automation.",
+				"Created tooling and workflows for NOC automation.",
 				"Performed database administration, systems administration, upkeep of internal perl tools, and optimized the web stack to scale as the company did.",
 				"Maintained basic mitigation of denial of service attacks on services through caching, network optimization and reverse proxies."
 			]
@@ -55,11 +55,11 @@
 			"startDate": "February 11th, 2011",
 			"endDate": "April 4th, 2012",
 			"summary":
-				"Designed and implemented new features, bug fixes, and reduced the memory footprint for Accrisoft's flagship Freedom CMS.",
+				"Designed and implemented new features, bug fixes, and reduced the memory footprint for Accrisoft's proprietary CMS.",
 			"highlights": [
-				"Integrated the CMS with several SOAP and REST APIs.",
+				"Optimized the standard web stack and configuration installed on application nodes, drastically reducing server costs.",
 				"Worked alongside a team of talented programmers, using subversion and an in-house ticketing system.",
-				"Optimized the standard web stack and configuration installed on application nodes, to reduce server costs."
+				"Integrated the CMS with several third-party SOAP and REST APIs."
 			]
 		}
 	],
@@ -70,6 +70,7 @@
 			"keywords": [
 				"Spring",
 				"Hibernate",
+				"Dropwizard",
 				"Storm",
 				"Spark"
 			]
@@ -80,6 +81,8 @@
 			"keywords": [
 				"Object Oriented",
 				"Procedural",
+				"Laravel",
+				"Symfony",
 				"Extension Development"
 			]
 		},
@@ -118,12 +121,13 @@
 			"name": "Javascript",
 			"level": "Advanced",
 			"keywords": [
+				"Angular",
+				"node",
+				"Express",
+				"Backbone.js",
 				"jQuery",
 				"Underscore",
-				"Lo-dash",
-				"Angular",
-				"Knockout",
-				"Backbone"
+				"Lo-dash"
 			]
 		},
 		{
@@ -140,7 +144,8 @@
 			"level": "Expert",
 			"keywords": [
 				"HTML5",
-				"XHTML"
+				"XHTML",
+				"mustache"
 			]
 		},
 		{
