@@ -41,9 +41,9 @@
 			"endDate": "February 15th, 2017",
 			"summary": "Became a leader in the Wayfair Engineering Community, and grew to manage a diverse team of engineers to develop services for scalable, customizable, and personalized interactions with customers.",
 			"highlights": [
-				"Managed engineering teams that enabled open communication with tens of millions of customers daily, connecting other teams to generate over 15% of company revenue.",
+				"Managed engineering teams that enabled open communication with tens of millions of customers daily, connecting internally to generate over 15% of company revenue.",
 				"Used Storm and Dropwizard to ingest and act upon a large throughput of data, based upon user definable rule sets.",
-				"Extensively utilized multiple frontend frameworks to create a highly interactive user experience."
+				"Extensively utilized multiple frontend frameworks to create a highly interactive user experiences."
 			]
 		},
 		{
@@ -52,14 +52,11 @@
 			"website": "http://limestonenetworks.com",
 			"startDate": "April 24th, 2012",
 			"endDate": "February 7th, 2014",
-			"summary":
-				"Refactored of large portions of legacy PHP codebases to implement new features, working with several hundred thousands of lines of code managed on GitHub.",
+			"summary": "Refactored large portions of legacy PHP codebases to implement new features.",
 			"highlights": [
-				"Implemented encryption and password hashing systems to meet industry standards and ensure PCI-DSS compliance.",
-				"Wrote unit and integration tests to verify changes would not break existing legacy code.",
+				"Wrote unit tests to verify changes would not break legacy code.",
 				"Created tooling and workflows for NOC automation.",
-				"Performed database administration, systems administration, upkeep of internal perl tools, and optimized the web stack to scale as the company did.",
-				"Maintained basic mitigation of denial of service attacks on services through caching, network optimization and reverse proxies."
+				"Maintained basic Denial of Service mitigation and performed database/systems administration."
 			]
 		},
 		{
@@ -68,10 +65,9 @@
 			"website": "http://accrisoft.com",
 			"startDate": "February 11th, 2011",
 			"endDate": "April 4th, 2012",
-			"summary":
-				"Designed and implemented new features, bug fixes, and reduced the memory footprint for Accrisoft's proprietary CMS.",
+			"summary": "Designed and implemented new features, bug fixes, and reduced the memory footprint of the flagship product.",
 			"highlights": [
-				"Optimized the standard web stack and configuration installed on application nodes, drastically reducing server costs.",
+				"Optimized the web stack and configuration installed on application nodes, drastically reducing server costs.",
 				"Worked alongside a team of talented programmers, using subversion and an in-house ticketing system.",
 				"Integrated the CMS with several third-party SOAP and REST APIs."
 			]
