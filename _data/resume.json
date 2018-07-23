@@ -86,8 +86,6 @@
 			"name": "PHP",
 			"level": "Expert",
 			"keywords": [
-				"Object Oriented",
-				"Procedural",
 				"Laravel",
 				"Symfony",
 				"Extension Development"
