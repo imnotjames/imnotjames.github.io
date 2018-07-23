@@ -24,13 +24,12 @@
 			"position": "Co-Founder",
 			"website": "https://forkbomb.us",
 			"startDate": "November 15, 2015",
-			"summary": "Being the Chief Executive Officer of a company means you have your hands in everythng.",
+			"summary": "Leveraging the human element behind threats to manage the risks they pose.",
 			"highlights": [
 				"Build scalable data infrastructure to scale as needs require.",
 				"Design and implement user experience of the Hivemind platform.",
 				"Produce a full marketing website - from creating wireframes, to generating copy text, to writing the Javascript and HTML.",
-				"Approach leads to personally convert them to customers.",
-				"Generating actionable feedback for employees to encourage growth."
+				"Approach leads to personally convert them to customers."
 			]
 		},
 		{
@@ -55,8 +54,7 @@
 			"summary": "Refactored large portions of legacy PHP codebases to implement new features.",
 			"highlights": [
 				"Wrote unit tests to verify changes would not break legacy code.",
-				"Created tooling and workflows for NOC automation.",
-				"Maintained basic Denial of Service mitigation and performed database/systems administration."
+				"Created tooling for NOC automation and Denial of Service mitigation."
 			]
 		},
 		{
@@ -67,9 +65,8 @@
 			"endDate": "April 4th, 2012",
 			"summary": "Designed and implemented new features, bug fixes, and reduced the memory footprint of the flagship product.",
 			"highlights": [
-				"Optimized the web stack and configuration installed on application nodes, drastically reducing server costs.",
-				"Worked alongside a team of talented programmers, using subversion and an in-house ticketing system.",
-				"Integrated the CMS with several third-party SOAP and REST APIs."
+				"Optimized the web stack on application nodes, reducing server costs.",
+				"Integrated the product with several third-party SOAP and REST APIs."
 			]
 		}
 	],
