@@ -1,5 +1,6 @@
-source "http://production.cf.rubygems.org/"
+source 'https://rubygems.org'
 
-gem "github-pages"
-gem "redcarpet"
-gem "jekyll-paginate"
+gem 'github-pages', group: :jekyll_plugins
+gem 'jekyll-paginate', group: :jekyll_plugins
+
+gem 'redcarpet'
