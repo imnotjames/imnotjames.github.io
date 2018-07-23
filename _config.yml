@@ -27,8 +27,9 @@ redcarpet:
   - tables
   - with_toc_data
 
-gems:
+plugins:
  - jekyll-sitemap
+ - jekyll-paginate
 
 sass:
  style: compressed
