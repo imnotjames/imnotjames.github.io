@@ -89,7 +89,7 @@ alternates:
 							&mdash;
 							<span title="{{ experience.endDate | default: 'Current' | escape }}">
 								{% if experience.endDate %}
-									{{ experience.endDate | date: '%Y'' }}
+									{{ experience.endDate | date: '%Y' }}
 								{% else %}
 									Current
 								{% endif %}
