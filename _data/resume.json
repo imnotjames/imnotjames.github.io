@@ -16,8 +16,7 @@
 				"url": "http://github.com/imnotjames/"
 			}
 		],
-		"summary":
-			"I am an Engineer through and through - I solve practical problems. I get things done, ship amazing software, and create a superb user experience - all while hitting every specification and business requirement.  Unit tests and general test driven development are some of my go-to tools for crafting code in a multitude of languages, and I've also dabbled in some end-to-end testing frameworks.\n\nThis isn't just a day job to me, it's a passion."
+		"summary": "I am an Engineer through and through - I solve practical problems. I get things done, ship amazing software, and create a superb user experience - all while hitting every specification and business requirement.  Unit tests, end to end testing, and test driven development are my go-to tools for crafting solid code in a multitude of languages\n\nThis isn't just a day job to me, it's a passion."
 	},
 	"work": [
 		{
@@ -27,11 +26,11 @@
 			"startDate": "November 15, 2015",
 			"summary": "Being the Chief Executive Officer of a company means you have your hands in everythng.",
 			"highlights": [
-				"Built a scalable data ingestion infrastructure with limited funding and tightened security.",
-				"Design user experience of the Hivemind platform.",
+				"Build scalable data infrastructure to scale as needs require.",
+				"Design and implement user experience of the Hivemind platform.",
 				"Produce a full marketing website - from creating wireframes, to generating copy text, to writing the Javascript and HTML.",
 				"Approach leads to personally convert them to customers.",
-				"Generating actionable feedback for other employees in the company to encourage proper growth."
+				"Generating actionable feedback for employees to encourage growth."
 			]
 		},
 		{
@@ -103,7 +102,7 @@
 		},
 		{
 			"name": "SQL",
-			"level": "Advanced",
+			"level": "Expert",
 			"keywords": [
 				"MySQL",
 				"T-SQL",
@@ -131,6 +130,20 @@
 				"Django",
 				"Twisted",
 				"pandas"
+			]
+		},
+		{
+			"name": "Infrastructure",
+			"level": "Advanced",
+			"keywords": [
+				"Linux",
+				"Windows",
+				"Chef",
+				"Puppet",
+				"Kubernetes",
+				"Docker",
+				"Helm",
+				
 			]
 		},
 		{
