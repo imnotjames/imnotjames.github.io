@@ -16,7 +16,7 @@
 				"url": "http://github.com/imnotjames/"
 			}
 		],
-		"summary": "I am an Engineer through and through - I solve practical problems. I get things done, ship amazing software, and create a superb user experience - all while hitting every specification and business requirement.  Unit tests, end to end testing, and test driven development are my go-to tools for crafting solid code in a multitude of languages\n\nThis isn't just a day job to me, it's a passion."
+		"summary": "I am an Engineer through and through - I solve practical problems. I get things done, ship amazing software, and create a superb user experience - all while hitting every specification and business requirement.  Unit tests, end to end testing, and test driven development are my go-to tools for crafting solid code in a multitude of languages.\n\nThis isn't just a day job to me, it's a passion."
 	},
 	"work": [
 		{
@@ -24,12 +24,11 @@
 			"position": "Co-Founder",
 			"website": "https://forkbomb.us",
 			"startDate": "November 15, 2015",
-			"summary": "Leveraging the human element behind threats to manage the risks they pose.",
+			"summary": "Understanding the human element behind threats to manage the risks they pose.",
 			"highlights": [
-				"Build scalable data infrastructure to scale as needs require.",
-				"Design and implement user experience of the Hivemind platform.",
-				"Produce a full marketing website - from creating wireframes, to generating copy text, to writing the Javascript and HTML.",
-				"Approach leads to personally convert them to customers."
+				"Built backend infrastructure with Kafka, Tensorflow, PostgreSQL, and ElasticSearch.",
+				"Design and implement user experience of the primary product.",
+				"Produce a full marketing website - from creating wireframes, to generating copy text, to writing the Javascript and HTML."
 			]
 		},
 		{
@@ -38,11 +37,11 @@
 			"website": "http://wayfair.com",
 			"startDate": "February 17th, 2014",
 			"endDate": "February 15th, 2017",
-			"summary": "Became a leader in the Wayfair Engineering Community, and grew to manage a diverse team of engineers to develop services for scalable, customizable, and personalized interactions with customers.",
+			"summary": "Became a leader in the Wayfair Engineering Community. Grew to manage a diverse team of engineers developing services for scalable, customizable, and personalized interactions with customers.",
 			"highlights": [
 				"Managed engineering teams that enabled open communication with tens of millions of customers daily, connecting internally to generate over 15% of company revenue.",
-				"Used Storm and Dropwizard to ingest and act upon a large throughput of data, based upon user definable rule sets.",
-				"Extensively utilized multiple frontend frameworks to create a highly interactive user experiences."
+				"Used Kafka, Storm, and Dropwizard to ingest and act upon a large throughput of data, based upon user definable rule sets.",
+				"Extensively utilized multiple frontend frameworks to create highly interactive user experiences."
 			]
 		},
 		{
@@ -120,7 +119,8 @@
 			"keywords": [
 				"Django",
 				"Twisted",
-				"pandas"
+				"Pandas",
+				"Keras"
 			]
 		},
 		{
@@ -130,36 +130,19 @@
 				"Linux",
 				"Windows",
 				"Chef",
-				"Puppet",
 				"Kubernetes",
 				"Docker",
-				"Helm",
-				
-			]
-		},
-		{
-			"name": "Machine Learning",
-			"level": "Intermediate",
-			"keywords": [
-				"Keras",
-				"TensorFlow",
-				"R",
-				
+				"Helm"
 			]
 		},
 		{
 			"name": "Javascript",
 			"level": "Advanced",
 			"keywords": [
-				"ES6",
-				"ES7",
-				"Angular",
+				"ES.Next",
 				"nodeJS",
 				"Express",
-				"Backbone.js",
-				"jQuery",
-				"Underscore",
-				"Lo-dash",
+				"Tensorflow.js",
 				"React",
 				"Redux"
 			]
@@ -196,18 +179,33 @@
 		{
 			"name": "Perl",
 			"level": "Intermediate",
-			"keywords": []
+			"keywords": [
+				"Mojolicious",
+				"CGI"
+			]
 		},
 		{
 			"name": "C++",
 			"level": "Intermediate",
-			"keywords": []
+			"keywords": [
+				"Boost"
+			]			
 		},
 		{
 			"name": "C",
 			"level": "Intermediate",
+			"keywords": [
+				"C11",
+				"C99",
+				"CMake"
+			]
+		},
+		{
+			"name": "R",
+			"level": "Intermediate",
 			"keywords": []
 		}
+
 	],
 	"languages":[
 		{
