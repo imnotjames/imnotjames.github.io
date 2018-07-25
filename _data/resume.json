@@ -37,7 +37,7 @@
 			"website": "http://wayfair.com",
 			"startDate": "February 17th, 2014",
 			"endDate": "February 15th, 2017",
-			"summary": "Became a leader in the Wayfair Engineering Community. Grew to manage a diverse team of engineers developing services for scalable, customizable, and personalized interactions with customers.",
+			"summary": "Grew to manage a diverse team of engineers developing services for scalable, customizable, and personalized interactions with customers.",
 			"highlights": [
 				"Managed engineering teams that enabled open communication with tens of millions of customers daily, connecting internally to generate over 15% of company revenue.",
 				"Used Kafka, Storm, and Dropwizard to ingest and act upon a large throughput of data, based upon user definable rule sets.",
