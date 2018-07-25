@@ -102,6 +102,16 @@
 			}
 		}
 
+		#skills_tools {
+			li {
+				&:after {
+					content: attr(title);
+					display: block;
+					font-size: 70%;
+					opacity: 0.6;
+				}
+			}
+		}
 
 		section {
 			blockquote {
