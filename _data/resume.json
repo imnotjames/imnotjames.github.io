@@ -26,8 +26,8 @@
 			"startDate": "November 15, 2015",
 			"summary": "Understanding the human element behind threats to manage the risks they pose.",
 			"highlights": [
-				"Built backend infrastructure with Kafka, Tensorflow, PostgreSQL, and ElasticSearch.",
-				"Design and implement user experience of the primary product.",
+				"Built scalable platform infrastructure with Node.js, Kafka, Tensorflow, PostgreSQL, and ElasticSearch.",
+				"Design and implement user experience and workflows of the flagship product.",
 				"Produce a full marketing website - from creating wireframes, to generating copy text, to writing the Javascript and HTML."
 			]
 		},
@@ -37,10 +37,10 @@
 			"website": "http://wayfair.com",
 			"startDate": "February 17th, 2014",
 			"endDate": "February 15th, 2017",
-			"summary": "Grew to manage a diverse team of engineers developing services for scalable, customizable, and personalized interactions with customers.",
+			"summary": "Lead a diverse team of engineers to develop services for scalable, customizable, and personalized interactions with customers.",
 			"highlights": [
-				"Managed engineering teams that enabled open communication with tens of millions of customers daily, connecting internally to generate over 15% of company revenue.",
-				"Used Kafka, Storm, and Dropwizard to ingest and act upon a large throughput of data, based upon user definable rule sets.",
+				"Architected a cross-team platform that generates over 18% of company revenue by enabling open communication with millions of active customers.",
+				"Used Kafka, Storm, and HBase to ingest and act upon a large throughput of data, based upon user definable rule sets.",
 				"Extensively utilized multiple frontend frameworks to create highly interactive user experiences."
 			]
 		},
@@ -50,10 +50,10 @@
 			"website": "http://limestonenetworks.com",
 			"startDate": "April 24th, 2012",
 			"endDate": "February 7th, 2014",
-			"summary": "Refactored large portions of legacy PHP codebases to implement new features.",
+			"summary": "Refactored large portions of legacy codebases to implement new features.",
 			"highlights": [
-				"Wrote unit tests to verify changes would not break legacy code.",
-				"Created tooling for NOC automation and Denial of Service mitigation."
+				"Created tooling for NOC automation and Denial of Service mitigation.",
+				"Wrote end-to-end and unit tests to reduce breakage during refactor."
 			]
 		},
 		{
@@ -64,7 +64,7 @@
 			"endDate": "April 4th, 2012",
 			"summary": "Designed and implemented new features, bug fixes, and reduced the memory footprint of the flagship product.",
 			"highlights": [
-				"Optimized the web stack on application nodes, reducing server costs.",
+				"Optimized web stack on application servers, reducing infrastructure costs.",
 				"Integrated the product with several third-party SOAP and REST APIs."
 			]
 		}
