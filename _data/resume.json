@@ -26,8 +26,8 @@
 			"startDate": "October 1, 2018",
 			"summary": "Organized the Platform as a Service team - developing the mission, vision, capabilities, and roadmap to encourage a high performing team with a strong sense of ownership.",
 			"highlights": [
-				"Provide technical leadership over areas of responsibility to bring reliability of systems from 90% reliability to 99.999%.",
-				"Develop cross-functional initiatives to improve data flowing between various products encouraging a migration towards distributed architecture."
+				"Provide technical leadership to bring reliability of team systems from 90% reliability to 99.999%.",
+				"Develop cross-functional initiatives to improve data flow between products to encourage a migration towards distributed architecture."
 			]
 		},
 		{
@@ -38,7 +38,7 @@
 			"endDate": "September 1, 2018",
 			"summary": "Understanding the human element behind threats to manage the risks they pose.",
 			"highlights": [
-				"Built scalable platform infrastructure with Node.js, Kafka, Tensorflow, PostgreSQL, and ElasticSearch.",
+				"Built scalable platform with Node.js, Kafka, Tensorflow, PostgreSQL, and ElasticSearch.",
 				"Design and implement user experience and workflows of the flagship product.",
 				"Produce a full marketing website - from creating wireframes, to generating copy text, to writing the Javascript and HTML."
 			]
@@ -52,7 +52,7 @@
 			"summary": "Lead a diverse team of engineers to develop services for scalable, customizable, and personalized interactions with customers.",
 			"highlights": [
 				"Architect a cross-team platform that generates over 18% of company revenue by enabling open communication with millions of active customers.",
-				"Use Kafka, Storm, and HBase to ingest and act upon a large throughput of data, based upon user definable rule sets.",
+				"Use Kafka, Storm, and HBase to ingest and act upon a large throughput of data through user definable rule sets.",
 				"Extensively utilize multiple frontend frameworks to create highly interactive user experiences."
 			]
 		},
