@@ -5,8 +5,8 @@
 		"email": "james@notjam.es",
 		"website": "https://notjam.es",
 		"location": {
-			"city": "Boston",
-			"region": "Massachusetts",
+			"city": "New York City",
+			"region": "New York",
 			"countryCode": "US"
 		},
 		"profiles": [
@@ -20,10 +20,22 @@
 	},
 	"work": [
 		{
+			"company": "Venmo",
+			"position": "Senior Engineering Manager",
+			"website": "https://venmo.com/",
+			"startDate": "October 1, 2018",
+			"summary": "Organized the Platform as a Service team - developing the mission, vision, capabilities, and roadmap to encourage a high performing team with a strong sense of ownership.",
+			"highlights": [
+				"Provide technical leadership over areas of responsibility to bring reliability of systems from 90% reliability to 99.999%.",
+				"Develop cross-functional initiatives to improve data flowing between various products encouraging a migration towards distributed architecture."
+			]
+		},
+		{
 			"company": "Forkbombus Labs",
 			"position": "Co-Founder",
 			"website": "https://forkbomb.us",
 			"startDate": "November 15, 2015",
+			"endDate": "September 1, 2018",
 			"summary": "Understanding the human element behind threats to manage the risks they pose.",
 			"highlights": [
 				"Built scalable platform infrastructure with Node.js, Kafka, Tensorflow, PostgreSQL, and ElasticSearch.",
@@ -39,9 +51,9 @@
 			"endDate": "February 15th, 2017",
 			"summary": "Lead a diverse team of engineers to develop services for scalable, customizable, and personalized interactions with customers.",
 			"highlights": [
-				"Architected a cross-team platform that generates over 18% of company revenue by enabling open communication with millions of active customers.",
-				"Used Kafka, Storm, and HBase to ingest and act upon a large throughput of data, based upon user definable rule sets.",
-				"Extensively utilized multiple frontend frameworks to create highly interactive user experiences."
+				"Architect a cross-team platform that generates over 18% of company revenue by enabling open communication with millions of active customers.",
+				"Use Kafka, Storm, and HBase to ingest and act upon a large throughput of data, based upon user definable rule sets.",
+				"Extensively utilize multiple frontend frameworks to create highly interactive user experiences."
 			]
 		},
 		{
@@ -52,8 +64,8 @@
 			"endDate": "February 7th, 2014",
 			"summary": "Refactored large portions of legacy codebases to implement new features.",
 			"highlights": [
-				"Created tooling for NOC automation and Denial of Service mitigation.",
-				"Wrote end-to-end and unit tests to reduce breakage during refactor."
+				"Create tooling for NOC automation and Denial of Service mitigation.",
+				"Write end-to-end and unit tests to reduce breakage during refactor."
 			]
 		},
 		{
@@ -64,8 +76,8 @@
 			"endDate": "April 4th, 2012",
 			"summary": "Designed and implemented new features, bug fixes, and reduced the memory footprint of the flagship product.",
 			"highlights": [
-				"Optimized web stack on application servers, reducing infrastructure costs.",
-				"Integrated the product with several third-party SOAP and REST APIs."
+				"Optimize web stack on application servers, reducing infrastructure costs.",
+				"Integrate the product with several third-party SOAP and REST APIs."
 			]
 		}
 	],
@@ -115,12 +127,15 @@
 		},
 		{
 			"name": "Python",
-			"level": "Intermediate",
+			"level": "Expert",
 			"keywords": [
 				"Django",
 				"Twisted",
 				"Pandas",
-				"Keras"
+				"Keras",
+				"Tornado",
+				"Celery",
+				"Heron"
 			]
 		},
 		{
@@ -154,7 +169,9 @@
 				"HBase",
 				"MongoDB",
 				"DynamoDB",
-				"Redis"
+				"Redis",
+				"DynamoDB",
+				"Cassandra"
 			]
 		},
 		{
