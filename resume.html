@@ -14,6 +14,8 @@ alternates:
 ---
 
 {% assign resume = site.data.resume %}
+{% assign work_limit = 4 %}
+
 
 <!-- You're actually reading the raw HTML..? Find the raw data at /resume.json -->
 
@@ -74,7 +76,7 @@ alternates:
 					</h2>
 				</header>
 
-				{% for experience in resume.work %}
+				{% for experience in resume.work limit:work_limit %}
 					<article>
 						<h3 class="title">{{ experience.position }}</h3>
 						<h4 class="organization">
@@ -109,6 +111,15 @@ alternates:
 
 					</article>
 				{% endfor %}
+				
+				{% if resume.work.size > work_limit %}
+					<footer>
+						<small>
+							Experience points truncated for optimal viewing.
+							More available upon request.
+						</small>
+					</footer>
+				{% endif %}
 			</section>
 		</div>
 	</div>
