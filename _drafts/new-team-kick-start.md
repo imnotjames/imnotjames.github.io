@@ -19,9 +19,9 @@ It starts with an agenda.
 
 25 minutes total. 3 questions.
 
-20 minutes: "Tell me everything you think I should know."
-3 minutes: "What are the biggest challenges the team has right now?"
-2 minutes: "Who else should I speak with?"
+* 20 minutes: "Tell me everything you think I should know."
+* 3 minutes: "What are the biggest challenges the team has right now?"
+* 2 minutes: "Who else should I speak with?"
 
 Bring a notebook, write everything down, only interrupt if you need clarification, and repeat this process for every name you get.  If you don't know where to start, go to your manager.
 
