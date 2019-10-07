@@ -87,7 +87,7 @@ able to describe it in an email or slack message.
 This question is incredibly important.  Sure, it helps you fan out into the
 team.  At the same time, though, it builds a graph of influence via the 
 frequency of names.  Forget what they shared to you the first day.  This is
-the true org chart.
+the true org chart to guide you through social interactions.
 
 Until you've run out of steam I would suggest following up with every name you
 get.  I'd suggest at least talking with some of your peers and your team
