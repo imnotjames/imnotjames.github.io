@@ -1,23 +1,26 @@
 ---
 date: 2019-10-06 00:00:00 -0500
 layout: post
-title: 'New Team Kick Start'
+title: New Team Kick Start
 tags:
-  - "People"
+  - People
+  - Onboarding
 excerpt: ""
 ---
 > "Seek first to understand, then to be understood." - Habit 5: The 7 Habits of
 > highly Effective People
 
 Joining a new team can be difficult.  You lack institutional knowledge and the
-lingua franca that the rest of the team has - they're speaking a language you
-know at face value but the context tying it together is missing.
+lingua franca that the rest of the team has - it's like they're speaking a language
+you know at face value but the context tying it together is missing.
 
 When we join a new team we want to have an impact right away.  Even with good
 intent, this can be disastrous without the right context.  There's an approach
-to this problem I found on [Andrew Bosworth's site][bosworth-wayback].
+to this problem I found on [Andrew Bosworth's site][bosworth-wayback].  It
+helps you quickly gather context and build a framework to base the knowledge
+around.
 
-It starts with an agenda.
+This approach starts with an agenda.
 
 ## The Agenda
 
@@ -42,28 +45,31 @@ restaurant in town?  All of this is great.  Why?  Because you're learning
 something new.
 
 Many people expect the universe to be efficient and orderly.  It isn't. 
-Assume they have something to teach you - even when talking about topics that
-appear to bring no substantive value to the conversation or the business 
-needs.  People and organizations are messy, so you'll never know when 
+Always assume everyone has something to teach you - even when talking about
+topics that appear to bring no substantive value to the conversation or the
+business needs.  People and organizations are messy, so you'll never know when 
 something is relevant.
 
-You won't learn everything you'll need to know.  Not by a long shot.  That's
-OK.  There's not nearly enough time for that in these meetings.  Learning in
-depth will take you much, much longer.  
+You won't learn everything you'll need to know with your new team.  Not by a long
+shot.  Don't fret, it's OK.  There's not nearly enough time for that in these
+meetings.  Learning in depth will take you much, much longer.  
 
 Instead, this exercise helps you build rapport and context.  Sometimes you'll 
-find the location of important documentation.  Other times you'll get
+find the location of important documentation.  Other times you'll gather
 important tribal knowledge that's not documented anywhere.  Then again, maybe
 you'll get a bit of a history lesson.
 
-Through this, you can learn the common language of the team.  This is where all
-the clarification comes in.  You gain knowledge that lets you hop over the
-many barriers that prevent you from joining discussions.
+Through this, you can learn the common language of the team.  You'll start by
+building out a framework to understand where your context has gaps.  This is
+where all the clarification comes in.  You gain knowledge that fills in those
+gaps so you can hop over the many barriers that prevent you from joining
+discussions.
 
 ## What are the biggest challenges the team has right now?
 
-Given the first question this could be redundant -  that's not important, ask
-it anyway.  The question ensures that there is a focused time to understand
+Given the first question this could be redundant - folks will pretty frequently
+answer it partially as what you need to know.  That's not important, ask
+it anyway.  This question ensures that there is a focused time to understand
 the perceived challenges that the team faces.
 
 Internalize the bigger problems - the problems that will take a long time to
