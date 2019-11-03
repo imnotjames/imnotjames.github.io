@@ -128,21 +128,15 @@ class ResumeHeader extends React.Component {
               }}
           >
             <div className="contact contact-email">
-              <Link
-                  style={{textDecoration: "none", color: "#000"}}
-                  to={`mailto:${email}`}
-              >
+              <a style={{textDecoration: "none"}} href={`mailto:${email}`}>
                 Email: {email}
-              </Link>
+              </a>
             </div>
             { profiles.map(profile => (
                 <div className={'contact'} key={profile.network}>
-                  <Link
-                      style={{textDecoration: "none", color: "#000"}}
-                      to={profile.url}
-                  >
+                  <a style={{textDecoration: "none"}} href={profile.url}>
                     {profile.network}: {profile.username}
-                  </Link>
+                  </a>
                 </div>
             ))}
           </div>
