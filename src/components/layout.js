@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled";
+import { css } from '@emotion/core'
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -30,15 +31,19 @@ a {
 
 class LayoutHeader extends React.Component {
   render() {
-
-
     return (
       <header
           style={{
             position: "relative",
             marginTop: "-42px",
           }}
-      >
+          css={css`
+            @media print {
+               display: none;
+            }
+            `
+          }
+        >
         <h1
             className="title"
             style={{
@@ -118,18 +123,26 @@ class Layout extends React.Component {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(28),
+          maxWidth: rhythm(30),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
+        css={css`
+            @page {
+              margin: 0 0;
+            }
+            @media print {
+              max-width: auto;
+              padding: 8mm 10mm !important;
+              margin: 0 !important;
+            }
+            `
+        }
       >
         <LayoutHeader
             location={location}
             title={title}
           />
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}
-        </footer>
       </div>
     );
   }

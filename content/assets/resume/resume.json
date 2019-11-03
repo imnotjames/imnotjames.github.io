@@ -23,7 +23,7 @@
 			"company": "Venmo",
 			"position": "Senior Engineering Manager",
 			"website": "https://venmo.com/",
-			"startDate": "October 1, 2018",
+			"startDate": "2018-10-01",
 			"summary": "Organized the Platform as a Service team - developing the mission, vision, capabilities, and roadmap to encourage a high performing team with a strong sense of ownership.",
 			"highlights": [
 				"Provide technical leadership to bring reliability of team systems from 90% reliability to 99.999%.",
@@ -34,8 +34,8 @@
 			"company": "Forkbombus Labs",
 			"position": "Co-Founder",
 			"website": "https://forkbomb.us",
-			"startDate": "November 15, 2015",
-			"endDate": "September 1, 2018",
+			"startDate": "2015-11-15",
+			"endDate": "2018-09-01",
 			"summary": "Understanding the human element behind threats to manage the risks they pose.",
 			"highlights": [
 				"Built scalable platform with Node.js, Kafka, Tensorflow, PostgreSQL, and ElasticSearch.",
@@ -47,8 +47,8 @@
 			"company": "Wayfair",
 			"position": "Senior Engineering Manager",
 			"website": "http://wayfair.com",
-			"startDate": "February 17th, 2014",
-			"endDate": "February 15th, 2017",
+			"startDate": "2014-02-17",
+			"endDate": "2017-02-15",
 			"summary": "Lead a diverse team of engineers to develop services for scalable, customizable, and personalized interactions with customers.",
 			"highlights": [
 				"Architect a cross-team platform that generates over 18% of company revenue by enabling open communication with millions of active customers.",
@@ -60,8 +60,8 @@
 			"company": "Limestone Networks",
 			"position": "Software Engineer",
 			"website": "http://limestonenetworks.com",
-			"startDate": "April 24th, 2012",
-			"endDate": "February 7th, 2014",
+			"startDate": "2012-04-24",
+			"endDate": "2014-02-07",
 			"summary": "Refactored large portions of legacy codebases to implement new features.",
 			"highlights": [
 				"Create tooling for NOC automation and Denial of Service mitigation.",
@@ -72,8 +72,8 @@
 			"company": "Accrisoft",
 			"position": "Software Architect",
 			"website": "http://accrisoft.com",
-			"startDate": "February 11th, 2011",
-			"endDate": "April 4th, 2012",
+			"startDate": "2011-02-11",
+			"endDate": "2012-04-04",
 			"summary": "Designed and implemented new features, bug fixes, and reduced the memory footprint of the flagship product.",
 			"highlights": [
 				"Optimize web stack on application servers, reducing infrastructure costs.",

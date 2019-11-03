@@ -4,42 +4,186 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const WORK_LIMIT = 4;
+const WORK_LIMIT = 3;
 
 class ResumeExperience extends React.Component {
   render() {
     const { experience } = this.props;
 
-    /*
-            <ul>
-              {% for highlight in experience.highlights %}
-              <li>{{highlight}}</li>
-              {% endfor %}
-            </ul>
-     */
+    const highlightsList = (
+        <ul style={{padding: 0, marginBottom: 0}}>
+          {experience.highlights.map(hl => (
+              <li
+                  key={hl}
+                  style={{
+                    fontSize: `14px`,
+                    lineHeight: `22px`,
+                    marginBottom: `4px`,
+                  }}>
+                {hl}
+              </li>
+          ))}
+        </ul>
+    );
 
     return (
-        <article>
-          <h3 className="title">{experience.position}</h3>
-          <h4 className="organization">
-            <Link to={experience.website || '#'}>
-              {experience.company}
-            </Link>
-          </h4>
-          <h5 className="timeframe">
-            <span title={ experience.startDate }>
-              {experience.startDate}
-            </span>
-            &mdash;
-            <span title={ experience.endDate || 'Current' }>
-              {experience.endDate || 'Current' }
-            </span>
-          </h5>
-          <blockquote>
+        <article
+            style={{
+              marginBottom: `14px`,
+            }}
+          >
+          <header
+              style={{
+                marginBottom: `14px`,
+              }}
+            >
+            <h3
+                style={{
+                  fontSize: `20px`,
+                  display: "inline-block",
+                  margin: 0,
+                  marginRight: `14px`,
+                  padding: 0,
+                }}
+              >
+              {experience.position}
+            </h3>
+            <h4
+                style={{
+                  display: "inline-block",
+                  margin: 0,
+                  padding: 0,
+                }}
+              >
+              <Link
+                  style={{
+                    color: `inherit`,
+                    textDecoration: `none`,
+                  }}
+                  to={experience.website || '#'}
+                >
+                {experience.company}
+              </Link>
+            </h4>
+            <h5 style={{ margin: 0 }}>
+              <span title={ experience.startDate }>
+                {experience.startYear}
+              </span>
+              {` `}
+              &mdash;
+              {` `}
+              <span title={ experience.endDate || 'Current' }>
+                {experience.endYear || 'Current' }
+              </span>
+            </h5>
+          </header>
+          <blockquote
+              style={{
+                margin: 0,
+                padding: 0,
+                fontSize: `14px`,
+                lineHeight: `22px`,
+              }}
+            >
             { experience.summary }
           </blockquote>
+          { experience.highlights.length > 0 ? highlightsList : `` }
         </article>
     );
+  }
+}
+
+class ResumeHeader extends React.Component {
+  render() {
+    const { name, label, email, profiles } = this.props;
+
+    return (
+        <header
+            style={{
+              display: "flex",
+              width: "100%",
+              marginBottom: `24px`,
+            }}
+          >
+          <div style={{
+            textAlign: "right",
+            marginLeft: 'auto',
+            order: 2,
+          }}>
+            <h1
+                style={{
+                  fontSize: `32px`,
+                  margin: 0,
+                }}
+              >
+              {name}
+            </h1>
+            <span style={{fontSize: `12px`}}>Level 13</span>
+            {` `}
+            <span style={{fontSize: `18px`}}>{label}</span>
+          </div>
+          <div
+              style={{
+                order: 1,
+              }}
+          >
+            <div className="contact contact-email">
+              <Link
+                  style={{textDecoration: "none", color: "#000"}}
+                  to={`mailto:${email}`}
+              >
+                Email: {email}
+              </Link>
+            </div>
+            { profiles.map(profile => (
+                <div className={'contact'} key={profile.network}>
+                  <Link
+                      style={{textDecoration: "none", color: "#000"}}
+                      to={profile.url}
+                  >
+                    {profile.network}: {profile.username}
+                  </Link>
+                </div>
+            ))}
+          </div>
+        </header>
+    );
+  }
+}
+
+class ResumeSectionHeader extends React.Component {
+  render() {
+    const { style, ...props } = this.props;
+
+    return (
+        <header
+            {...props}
+            style={{
+              marginBottom: `18px`,
+              height: `8px`,
+              lineHeight: `12px`,
+              borderBottom: `1px solid black`,
+              ...style,
+            }}
+          >
+          <h2
+              style={{
+                margin: 0,
+                display: `inline-block`,
+                fontSize: `12px`,
+                letterSpacing: `2px`,
+                textTransform: `uppercase`,
+                fontWeight: `bold`,
+                backgroundColor: `#FFF`,
+                paddingRight: `4px`,
+                whiteSpace: `nowrap`,
+                overflowX: `hidden`,
+              }}
+            >
+            {this.props.children}
+          </h2>
+        </header>
+    )
   }
 }
 
@@ -62,69 +206,84 @@ class ResumeIndex extends React.Component {
         <Layout location={this.props.location} title={siteTitle}>
           <SEO title="Resume - James Ward" />
           <div>
-            <header className="clearfix">
-              <div className="rightColumn">
-                <h1>
-                  {resume.basics.name}
-                </h1>
-                <span className="level">Level 13</span>
-                <span className="position">
-                  {resume.basics.label}
-                </span>
-              </div>
-              <div className="leftColumn">
-                <div className="contact contact-email">
-                  <Link to={`mailto:${resume.basics.email}`}>
-                    Email: {resume.basics.email}
-                  </Link>
-                </div>
-                { resume.basics.profiles.map(profile => (
-                    <div className={'contact'} key={profile.network}>
-                      <Link to={profile.url}>{profile.network}: {profile.username}</Link>
-                    </div>
-                ))}
-              </div>
-            </header>
+            <ResumeHeader
+                name={resume.basics.name}
+                label={resume.basics.label}
+                email={resume.basics.email}
+                profiles={resume.basics.profiles}
+              />
 
-            <div className="rightColumn">
-              <section id="skills_tools">
-                <header title="In order of what makes the list visually pleasing">
-                  <h2 className="title">
+            <div
+                style={{
+                  display: `flex`,
+                  flexDirection: `row`,
+                }}
+              >
+
+              <div
+                  style={{
+                    display: `flex`,
+                    flexDirection: `column`,
+                    rowGap: `18px`,
+                  }}
+                >
+                <section>
+                  <ResumeSectionHeader>
+                    Summary
+                  </ResumeSectionHeader>
+                  <blockquote
+                      style={{
+                        margin: 0,
+                        padding: 0,
+                        fontSize: `14px`,
+                        lineHeight: `22px`,
+                      }}
+                    >
+                    {resume.basics.summary}
+                  </blockquote>
+                </section>
+
+                <section>
+                  <ResumeSectionHeader>
+                    Experience Points
+                  </ResumeSectionHeader>
+
+                  {resume.work.slice(0, WORK_LIMIT).map(xp => (<ResumeExperience experience={xp} />))}
+
+                </section>
+
+                { resume.work.length > WORK_LIMIT ? extraXPAvailable : ``}
+              </div>
+              <section
+                  style={{
+                    order: 1,
+                    marginLeft: `42px`,
+                    minWidth: `160px`,
+                  }}
+                >
+                <ResumeSectionHeader
+                    title={`In order of what makes the list visually pleasing`}
+                  >
                     Tools I Use
-                  </h2>
-                </header>
-                <ul>
+                </ResumeSectionHeader>
+                <ul style={{ padding: 0, margin: 0 }}>
                   { resume.skills.map(skill => (
-                      <li key={skill.name} title={ skill.keywords.join(', ') }>{skill.name}</li>
+                      <li
+                          key={skill.name}
+                          title={ skill.keywords.join(', ') }
+                          style={{
+                            listStyle: `none`,
+                            textAlign: `right`,
+                            fontSize: `16px`,
+                            lineHeight: `22px`,
+                            margin: 0,
+                          }}
+                        >
+                          {skill.name}
+                      </li>
                   ))}
                 </ul>
               </section>
-            </div>
-
-            <div className="leftColumn">
-              <section id="about_summary">
-                <header>
-                  <h2 className="title">
-                    Summary
-                  </h2>
-                </header>
-                <blockquote>
-                  {resume.basics.summary}
-                </blockquote>
-              </section>
-
-              <section id="about_experience">
-                <header>
-                  <h2 className="title">
-                    Experience Points
-                  </h2>
-                </header>
-
-                {resume.work.slice(0, WORK_LIMIT).map(xp => (<ResumeExperience experience={xp} />))}
-
-              </section>
-
-              { resume.work.length > WORK_LIMIT ? extraXPAvailable : ``}
             </div>
           </div>
         </Layout>
@@ -170,9 +329,11 @@ export const pageQuery = graphql`
             work {
                 company
                 endDate
+                endYear:endDate(formatString: "YYYY")
                 highlights
                 position
                 startDate
+                startYear:startDate(formatString: "YYYY")
                 summary
                 website
             }
