@@ -76,6 +76,7 @@ class BlogPostHeader extends React.Component {
                 float: "left",
                 lineHeight: `14px`,
                 fontSize: `12px`,
+                letterSpacing: `2px`,
                 textTransform: `uppercase`,
                 paddingRight: `6px`,
                 margin: 0,
@@ -100,7 +101,12 @@ class BlogPostPreview extends React.Component {
     const title = frontmatter.title || slug;
 
     return (
-        <article key={slug}>
+        <article
+            key={slug}
+            style={{
+              marginBottom: `32px`,
+            }}
+          >
           <BlogPostHeader
               title={title}
               date={frontmatter.date}
@@ -110,11 +116,17 @@ class BlogPostPreview extends React.Component {
 
           <section>
             <p
+                style={{
+                  padding: 0,
+                  margin: 0,
+                }}
                 dangerouslySetInnerHTML={{
                   __html: frontmatter.description || excerpt,
                 }}
             />
           </section>
+
+          <Link to={slug}>Read More</Link>
         </article>
     )
   }

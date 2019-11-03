@@ -1,7 +1,6 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {BlogPostPreview} from "../components/blog-post";
@@ -19,13 +18,12 @@ class BlogIndex extends React.Component {
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug;
             return (
-                <div key={node.fields.slug}>
-                  <BlogPostPreview
-                      slug={node.fields.slug}
-                      frontmatter={node.frontmatter}
-                      excerpt={node.excerpt}
-                  />
-                </div>
+                <BlogPostPreview
+                    key={node.fields.slug}
+                    slug={node.fields.slug}
+                    frontmatter={node.frontmatter}
+                    excerpt={node.excerpt}
+                />
             );
           })}
         </Layout>

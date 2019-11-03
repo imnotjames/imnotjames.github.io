@@ -16,7 +16,31 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Home" />
         <Bio />
-        <hr />
+        <header
+            style={{
+              marginBottom: `32px`,
+              height: `8px`,
+              lineHeight: `12px`,
+              borderBottom: `1px solid black`,
+            }}
+        >
+          <h2
+              style={{
+                margin: 0,
+                display: `inline-block`,
+                fontSize: `12px`,
+                letterSpacing: `2px`,
+                textTransform: `uppercase`,
+                fontWeight: `bold`,
+                backgroundColor: `#FFF`,
+                paddingRight: `4px`,
+                whiteSpace: `nowrap`,
+                overflowX: `hidden`,
+              }}
+          >
+            Recent Blog Posts
+          </h2>
+        </header>
         {posts.map(({ node }) => {
           return (
             <div key={node.fields.slug}>
