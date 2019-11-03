@@ -17,7 +17,7 @@ jobs:
       - name: gatsby build
         run: npm run build
 
-      - name: deploy
+      - name: deploy to github pages branch
         uses: maxheld83/ghpages@v0.2.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
