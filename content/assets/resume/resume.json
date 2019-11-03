@@ -13,7 +13,7 @@
 			{
 				"network": "Github",
 				"username": "imnotjames",
-				"url": "http://github.com/imnotjames/"
+				"url": "https://github.com/imnotjames/"
 			}
 		],
 		"summary": "I am an Engineer through and through - I solve practical problems. I get things done, ship amazing software, and create a superb user experience - all while hitting every specification and business requirement.  Unit tests, end to end testing, and test driven development are my go-to tools for crafting solid code in a multitude of languages.\n\nThis isn't just a day job to me, it's a passion."
@@ -46,7 +46,7 @@
 		{
 			"company": "Wayfair",
 			"position": "Senior Engineering Manager",
-			"website": "http://wayfair.com",
+			"website": "https://wayfair.com",
 			"startDate": "2014-02-17",
 			"endDate": "2017-02-15",
 			"summary": "Lead a diverse team of engineers to develop services for scalable, customizable, and personalized interactions with customers.",
@@ -59,7 +59,7 @@
 		{
 			"company": "Limestone Networks",
 			"position": "Software Engineer",
-			"website": "http://limestonenetworks.com",
+			"website": "https://limestonenetworks.com",
 			"startDate": "2012-04-24",
 			"endDate": "2014-02-07",
 			"summary": "Refactored large portions of legacy codebases to implement new features.",
@@ -71,7 +71,7 @@
 		{
 			"company": "Accrisoft",
 			"position": "Software Architect",
-			"website": "http://accrisoft.com",
+			"website": "https://accrisoft.com",
 			"startDate": "2011-02-11",
 			"endDate": "2012-04-04",
 			"summary": "Designed and implemented new features, bug fixes, and reduced the memory footprint of the flagship product.",
