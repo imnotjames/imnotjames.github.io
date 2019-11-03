@@ -71,7 +71,7 @@ module.exports = {
         short_name: `imnotjames`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#222`,
         display: `minimal-ui`,
         icon: `static/favicon.png`,
       },

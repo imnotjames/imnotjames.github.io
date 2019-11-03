@@ -11,10 +11,17 @@ const typography = new Typography({
   }],
   headerFontFamily: ["Prociono", "Helvetica", "serif"],
   bodyFontFamily: ["Prociono", "Helvetica", "serif"],
-  bodyColor: "hsla(0,0%,0%,0.9)",
+  bodyColor: "#222",
   headerWeight: 900,
   bodyWeight: 400,
   boldWeight: 700,
+  overrideStyles: ({ adjustFontSizeTo, scale, rhythm }) => {
+    return {
+      a: {
+        color: `#222`,
+      }
+    }
+  }
   /* overrideStyles: function overrideStyles(_ref, options) {
     var _ref2;
 
