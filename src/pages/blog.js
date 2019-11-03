@@ -56,7 +56,6 @@ export const pageQuery = graphql`
                         date(formatString: "YYYY/MM/DD")
                         time: date(formatString: "HH:mm z")
                         title
-                        description
                     }
                 }
             }
