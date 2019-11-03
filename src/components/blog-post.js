@@ -133,7 +133,17 @@ class BlogPostPreview extends React.Component {
             />
           </section>
 
-          <Link to={slug}>Read More</Link>
+          <Link
+              style={{
+                textTransform: "uppercase",
+                fontSize: `12px`,
+                letterSpacing: `2px`,
+                fontWeight: "bold",
+              }}
+              to={slug}
+            >
+            Read More
+          </Link>
         </article>
     )
   }
