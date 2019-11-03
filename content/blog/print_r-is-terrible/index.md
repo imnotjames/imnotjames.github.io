@@ -2,7 +2,6 @@
 date: 2014-07-28 11:22:11 -0500
 layout: post
 title: print_r is terrible
-description: It is!
 tags:
   - PHP
   - Disclaimer
