@@ -1,4 +1,42 @@
 const path = require('path');
+const fs = require('fs');
+const puppeteer = require('puppeteer');
+const express = require('express');
+
+async function printPDF(pageName, options) {
+  options = options || {};
+
+  const publicPath = path.join(
+      __dirname,
+      'public',
+  );
+
+  const pdfPath = path.join(
+      __dirname,
+      'public',
+      pageName + '.pdf',
+  );
+
+  const app = express();
+
+  app.use(express.static(publicPath));
+
+  const server = await app.listen(3000);
+
+  const browser = await puppeteer.launch({ headless: true });
+  const page = await browser.newPage();
+
+  await page.goto(`http://localhost:3000/${pageName}`, { waitUntil: 'networkidle0' });
+
+  await page.pdf({
+    format: 'A4',
+    path: pdfPath,
+    ...options
+  });
+
+  await browser.close();
+  await server.close();
+}
 
 async function createBlogPages(graphql, actions) {
   const { createPage } = actions;
@@ -50,4 +88,8 @@ async function createBlogPages(graphql, actions) {
 
 exports.createPages = async ({ graphql, actions }) => {
   await createBlogPages(graphql, actions)
+};
+
+exports.onPostBuild = async () => {
+  await printPDF('resume', { pageRanges: '1' });
 };
