@@ -221,7 +221,7 @@ class ResumeIndex extends React.Component {
                     rowGap: `18px`,
                   }}
                 >
-                <section>
+                <section style={{marginBottom: '22px'}}>
                   <ResumeSectionHeader>
                     Summary
                   </ResumeSectionHeader>
