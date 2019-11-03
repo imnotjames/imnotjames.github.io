@@ -1,15 +1,42 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "@emotion/styled";
 
 import { rhythm, scale } from "../utils/typography"
 
+const NavigationItem = styled.li`
+list-style: none;
+display: inline-block;
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 2px;
+font-size: 12px;
+line-height: 12px;
+margin: 0;
+
+a {
+  background-color: #FFF;
+  margin: 0 1em;
+  padding: 0 0.8em;
+  
+  color: #222;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+`;
+
 class LayoutHeader extends React.Component {
   render() {
+
+
     return (
       <header
           style={{
             position: "relative",
-            marginTop: "-2em",
+            marginTop: "-42px",
           }}
       >
         <h1
@@ -19,7 +46,7 @@ class LayoutHeader extends React.Component {
               fontSize: `50px`,
               fontWeight: 200,
               textTransform: `uppercase`,
-              textAlign: `left`,
+              textAlign: `center`,
             }}
         >
           <Link
@@ -39,7 +66,7 @@ class LayoutHeader extends React.Component {
                 style={{
                   fontSize: `12px`,
                   position: `absolute`,
-                  top: 0,
+                  top: '0',
                   right: `-14px`,
                   transform: "rotate(-90deg)"
                 }}
@@ -48,20 +75,33 @@ class LayoutHeader extends React.Component {
             </span>
           </Link>
         </h1>
-        <nav>
-          <ul>
-
-            <li>
+        <nav
+            style={{
+              marginTop: `8px`,
+              marginBottom: `32px`,
+              lineHeight: `6px`,
+              height: `6px`,
+              borderBottom: `1px solid black`,
+            }}
+          >
+          <ul
+              style={{
+                textAlign: `center`,
+                margin: 0,
+                padding: 0,
+              }}
+            >
+            <NavigationItem>
               <Link to={`/blog/`}>
                 Blog
               </Link>
-            </li>
+            </NavigationItem>
 
-            <li>
+            <NavigationItem>
               <Link to={`/resume/`}>
                 Resume
               </Link>
-            </li>
+            </NavigationItem>
           </ul>
         </nav>
       </header>
