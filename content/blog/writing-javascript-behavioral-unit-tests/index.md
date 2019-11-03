@@ -36,49 +36,47 @@ While there is no right or wrong way to write a behavior specification, the
 [structure proposed by Dan North][dans_behavioral_spec_proposal] is clear,
 concise, and uniform.
 
-```
-Story: Game of Life
+    Story: Game of Life
 
-As a cellular automaton simulation
-I want to follow the rules of Conway's Game of Life
-So that we are able to simulate simple life
+    As a cellular automaton simulation
+    I want to follow the rules of Conway's Game of Life
+    So that we are able to simulate simple life
 
-Scenario 1: Game of Life should kill lonely cells
-Given that a cell is alive
- And that cell has no live neighbors
-When a simulation step has executed
-Then that cell should die
+    Scenario 1: Game of Life should kill lonely cells
+    Given that a cell is alive
+     And that cell has no live neighbors
+    When a simulation step has executed
+    Then that cell should die
 
-Scenario 2: Game of Life should kill cells with only one neighbor
-Given that a cell is alive
- And that cell has exactly one live neighbor
-When a simulation step has executed
-Then that cell should die
+    Scenario 2: Game of Life should kill cells with only one neighbor
+    Given that a cell is alive
+     And that cell has exactly one live neighbor
+    When a simulation step has executed
+    Then that cell should die
 
-Scenario 3: Game of Life should leave cells with two neighbors alone
-Given that a cell is alive
- And that cell has two live neighbors
-When a simulation step has executed
-Then that cell should continue to live
+    Scenario 3: Game of Life should leave cells with two neighbors alone
+    Given that a cell is alive
+     And that cell has two live neighbors
+    When a simulation step has executed
+    Then that cell should continue to live
 
-Scenario 4: Game of Life should leave cells with three neighbors alone
-Given that a cell is alive
- And that cell has three live neighbors
-When a simulation step has executed
-Then that cell should continue to live
+    Scenario 4: Game of Life should leave cells with three neighbors alone
+    Given that a cell is alive
+     And that cell has three live neighbors
+    When a simulation step has executed
+    Then that cell should continue to live
 
-Scenario 5: Game of Life should kill overpopulated cells
-Given that a cell is alive
- And that cell has more than three live neighbors
-When a simulation step has executed
-Then that cell should die
+    Scenario 5: Game of Life should kill overpopulated cells
+    Given that a cell is alive
+     And that cell has more than three live neighbors
+    When a simulation step has executed
+    Then that cell should die
 
-Scenario 6: Game of Life should reproduce into cells with exactly three live neighbors
-Given that a cell is dead
- And that cell has exactly three live neighbors
-When a simulation step has executed
-Then that cell should be given life
-```
+    Scenario 6: Game of Life should reproduce into cells with exactly three live neighbors
+    Given that a cell is dead
+     And that cell has exactly three live neighbors
+    When a simulation step has executed
+    Then that cell should be given life
 
 ## Writing The Tests
 

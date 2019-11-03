@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "@emotion/styled";
+import { css } from "@emotion/core";
 
 import { rhythm } from "../utils/typography";
 
@@ -146,7 +147,47 @@ class BlogPost extends React.Component {
             time={frontmatter.time}
             slug={slug}
         />
-        <section className={"post"} dangerouslySetInnerHTML={{ __html: html }} />
+        <section
+            css={css`
+              p {
+                code {
+                  padding: 3px 6px;
+                }
+              }
+
+              .gatsby-highlight {
+                &:before {
+                  content: "Code";
+                  display: inline-block;
+                  position: absolute;
+                  top: -7px;
+                  left: 0;
+                  text-transform: uppercase;
+                  font-size: 10px;
+                  line-height: 12px;
+                  padding-right: 8px;
+                  letter-spacing: 2px;
+                  
+                  background: #FFF;
+                }
+
+                &[data-language]:before {
+                  content: attr(data-language);
+                }
+
+                pre {
+                  margin-bottom: 0;
+                }
+
+                position: relative;       
+                margin-bottom: 1.75rem;
+                padding: 16px 0;
+                border-top: 1px solid #222;
+                border-bottom: 1px solid #222;
+              }
+            `}
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
         <footer>
         </footer>
       </article>

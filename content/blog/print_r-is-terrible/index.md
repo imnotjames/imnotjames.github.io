@@ -17,7 +17,7 @@ the concept of arrays.
 
 On first glance it kind of works.
 
-```
+```php
 php > print_r('foo bar');
 foo bar
 
@@ -34,7 +34,7 @@ Those sure are some fantastic string representations of things.
 
 But you quickly find out that many things are printed as being the same value.
 
-```
+```php
 php > print_r([false, '', null]);
 Array
 (
@@ -63,7 +63,7 @@ Array
 When strings are involved, you also can get output that may look the same but
 isn't because of whitespace or other various non-visible characters.
 
-```
+```php
 php > print_r(['foo ', 'foo', "foo" . chr(0)]);
 Array
 (
@@ -75,7 +75,7 @@ Array
 
 ..Or you get things caused by people who just want to watch the world burn.
 
-```
+```php
 php > print_r([["Array\n\t\t(\n\t\t\t[0] => Wello\n\n\t\t)\n"]]);
 Array
 (
@@ -104,7 +104,7 @@ differentiating between types for the sake of readability.  While you are
 debugging you don't want readability.  You want to know what the variable
 contains.  `var_dump` gets you that.
 
-```
+```php
 php > var_dump(['foo ', 'foo', "foo" . chr(0)]);
 array(3) {
   [0] =>

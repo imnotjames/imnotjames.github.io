@@ -48,7 +48,17 @@ module.exports = {
           `gatsby-remark-autolink-headers`,
           `gatsby-remark-emojis`,
           `gatsby-remark-normalize-paths`,
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              showLineNumbers: true,
+              prompt: {
+                user: "user",
+                host: "notjam.es",
+                global: false,
+              },
+            }
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
