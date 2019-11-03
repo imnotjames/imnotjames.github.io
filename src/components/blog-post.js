@@ -83,10 +83,16 @@ class BlogPostHeader extends React.Component {
                 margin: 0,
               }}
           >
-            <Link style={{
-              textDecoration: `none`,
-              color: `inherit`,
-            }} to={slug}>
+            <Link
+                css={css`
+                text-decoration: none;
+
+                &:hover {
+                  text-decoration: underline;
+                }
+                `}
+                to={slug}
+              >
               {title}
             </Link>
           </h1>
