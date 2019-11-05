@@ -1,5 +1,5 @@
 ---
-date: 2019-10-06 00:00:00 -0500
+date: 2019-11-06 00:00:00 -0500
 layout: post
 title: New Team Kick Start
 tags:
