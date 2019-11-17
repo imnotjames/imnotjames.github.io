@@ -100,11 +100,6 @@ get.  I'd suggest at least talking with some of your peers and your team
 you'll be working with on a regular basis.  You don't need to (or maybe can't)
 meet with everyone on the team.
 
-Sometimes people suggest members of the team that have left the team.  While
-I've gone out of my way to reach out not everyone will want to - it can get
-difficult.  It has always been worth it as I'd found them to have amazing
-hindsight, and have been very valuable as fountains of historical knowledge.
-
 ## The End Goal
 
 None of this is new or too surprising.  You're building relationships within 
