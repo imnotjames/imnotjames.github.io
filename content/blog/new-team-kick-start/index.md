@@ -15,7 +15,7 @@ lingua franca that the rest of the team has - it's like they're speaking a langu
 you know at face value but the context tying it together is missing.
 
 When we join a new team we want to have an impact right away.  Even with good
-intent, this can be disastrous without the right context.  There's an approach
+intent this can be disastrous without the right context.  There's an approach
 to this problem I found on [Andrew Bosworth's site][bosworth-wayback].  It
 helps you quickly gather context and build a framework to base the knowledge
 around.
@@ -47,11 +47,11 @@ something new.
 Many people expect the universe to be efficient and orderly.  It isn't. 
 Always assume everyone has something to teach you - even when talking about
 topics that appear to bring no substantive value to the conversation or the
-business needs.  People and organizations are messy, so you'll never know when 
+business needs.  People and organizations are messy so you'll never know when 
 something is relevant.
 
 You won't learn everything you'll need to know with your new team.  Not by a long
-shot.  Don't fret, it's OK.  There's not nearly enough time for that in these
+shot.  Don't fret - it's OK.  There's not nearly enough time for that in these
 meetings.  Learning in depth will take you much, much longer.  
 
 Instead, this exercise helps you build rapport and context.  Sometimes you'll 
@@ -59,7 +59,7 @@ find the location of important documentation.  Other times you'll gather
 important tribal knowledge that's not documented anywhere.  Then again, maybe
 you'll get a bit of a history lesson.
 
-Through this, you can learn the common language of the team.  You'll start by
+Through this you can learn the common language of the team.  You'll start by
 building out a framework to understand where your context has gaps.  This is
 where all the clarification comes in.  You gain knowledge that fills in those
 gaps so you can hop over the many barriers that prevent you from joining
@@ -73,10 +73,10 @@ it anyway.  This question ensures that there is a focused time to understand
 the perceived challenges that the team faces.
 
 Internalize the bigger problems - the problems that will take a long time to
-fix.  "We're using an outdated tech stack" or "We .  Maybe they're complex,
-maybe systemic, but they won't be mitigated right away.  If you're in a 
-leadership role, identify how the team could move toward these as long term
-goals.  Even if not, it can help you align goals.
+fix.  "We're using an outdated tech stack" or "We aren't focused on building
+the primary product".  Maybe they're complex, maybe systemic, but they won't
+be mitigated right away.  If you're in a  leadership role, identify how the
+team could move toward these as long term goals.
 
 The smaller problems are often small enough that the team hasn't prioritized 
 them.  They might be quality of life improvements, or solvable issues with 
@@ -85,7 +85,7 @@ test in the build that's been frustrating".  These are good to dig into so you
 get some quick wins while building your knowledge of the systems at play.
 
 Asynchronously follow up on these if you don't understand them.  You don't have
-much time during the meeting, and once you know of its existence, you should be
+much time during the meeting, and once you know of its existence you should be
 able to describe it in an email or slack message.
 
 ## Who else should I speak with?
@@ -100,16 +100,16 @@ get.  I'd suggest at least talking with some of your peers and your team
 you'll be working with on a regular basis.  You don't need to (or maybe can't)
 meet with everyone on the team.
 
-Sometimes, people suggest members of the team that have left the team.  While
-I've gone out of my way to reach out, this can get difficult.  I found them to
-have amazing hindsight, and have been very valuable fountains of historical
-knowledge.
+Sometimes people suggest members of the team that have left the team.  While
+I've gone out of my way to reach out not everyone will want to - it can get
+difficult.  It has always been worth it as I'd found them to have amazing
+hindsight, and have been very valuable as fountains of historical knowledge.
 
 ## The End Goal
 
 None of this is new or too surprising.  You're building relationships within 
 your team.  The big value here is in the asking and listening.  It shows a 
-mutual respect with the existing team, building a level of trust.
+respect to the existing team and paves the path to a level of trust.
 
 You'll end up with more questions than answers, finding you don't know more 
 than you thought - but at least you'll know what you didn't know.
