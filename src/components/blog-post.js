@@ -134,12 +134,51 @@ class BlogPostPreview extends React.Component {
           </section>
 
           <Link
-              style={{
-                textTransform: "uppercase",
-                fontSize: `12px`,
-                letterSpacing: `2px`,
-                fontWeight: "bold",
-              }}
+              css={css`
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 12px;
+                background: white;
+
+                position: relative;
+                display: block;
+                text-align: right;
+
+                &:hover:after {
+                  height: 26px;
+                  font-size: 26px;
+                  line-height: 26px;
+                  top: -7px;
+                  width: 20px;
+                  opacity: 1;
+                  transition: all 0.3s, opacity 0.1s 0.05s;
+                  -moz-transition: all 0.3s, opacity 0.1s 0.05s;
+                  -ms-transition: all 0.3s, opacity 0.1s 0.05s;
+                  -webkit-transition: all 0.3s, opacity 0.1s 0.05s;
+                  -o-transition: all 0.3s, opacity 0.1s 0.05s;
+                }
+
+                &:after {
+                  height: 12px;
+                  font-size: 12px;
+                  line-height: 12px;
+                  top: 0px;
+                  left: 100%;
+                  content: "\\00BB";
+                  display: inline-block;
+                  width: 0px;
+                  overflow: hidden;
+                  z-index: 1;
+                  text-align: right;
+                  position: absolute;
+                  opacity: 0;
+                  transition: all 0.2s, opacity 0.1s;
+                  -moz-transition: all 0.2s, opacity 0.1s;
+                  -ms-transition: all 0.2s, opacity 0.1s;
+                  -webkit-transition: all 0.2s, opacity 0.1s;
+                  -o-transition: all 0.2s, opacity 0.1s;
+                }
+                `}
               to={slug}
             >
             Read More
