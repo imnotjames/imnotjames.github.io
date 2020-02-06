@@ -10,7 +10,7 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
     const siteTitle = data.site.siteMetadata.title;
-    const posts = data.allMarkdownRemark.edges;
+    const posts = data.allSitePage.edges;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -43,11 +43,12 @@ class BlogIndex extends React.Component {
         </header>
         {posts.map(({ node }) => {
           return (
-            <div key={node.fields.slug}>
+            <div key={node.parent.fields.slug}>
               <BlogPostPreview
-                slug={node.fields.slug}
-                frontmatter={node.frontmatter}
-                excerpt={node.excerpt}
+                path={node.path}
+                slug={node.parent.fields.slug}
+                frontmatter={node.parent.frontmatter}
+                excerpt={node.parent.excerpt}
               />
             </div>
           );
@@ -66,24 +67,29 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
-        filter: { fields: { sourceName: { eq: "blog"} } }
-        sort: { fields: [frontmatter___date], order: DESC }
+    allSitePage (
+        filter: { context: { sourceName: { eq: "blog"} } }
+        sort: { fields: [context___postDate], order: DESC }
         limit: 3
     ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "YYYY/MM/DD")
-              time: date(formatString: "HH:mm z")
-            title
-          }
+        edges {
+            node {
+                path
+                parent {
+                    ... on MarkdownRemark {
+                        excerpt
+                        fields {
+                            slug
+                        }
+                        frontmatter {
+                            date(formatString: "YYYY/MM/DD")
+                            time: date(formatString: "HH:mm z")
+                            title
+                        }
+                    }
+                }
+            }
         }
-      }
     }
   }
 `;

@@ -18,11 +18,11 @@ class BlogIndex extends React.Component {
           {posts.map(({ node }) => {
             return (
                 <BlogPostPreview
-                    key={node.context.slug}
-                    slug={node.context.slug}
+                    key={node.parent.fields.slug}
+                    slug={node.parent.fields.slug}
                     path={node.path}
-                    frontmatter={node.context.frontmatter}
-                    excerpt={node.context.excerpt}
+                    frontmatter={node.parent.frontmatter}
+                    excerpt={node.parent.excerpt}
                 />
             );
           })}
@@ -42,18 +42,22 @@ export const pageQuery = graphql`
         }
         allSitePage (
             filter: { context: { sourceName: { eq: "blog"} } }
-            sort: { fields: [context___frontmatter___date], order: DESC }
+            sort: { fields: [context___postDate], order: DESC }
         ) {
             edges {
                 node {
                     path
-                    context {
-                        excerpt
-                        slug
-                        frontmatter {
-                            date # date(formatString: "YYYY/MM/DD")
-                            time: date # time: date(formatString: "HH:mm z")
-                            title
+                    parent {
+                        ... on MarkdownRemark {
+                            excerpt
+                            fields {
+                                slug
+                            }
+                            frontmatter {
+                                date(formatString: "YYYY/MM/DD")
+                                time: date(formatString: "HH:mm z")
+                                title
+                            }
                         }
                     }
                 }

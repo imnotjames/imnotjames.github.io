@@ -50,13 +50,12 @@ async function createBlogPages(graphql, actions) {
         ) {
           edges {
             node {
-              excerpt
+              id
               fields {
                 slug
                 sourceName
               }
               frontmatter {
-                title
                 date
               }
             }
@@ -79,22 +78,36 @@ async function createBlogPages(graphql, actions) {
     createPage({
       path: path.join('blog', post.node.fields.slug),
       component: blogPost,
+      parent: post.node.id,
       context: {
-        excerpt: post.node.excerpt,
-        sourceName: post.node.fields.sourceName,
+        parentId: post.node.id,
         slug: post.node.fields.slug,
-        frontmatter: {
-          ...post.node.frontmatter,
-        },
+        sourceName: post.node.fields.sourceName,
+        postDate: post.node.frontmatter.date,
         previous,
         next,
       },
-    })
+    });
   })
 }
 
 exports.createPages = async ({ graphql, actions }) => {
-  await createBlogPages(graphql, actions)
+  await createBlogPages(graphql, actions);
+};
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createParentChildLink } = actions;
+
+  if (node.internal.type === "SitePage" && node.context && node.context.parentId) {
+    node.parent = node.context.parentId;
+
+    let parentNode = getNode(node.context.parentId);
+
+    createParentChildLink({
+      parent: parentNode,
+      child: node,
+    })
+  }
 };
 
 exports.onPostBuild = async () => {

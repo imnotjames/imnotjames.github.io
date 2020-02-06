@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled";
 import { css } from '@emotion/core'
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 const NavigationItem = styled.li`
 list-style: none;
