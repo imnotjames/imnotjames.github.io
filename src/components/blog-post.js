@@ -62,7 +62,7 @@ class BlogPostTimestamp extends React.Component {
 
 class BlogPostHeader extends React.Component {
   render() {
-    const { title, slug, date, time } = this.props;
+    const { title, path, date, time } = this.props;
 
     return (
         <header style={{
@@ -91,7 +91,7 @@ class BlogPostHeader extends React.Component {
                   text-decoration: underline;
                 }
                 `}
-                to={slug}
+                to={path}
               >
               {title}
             </Link>
@@ -104,7 +104,7 @@ class BlogPostHeader extends React.Component {
 
 class BlogPostPreview extends React.Component {
   render() {
-    const {frontmatter, slug, excerpt} = this.props;
+    const {frontmatter, path, slug, excerpt} = this.props;
     const title = frontmatter.title || slug;
 
     return (
@@ -119,6 +119,7 @@ class BlogPostPreview extends React.Component {
               date={frontmatter.date}
               time={frontmatter.time}
               slug={slug}
+              path={path}
           />
 
           <section>
@@ -179,7 +180,7 @@ class BlogPostPreview extends React.Component {
                   -o-transition: all 0.2s, opacity 0.1s;
                 }
                 `}
-              to={slug}
+              to={path}
             >
             Read More
           </Link>

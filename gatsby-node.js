@@ -1,5 +1,4 @@
 const path = require('path');
-const fs = require('fs');
 const puppeteer = require('puppeteer');
 const express = require('express');
 
@@ -51,11 +50,14 @@ async function createBlogPages(graphql, actions) {
         ) {
           edges {
             node {
+              excerpt
               fields {
                 slug
+                sourceName
               }
               frontmatter {
                 title
+                date
               }
             }
           }
@@ -75,10 +77,15 @@ async function createBlogPages(graphql, actions) {
     const next = index === 0 ? null : posts[index - 1].node;
 
     createPage({
-      path: post.node.fields.slug,
+      path: path.join('blog', post.node.fields.slug),
       component: blogPost,
       context: {
+        excerpt: post.node.excerpt,
+        sourceName: post.node.fields.sourceName,
         slug: post.node.fields.slug,
+        frontmatter: {
+          ...post.node.frontmatter,
+        },
         previous,
         next,
       },

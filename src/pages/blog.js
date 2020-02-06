@@ -9,20 +9,20 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
     const siteTitle = data.site.siteMetadata.title;
-    const posts = data.allMarkdownRemark.edges;
+    const posts = data.allSitePage.edges;
 
     return (
         <Layout location={this.props.location} title={siteTitle}>
           <SEO title="All posts" />
 
           {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug;
             return (
                 <BlogPostPreview
-                    key={node.fields.slug}
-                    slug={node.fields.slug}
-                    frontmatter={node.frontmatter}
-                    excerpt={node.excerpt}
+                    key={node.context.slug}
+                    slug={node.context.slug}
+                    path={node.path}
+                    frontmatter={node.context.frontmatter}
+                    excerpt={node.context.excerpt}
                 />
             );
           })}
@@ -40,20 +40,21 @@ export const pageQuery = graphql`
                 title
             }
         }
-        allMarkdownRemark(
-            filter: { fields: { sourceName: { eq: "blog"} } }
-            sort: { fields: [frontmatter___date], order: DESC }
+        allSitePage (
+            filter: { context: { sourceName: { eq: "blog"} } }
+            sort: { fields: [context___frontmatter___date], order: DESC }
         ) {
             edges {
                 node {
-                    excerpt
-                    fields {
+                    path
+                    context {
+                        excerpt
                         slug
-                    }
-                    frontmatter {
-                        date(formatString: "YYYY/MM/DD")
-                        time: date(formatString: "HH:mm z")
-                        title
+                        frontmatter {
+                            date # date(formatString: "YYYY/MM/DD")
+                            time: date # time: date(formatString: "HH:mm z")
+                            title
+                        }
                     }
                 }
             }
