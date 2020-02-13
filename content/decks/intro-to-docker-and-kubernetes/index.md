@@ -401,20 +401,38 @@ Helm Charts are packages of pre-configured Kubernetes resources.
 
 ---
 
+## Let's Index Tweets about Dogs
+
+![corgi](https://i.imgur.com/B3yGqGf.jpg?4)
+
++++
+
 ## Let's install Elasticsearch and Kibana
 
 ```shell-session
 $ helm repo add elastic https://helm.elastic.co
-$ helm install --name elasticsearch \
-$              --set replicas=3 \
+$ helm install elasticsearch \
 $              elastic/elasticsearch
-$ helm install --name kibana elastic/kibana
-$ kubectl port-forward \
-$              deployment/helm-kibana-default-kibana \
-$              5601
+$ helm install kibana elastic/kibana
+$ kubectl port-forward deployment/kibana-kibana 5601
+```
+
++++
+
+## Getting data into Elasticsearch
+
+```shell-session
+$ helm repo add rc-tweet-listener \
+$       https://notjam.es/recurse-center-tweet-listener
+$ helm install rc-tweet-listener \
+$       rc-tweet-listener/recurse-center-tweet-listener \
+$       --values rctwl.yaml
 ```
 
 ---
 
-## Getting data into Elasticsearch
+# Fin.
 
++++
+
+<small>(applause)</small>
