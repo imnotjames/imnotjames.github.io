@@ -241,7 +241,7 @@ Automating Scaling of Systems
 Note:
 
 Kubernetes was started at Google and announced in 2014.  It's an open source
-container orechestrator focused on automating application deployment, scaling,
+container orchestrator focused on automating application deployment, scaling,
 and operations.  It works with many container solutions - including Docker.
 
 Borg is an internal Google cluster manager that runs almost all of Google's
