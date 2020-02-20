@@ -208,8 +208,8 @@ CMD ["python", "-m", "http.server", "8080"]
 
 ```shell-session
 $ docker image build --tag webserver . # Build our image
-$ docker container run webserver --name webserver \
-$        --publish 8080:8080 --detach  # Start our Server
+$ docker container run --name webserver \
+$        --publish 8080:8080 --detach webserver  # Start our Server
 $ docker container stop webserver      # Clean Up!
 ```
 
