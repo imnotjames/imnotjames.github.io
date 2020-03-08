@@ -30,7 +30,7 @@
     "gatsby-remark-prismjs": "^3.3.20",
     "gatsby-remark-reading-time": "^1.0.1",
     "gatsby-remark-responsive-iframe": "^2.2.25",
-    "gatsby-remark-slidify": "0.0.1",
+    "gatsby-remark-slidify": "0.0.2",
     "gatsby-remark-smartypants": "^2.1.14",
     "gatsby-remark-source-name": "^1.0.0",
     "gatsby-source-filesystem": "^2.1.35",
