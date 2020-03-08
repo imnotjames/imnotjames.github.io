@@ -107,6 +107,12 @@ class LayoutHeader extends React.Component {
                 Resume
               </Link>
             </NavigationItem>
+
+            <NavigationItem>
+              <Link to={`/lets-chat/`}>
+                Let's Chat
+              </Link>
+            </NavigationItem>
           </ul>
         </nav>
       </header>
