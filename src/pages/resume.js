@@ -60,7 +60,7 @@ class ResumeExperience extends React.Component {
                     color: `inherit`,
                     textDecoration: `none`,
                   }}
-                  to={experience.website || '#'}
+                  href={experience.website || '#'}
                 >
                 {experience.company}
               </a>
