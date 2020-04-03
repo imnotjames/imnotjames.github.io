@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -55,7 +55,7 @@ class ResumeExperience extends React.Component {
                   padding: 0,
                 }}
               >
-              <Link
+              <a
                   style={{
                     color: `inherit`,
                     textDecoration: `none`,
@@ -63,7 +63,7 @@ class ResumeExperience extends React.Component {
                   to={experience.website || '#'}
                 >
                 {experience.company}
-              </Link>
+              </a>
             </h4>
             <h5 style={{ margin: 0 }}>
               <span title={ experience.startDate }>
