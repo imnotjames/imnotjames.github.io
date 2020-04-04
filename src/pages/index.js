@@ -29,13 +29,14 @@ class BlogIndex extends React.Component {
                 margin: 0,
                 display: `inline-block`,
                 fontSize: `12px`,
+                lineHeight: `16px`,
                 letterSpacing: `2px`,
                 textTransform: `uppercase`,
                 fontWeight: `bold`,
                 backgroundColor: `#FFF`,
                 paddingRight: `4px`,
                 whiteSpace: `nowrap`,
-                overflowX: `hidden`,
+                overflow: `hidden`,
               }}
           >
             Recent Blog Posts
