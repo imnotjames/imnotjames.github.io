@@ -20,10 +20,17 @@
 	},
 	"work": [
 		{
+			"company": "Stealth Seed Stage Startup",
+			"position": "Technical Cofounder",
+			"startDate": "2020-02-01",
+			"summary": "Bringing a product to fruition, starting at nothing."
+		}
+		{
 			"company": "Venmo",
 			"position": "Senior Engineering Manager",
 			"website": "https://venmo.com/",
 			"startDate": "2018-10-01",
+			"endDate": "2019-12-01",
 			"summary": "Organized the Platform as a Service team - developing the mission, vision, capabilities, and roadmap to encourage a high performing team with a strong sense of ownership.",
 			"highlights": [
 				"Provide technical leadership to bring reliability of team systems from 90% reliability to 99.999%.",
