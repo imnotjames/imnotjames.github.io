@@ -10,7 +10,7 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
     const siteTitle = data.site.siteMetadata.title;
-    const posts = data.allSitePage.edges;
+    const posts = data.blogPosts.edges;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -43,13 +43,15 @@ class BlogIndex extends React.Component {
           </h2>
         </header>
         {posts.map(({ node }) => {
+          const postPath = `/blog${node.fields.slug}`;
+
           return (
-            <div key={node.parent.fields.slug}>
+            <div key={node.fields.slug}>
               <BlogPostPreview
-                path={node.path}
-                slug={node.parent.fields.slug}
-                frontmatter={node.parent.frontmatter}
-                excerpt={node.parent.excerpt}
+                path={postPath}
+                slug={node.fields.slug}
+                frontmatter={node.frontmatter}
+                excerpt={node.excerpt}
               />
             </div>
           );
@@ -62,35 +64,30 @@ class BlogIndex extends React.Component {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allSitePage (
-        filter: { context: { sourceName: { eq: "blog"} } }
-        sort: { fields: [context___postDate], order: DESC }
-        limit: 3
-    ) {
-        edges {
-            node {
-                path
-                parent {
-                    ... on MarkdownRemark {
-                        excerpt
-                        fields {
-                            slug
-                        }
-                        frontmatter {
-                            date(formatString: "YYYY/MM/DD")
-                            time: date(formatString: "HH:mm z")
-                            title
-                        }
+    query {
+        site {
+            siteMetadata {
+                title
+            }
+        }
+        blogPosts: allMarkdownRemark (
+            filter: { fields:{ sourceName: { eq: "blog"} } }
+            sort: { fields: [frontmatter___date], order: DESC }
+            limit: 3
+        ) {
+            edges {
+                node {
+                    excerpt
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        date(formatString: "YYYY/MM/DD")
+                        time: date(formatString: "HH:mm z")
+                        title
                     }
                 }
             }
         }
     }
-  }
 `;

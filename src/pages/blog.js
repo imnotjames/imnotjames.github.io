@@ -7,22 +7,25 @@ import {BlogPostPreview} from "../components/blog-post";
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props;
-    const siteTitle = data.site.siteMetadata.title;
-    const posts = data.allSitePage.edges;
+    const {
+      site: { siteMetadata: { title: siteTitle } },
+      posts: { edges: posts }
+    } = this.props.data;
 
     return (
         <Layout location={this.props.location} title={siteTitle}>
           <SEO title="All posts" />
 
           {posts.map(({ node }) => {
+            const postPath = `/blog${node.fields.slug}`;
+
             return (
                 <BlogPostPreview
-                    key={node.parent.fields.slug}
-                    slug={node.parent.fields.slug}
-                    path={node.path}
-                    frontmatter={node.parent.frontmatter}
-                    excerpt={node.parent.excerpt}
+                    key={node.fields.slug}
+                    slug={node.fields.slug}
+                    path={postPath}
+                    frontmatter={node.frontmatter}
+                    excerpt={node.excerpt}
                 />
             );
           })}
@@ -40,25 +43,20 @@ export const pageQuery = graphql`
                 title
             }
         }
-        allSitePage (
-            filter: { context: { sourceName: { eq: "blog"} } }
-            sort: { fields: [context___postDate], order: DESC }
+        posts: allMarkdownRemark (
+            filter: { fields:{ sourceName: { eq: "blog"} } }
+            sort: { fields: [frontmatter___date], order: DESC }
         ) {
             edges {
                 node {
-                    path
-                    parent {
-                        ... on MarkdownRemark {
-                            excerpt
-                            fields {
-                                slug
-                            }
-                            frontmatter {
-                                date(formatString: "YYYY/MM/DD")
-                                time: date(formatString: "HH:mm z")
-                                title
-                            }
-                        }
+                    excerpt
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        date(formatString: "YYYY/MM/DD")
+                        time: date(formatString: "HH:mm z")
+                        title
                     }
                 }
             }

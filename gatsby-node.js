@@ -76,15 +76,13 @@ async function createBlogPages(graphql, actions) {
     const next = index === 0 ? null : posts[index - 1].node;
 
     createPage({
-      path: path.join('blog', post.node.fields.slug),
+      path: path.join(post.node.fields.sourceName, post.node.fields.slug),
       component: blogPost,
       context: {
-        parentId: post.node.id,
         slug: post.node.fields.slug,
-        sourceName: post.node.fields.sourceName,
         postDate: post.node.frontmatter.date,
-        previous,
-        next,
+        previous: previous ? previous.fields.slug : null,
+        next: next ? next.fields.slug : null,
       },
     });
   })
@@ -94,8 +92,8 @@ exports.createPages = async ({ graphql, actions }) => {
   await createBlogPages(graphql, actions);
 };
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createParentChildLink, createNodeField } = actions;
+exports.onCreateNode = async ({ node, actions, getNode }) => {
+  const { createNodeField } = actions;
 
   if (node.internal.type === 'MarkdownRemark') {
     const parentNode = getNode(node.parent);
@@ -105,17 +103,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       name: 'sourceName',
       value: parentNode.sourceInstanceName,
     });
-  }
-
-  if (node.internal.type === "SitePage" && node.context && node.context.parentId) {
-    node.parent = node.context.parentId;
-
-    const parentNode = getNode(node.context.parentId);
-
-    createParentChildLink({
-      parent: parentNode,
-      child: node,
-    })
   }
 };
 

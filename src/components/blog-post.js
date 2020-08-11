@@ -191,7 +191,7 @@ class BlogPostPreview extends React.Component {
 
 class BlogPost extends React.Component {
   render() {
-    const { frontmatter, slug, html } = this.props;
+    const { frontmatter, slug, html, path } = this.props;
 
     const title = frontmatter.title || slug;
 
@@ -202,6 +202,7 @@ class BlogPost extends React.Component {
             date={frontmatter.date}
             time={frontmatter.time}
             slug={slug}
+            path={path}
         />
         <section
             css={css`
