@@ -27,6 +27,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-json`,
+    `gatsby-plugin-slug`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -43,8 +44,6 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-plugin-slug`,
-          `gatsby-remark-source-name`,
           `gatsby-remark-autolink-headers`,
           `gatsby-remark-emojis`,
           `gatsby-remark-normalize-paths`,

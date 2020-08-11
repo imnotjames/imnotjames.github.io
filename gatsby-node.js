@@ -96,12 +96,22 @@ exports.createPages = async ({ graphql, actions }) => {
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createParentChildLink } = actions;
+  const { createParentChildLink, createNodeField } = actions;
+
+  if (node.internal.type === 'MarkdownRemark') {
+    const parentNode = getNode(node.parent);
+
+    createNodeField({
+      node,
+      name: 'sourceName',
+      value: parentNode.sourceInstanceName,
+    });
+  }
 
   if (node.internal.type === "SitePage" && node.context && node.context.parentId) {
     node.parent = node.context.parentId;
 
-    let parentNode = getNode(node.context.parentId);
+    const parentNode = getNode(node.context.parentId);
 
     createParentChildLink({
       parent: parentNode,
