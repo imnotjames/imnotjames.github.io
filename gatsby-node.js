@@ -78,7 +78,6 @@ async function createBlogPages(graphql, actions) {
     createPage({
       path: path.join('blog', post.node.fields.slug),
       component: blogPost,
-      parent: post.node.id,
       context: {
         parentId: post.node.id,
         slug: post.node.fields.slug,
