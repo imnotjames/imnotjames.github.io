@@ -20,11 +20,15 @@
 	},
 	"work": [
 		{
-			"company": "Stealth Seed Stage Startup",
-			"position": "Technical Cofounder",
+			"company": "Common Room",
+			"position": "Co-Founder",
+			"website": "https://commonroom.io/",
 			"startDate": "2020-02-01",
-			"summary": "Bringing a product to fruition, starting at nothing.",
-			"highlights": []
+			"summary": "Brought together an engineering team to build an alpha product, setting the cultural and technical vision for the company.",
+			"highlights": [
+				"Create React Native & React Native Web frontend for the alpha product.",
+				"Build NodeJS backend APIs and infrastructure to support rapid product iteration."
+			]
 		},
 		{
 			"company": "Venmo",
@@ -34,7 +38,7 @@
 			"endDate": "2019-12-01",
 			"summary": "Organized the Platform as a Service team - developing the mission, vision, capabilities, and roadmap to encourage a high performing team with a strong sense of ownership.",
 			"highlights": [
-				"Provide technical leadership to bring reliability of team systems from 90% reliability to 99.999%.",
+				"Provide technical leadership to bring reliability from 90% to 99.999%, improving the experience for over 40 million users.",
 				"Develop cross-functional initiatives to improve data flow between products to encourage a migration towards distributed architecture."
 			]
 		},
@@ -46,7 +50,7 @@
 			"endDate": "2018-09-01",
 			"summary": "Understanding the human element behind threats to manage the risks they pose.",
 			"highlights": [
-				"Built scalable platform with Node.js, Kafka, Tensorflow, PostgreSQL, and ElasticSearch.",
+				"Built scalable product platform using Node.js, Kafka, Tensorflow, PostgreSQL, and ElasticSearch.",
 				"Design and implement user experience and workflows of the flagship product.",
 				"Produce a full marketing website - from creating wireframes, to generating copy text, to writing the Javascript and HTML."
 			]
@@ -167,6 +171,7 @@
 				"Express",
 				"Tensorflow.js",
 				"React",
+				"React Native",
 				"Redux"
 			]
 		},
@@ -214,7 +219,7 @@
 			"level": "Intermediate",
 			"keywords": [
 				"Boost"
-			]			
+			]
 		},
 		{
 			"name": "C",
