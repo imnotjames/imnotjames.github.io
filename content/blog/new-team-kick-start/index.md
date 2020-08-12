@@ -5,14 +5,16 @@ title: New Team Kick Start
 tags:
   - People
   - Onboarding
-excerpt: ""
 ---
-> "Seek first to understand, then to be understood." - Habit 5: The 7 Habits of
-> highly Effective People
 
 Joining a new team can be difficult.  You lack institutional knowledge and the
 lingua franca that the rest of the team has - it's like they're speaking a language
 you know at face value but the context tying it together is missing.
+
+<!-- end-excerpt -->
+
+> "Seek first to understand, then to be understood." - Habit 5: The 7 Habits of
+> highly Effective People
 
 When we join a new team we want to have an impact right away.  Even with good
 intent this can be disastrous without the right context.  There's an approach
