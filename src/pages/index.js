@@ -6,62 +6,68 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {BlogPostPreview} from "../components/blog-post";
 
-class BlogIndex extends React.Component {
-  render() {
-    const { data } = this.props;
-    const siteTitle = data.site.siteMetadata.title;
-    const posts = data.blogPosts.edges;
-
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Home" />
-        <Bio />
-        <header
+export default function BlogIndex(
+    {
+        data: {
+          site: {
+            siteMetadata: {
+              title: siteTitle
+            }
+          },
+          blogPosts: {
+            edges: posts
+          }
+        },
+        location
+    }
+) {
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO title="Home" />
+      <Bio />
+      <header
+          style={{
+            marginBottom: `32px`,
+            height: `8px`,
+            lineHeight: `12px`,
+            borderBottom: `1px solid black`,
+          }}
+      >
+        <h2
             style={{
-              marginBottom: `32px`,
-              height: `8px`,
-              lineHeight: `12px`,
-              borderBottom: `1px solid black`,
+              margin: 0,
+              display: `inline-block`,
+              fontSize: `12px`,
+              lineHeight: `16px`,
+              letterSpacing: `2px`,
+              textTransform: `uppercase`,
+              fontWeight: `bold`,
+              backgroundColor: `#FFF`,
+              paddingRight: `4px`,
+              whiteSpace: `nowrap`,
+              overflow: `hidden`,
             }}
         >
-          <h2
-              style={{
-                margin: 0,
-                display: `inline-block`,
-                fontSize: `12px`,
-                lineHeight: `16px`,
-                letterSpacing: `2px`,
-                textTransform: `uppercase`,
-                fontWeight: `bold`,
-                backgroundColor: `#FFF`,
-                paddingRight: `4px`,
-                whiteSpace: `nowrap`,
-                overflow: `hidden`,
-              }}
-          >
-            Recent Blog Posts
-          </h2>
-        </header>
-        {posts.map(({ node }) => {
-          const postPath = `/blog${node.fields.slug}`;
+          Recent Blog Posts
+        </h2>
+      </header>
+      {posts.map(({ node }) => {
+        const postPath = `/blog${node.fields.slug}`;
 
-          return (
-            <div key={node.fields.slug}>
-              <BlogPostPreview
-                path={postPath}
-                slug={node.fields.slug}
-                frontmatter={node.frontmatter}
-                excerpt={node.excerpt}
-              />
-            </div>
-          );
-        })}
-      </Layout>
-    )
-  }
+        return (
+          <div key={node.fields.slug}>
+            <BlogPostPreview
+              path={postPath}
+              slug={node.fields.slug}
+              frontmatter={node.frontmatter}
+              excerpt={node.excerpt}
+            />
+          </div>
+        );
+      })}
+    </Layout>
+  )
 }
-
-export default BlogIndex
 
 export const pageQuery = graphql`
     query {

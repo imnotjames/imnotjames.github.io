@@ -5,36 +5,35 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {BlogPostPreview} from "../components/blog-post";
 
-class BlogIndex extends React.Component {
-  render() {
-    const {
-      site: { siteMetadata: { title: siteTitle } },
-      posts: { edges: posts }
-    } = this.props.data;
+export default function BlogIndex (
+    {
+        data: {
+          site: {siteMetadata: {title: siteTitle}},
+          posts: {edges: posts},
+        },
+        location
+   }
+) {
+  return (
+      <Layout location={location} title={siteTitle}>
+        <SEO title="All posts" />
 
-    return (
-        <Layout location={this.props.location} title={siteTitle}>
-          <SEO title="All posts" />
+        {posts.map(({ node }) => {
+          const postPath = `/blog${node.fields.slug}`;
 
-          {posts.map(({ node }) => {
-            const postPath = `/blog${node.fields.slug}`;
-
-            return (
-                <BlogPostPreview
-                    key={node.fields.slug}
-                    slug={node.fields.slug}
-                    path={postPath}
-                    frontmatter={node.frontmatter}
-                    excerpt={node.excerpt}
-                />
-            );
-          })}
-        </Layout>
-    )
-  }
+          return (
+              <BlogPostPreview
+                  key={node.fields.slug}
+                  slug={node.fields.slug}
+                  path={postPath}
+                  frontmatter={node.frontmatter}
+                  excerpt={node.excerpt}
+              />
+          );
+        })}
+      </Layout>
+  );
 }
-
-export default BlogIndex
 
 export const pageQuery = graphql`
     query {
