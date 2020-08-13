@@ -4,60 +4,73 @@ https://keybase.io/imnotjames
 
 I hereby claim:
 
-  * I am an admin of http://notjam.es
+  * I am an admin of https://notjam.es
   * I am imnotjames (https://keybase.io/imnotjames) on keybase.
   * I have a public key with fingerprint 1853 ABA2 946A CEF8 9693  6C99 D335 E3AE 3B71 D896
 
 To do so, I am signing this object:
 
 {
-    "body": {
-        "key": {
-            "eldest_kid": "01011991aa0d8a5a42fb96279a8a3fc904cc458e3ea2d8b91a16b0e887d0ddce120b0a",
-            "fingerprint": "1853aba2946acef896936c99d335e3ae3b71d896",
-            "host": "keybase.io",
-            "key_id": "d335e3ae3b71d896",
-            "kid": "01011991aa0d8a5a42fb96279a8a3fc904cc458e3ea2d8b91a16b0e887d0ddce120b0a",
-            "uid": "5948a2755af131de22485fc12e9a7b19",
-            "username": "imnotjames"
-        },
-        "service": {
-            "hostname": "notjam.es",
-            "protocol": "http:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "01011991aa0d8a5a42fb96279a8a3fc904cc458e3ea2d8b91a16b0e887d0ddce120b0a",
+      "fingerprint": "1853aba2946acef896936c99d335e3ae3b71d896",
+      "host": "keybase.io",
+      "key_id": "d335e3ae3b71d896",
+      "kid": "01011991aa0d8a5a42fb96279a8a3fc904cc458e3ea2d8b91a16b0e887d0ddce120b0a",
+      "uid": "5948a2755af131de22485fc12e9a7b19",
+      "username": "imnotjames"
     },
-    "ctime": 1496438167,
-    "expire_in": 157680000,
-    "prev": "69db1c1560f0e194a018bf449899aa357054647b549f05efecb4157a0dbb9fba",
-    "seqno": 7,
-    "tag": "signature"
+    "merkle_root": {
+      "ctime": 1597343743,
+      "hash_meta": "509d4e500fe4c851f749008428eecb459f7f6d7078c673860f19a4b6082ed3a7",
+      "seqno": 17272091
+    },
+    "revoke": {
+      "sig_ids": [
+        "750952972ed3b223a4115e2829ef6b9a0f9b863be64887548ba0ccebfc57c4f00f"
+      ]
+    },
+    "service": {
+      "hostname": "notjam.es",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1597343743,
+  "expire_in": 157680000,
+  "prev": "8cac0366f10ee52db82f89bb6f460d99e63e70b4118fd42f24c2047ca795be90",
+  "seqno": 15,
+  "tag": "signature"
 }
 
 which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.0.71
+Version: Keybase OpenPGP v2.1.13
 Comment: https://keybase.io/crypto
 
-yMIkAnicrZJbSBVBGMePeUmNwCLMyJAWykCxnd3Zy5wQs4sRpRQ9mcVhZnf2uKm7
-xz3r5XQ0upJdCCPLjLILQkFgFEUERVmWXUxIi4RKKR8KRO2CRBbUrNVbj83LzHz8
-/v/vmz/TOT3Wlxwznvdu4E30ViTmScfRKl8xeNEc5YitRzh/lCujkxst12nYDZSZ
-OufneMADgBDAmNdVLGEoGATJgoKwikVDQzzUNCipVKRY0FXCQCATnqqqovO6rlEg
-8ITHXDZnmFaQOiHHtFxmC1RJxAQLCMpYo4aKZCTKGkK6KEpUxFQkCtBZlQlL7bCn
-YMMRHKY5ps1q7BKYHO8f/H+eu2rSTkJQxYIiSdgAItCpIEBVMjQgUIQVApAHhqlj
-4QrKaLPCst0t7Bzm6rM5Vq82NepF673lD/ObyGFINhdybNfW7HJWLnXdkN9TuZGQ
-h9VQEvhjECCmpbMUmaCaOmHTtjg/YKTmmp4jgEiGogpkJZujtSHToQHTIyRFVnm2
-vDa0mlnKSCdAA5LMGzwFCGIeqMSAEKkIYSxKCi9BGSpEgsjgJWpQjUDmwoIkBBnE
-CyVMKy2b87NOLg4yy7AZtLBb5VCu/u6dTXG+mGRfQvwU73f5kpNS/v65uUWJvoPt
-O/ec7P+WVeysbEpYagwdi/TUj1tXGqNLzve0zxq5v6P2XN61CxubrqaOneq6tL0V
-fgrVHbrQ+DyUuj9K++e0gK/4fEbayUEx1pQWFIwGb3eUJA28jHx6Jju50cGz8bMn
-+MSiuK6bb1+9bFwezTwlJjXUnPk8OHPv98P3ikbX6bkNfe8/VzxOX/9Kab5uHzhy
-IuV1+eZFxS2tH7sn5NXzHj0saVu7svcB+DKcvqw2azhr2owxszKtbX4/yVvVmd+7
-L1eBzVOHb+y+HJr7tDA/+HNbT0NKfIlUWGY3/agp2Lrm+IrF3ZnJbdc7P+zzjyhD
-Owv3j1bVaRm3N1wcW3i6b2zXL0kVRoc=
-=IUqG
+yMK4AnicrVNtiBVVGN7VMlzXSFjNWBJ3+l5vcuZ8zDnn0iKGtEZ/9tdN0Lidc+ad
+u+PeO3ObmXtzvWwGG+QX/SjbIEEi2CzNNg36INzEijJ/CGZoQkVfRmUXKlwiwu3M
+ZtAPfzZ/Zs7L8z7P8z7zng8Wz+/o6ry05psvv2gdHe08ebzZ6CizJ2dbjo79UafY
+ckZg7gVVH9KsPBL6TtFBLnJdKV2lkC8UUxQHWnqYSyUUCYxE1BjKBBBQ2BfaAl1P
+IxCC+8j3DbgYaaScghOEUQWSehJGmaV1BSNKKyyppwwEQnqSeEZKnxAGRAHR3PVt
+1TYOx2neYc1plcLqMLY1eyjP2bsK/n/23ZijY5IKhTljKnCJ6wPGVLDAuBik4tqV
+OTCFJFI1sOiwFsXZZvudOmMFpwbJSBXKSRxnebwmC3OQyyQnlHBK7IgqHS7XIFO5
+EpI+BYZQANQI5gacSoQExQLAaMpkwAPP54gL43EiPBS4UlHtIYHBJ4pbJyk8EsVW
+gWOOkXSthQSa8Qjk6mlYscmlTnGjw60Uw5LnfRpjoqjrMsACSwg8LRUKpBYe0eBR
+GwujQitkDOjAMG5oYB06D43lakkzNHPk+a+6EsE/Aay2CRScehJnsYmrtjycZfW0
+mKeSjdZz3KOgy1cYyjqMfLsltqMJSRrGkZ3BIq8SGGyphwmUwxzBuCeQfXIdaFpK
+YZRBxPMCFwEw7GuB7YJp7QXUQ76U4BHgSNtpReDbvcDUYES5UVwyDRL9J0FmfaqK
+5bSxRSprJOCMHT+26ZqOzq6OBdfOy69PR9fCG/69VO//dN3lft53y/zt7TPT3m0v
+nr2xdeDivm3J9JLBxZ83NvTtf3XXktM3v7O379OdH/7QdahU2v1Z//3Lx/86sOzU
+6edXrNy4g9x5Ipso3f3UyZ7urZcnn7v98WPr96yvtNfuiV4frk3NVJ452vvRofjI
+zt2l79rt0kR37ft597w8Vj9x/renZ/t+f+uJbNOitfuX9u1dtWj2jW2XVhz8dnDd
+Hct7F/YXKvFdkzOD6yYHGu/ed+TnF1Y+e6He2t7Te+76Wzdnh39xHvhkqHTT2TNf
+ddfXnNu14ccthys9vy74eOjtHa3pr0kB15e9dG97/M+txakH951/ZSa6UJ2IDp76
+Y2pVNXus9ebAgBoaefi1i0vH3xv12d+LGoPk
+=0cep
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
@@ -66,4 +79,3 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/imnotjames
 
 ==================================================================
-
