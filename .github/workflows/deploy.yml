@@ -18,8 +18,8 @@ jobs:
         run: npm run build
 
       - name: deploy to github pages branch
-        uses: maxheld83/ghpages@v0.2.1
-        env:
+        uses: JamesIves/github-pages-deploy-action@3.5.9
+        with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_PAT: ${{ secrets.GITHUB_API_KEY }}
-          BUILD_DIR: "public/"
+          BRANCH: gh-pages
+          FOLDER: "public/"
