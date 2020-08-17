@@ -5,11 +5,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const WORK_LIMIT = 4;
+const WORK_HIGHLIGHT_LIMIT = 2;
 
 function ResumeExperience ({ experience }) {
   const highlightsList = (
       <ul style={{padding: 0, marginBottom: 0}}>
-        {experience.highlights.map(hl => (
+        {experience.highlights.slice(0, WORK_HIGHLIGHT_LIMIT).map(hl => (
             <li
                 key={hl}
                 style={{
@@ -24,11 +25,7 @@ function ResumeExperience ({ experience }) {
   );
 
   return (
-      <article
-          style={{
-            marginBottom: `14px`,
-          }}
-        >
+      <article>
         <header
             style={{
               marginBottom: `14px`,
@@ -95,7 +92,7 @@ function ResumeHeader({ name, label, email, profiles }) {
           style={{
             display: "flex",
             width: "100%",
-            marginBottom: `24px`,
+            marginBottom: `18px`,
           }}
         >
         <div style={{
@@ -105,7 +102,7 @@ function ResumeHeader({ name, label, email, profiles }) {
         }}>
           <h1
               style={{
-                fontSize: `32px`,
+                fontSize: `28px`,
                 margin: 0,
               }}
             >
@@ -143,7 +140,6 @@ function ResumeSectionHeader({ style, children, ...props }) {
       <header
           {...props}
           style={{
-            marginBottom: `18px`,
             height: `8px`,
             lineHeight: `12px`,
             borderBottom: `1px solid black`,
@@ -171,6 +167,22 @@ function ResumeSectionHeader({ style, children, ...props }) {
   )
 }
 
+function ResumeSection ({ style, children, ...props }) {
+  return (
+      <section
+          {...props}
+          style={{
+            display: `flex`,
+            flexDirection: `column`,
+            rowGap: `16px`,
+            ...style
+          }}
+      >
+        { children }
+      </section>
+  )
+}
+
 function ResumeIndex(
     {
         data: {
@@ -186,7 +198,11 @@ function ResumeIndex(
 ) {
   const extraXPAvailable = (
       <footer>
-        <small>
+        <small
+            style={{
+              fontSize: '12px'
+            }}
+          >
           Experience points truncated for optimal viewing.
           More available upon request.
         </small>
@@ -211,14 +227,8 @@ function ResumeIndex(
               }}
             >
 
-            <div
-                style={{
-                  display: `flex`,
-                  flexDirection: `column`,
-                  rowGap: `18px`,
-                }}
-              >
-              <section style={{marginBottom: '22px'}}>
+            <ResumeSection>
+              <ResumeSection>
                 <ResumeSectionHeader>
                   Summary
                 </ResumeSectionHeader>
@@ -230,22 +240,21 @@ function ResumeIndex(
                       lineHeight: `22px`,
                     }}
                   >
-                  {resume.basics.summary}
+                  {resume.basics.summary.split("\n").map(l => (<>{l}<br /></>))}
                 </blockquote>
-              </section>
+              </ResumeSection>
 
-              <section>
-                <ResumeSectionHeader>
+              <ResumeSection>
+                <ResumeSectionHeader style={{ marginBottom: '0px' }}>
                   Experience Points
                 </ResumeSectionHeader>
 
                 {resume.work.slice(0, WORK_LIMIT).map(xp => (<ResumeExperience experience={xp} />))}
 
-              </section>
+              </ResumeSection>
+            </ResumeSection>
 
-              { resume.work.length > WORK_LIMIT ? extraXPAvailable : ``}
-            </div>
-            <section
+            <ResumeSection
                 style={{
                   order: 1,
                   marginLeft: `42px`,
@@ -261,7 +270,6 @@ function ResumeIndex(
                 { resume.skills.map(skill => (
                     <li
                         key={skill.name}
-                        title={ skill.keywords.join(', ') }
                         style={{
                           listStyle: `none`,
                           textAlign: `right`,
@@ -271,11 +279,20 @@ function ResumeIndex(
                         }}
                       >
                         {skill.name}
+                        <div
+                          style={{
+                            fontSize: '10px'
+                          }}
+                        >
+                          { skill.keywords.map(k => k.replace(/\s/, "\xa0")).join(', ') }
+                        </div>
                     </li>
                 ))}
               </ul>
-            </section>
+            </ResumeSection>
           </div>
+
+          { resume.work.length > WORK_LIMIT ? extraXPAvailable : ``}
         </div>
       </Layout>
   )

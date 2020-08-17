@@ -16,7 +16,7 @@
 				"url": "https://github.com/imnotjames/"
 			}
 		],
-		"summary": "I am an Engineer through and through - I solve practical problems. I get things done, ship amazing software, and create a superb user experience - all while hitting every specification and business requirement.  Unit tests, end to end testing, and test driven development are my go-to tools for crafting solid code in a multitude of languages.\n\nThis isn't just a day job to me, it's a passion."
+		"summary": "I am an Engineer through and through - I solve practical problems. I get things done, ship amazing software, and create a superb user experience.  Unit tests, end to end testing, and test driven development are my go-to tools for crafting solid products.\nThis isn't just a day job to me, it's a passion."
 	},
 	"work": [
 		{
@@ -50,7 +50,7 @@
 			"endDate": "2018-09-01",
 			"summary": "Understanding the human element behind threats to manage the risks they pose.",
 			"highlights": [
-				"Built scalable product platform using Node.js, Kafka, Tensorflow, PostgreSQL, and ElasticSearch.",
+				"Built product platform using Node, Kafka, Tensorflow, Postgres, and ElasticSearch.",
 				"Design and implement user experience and workflows of the flagship product.",
 				"Produce a full marketing website - from creating wireframes, to generating copy text, to writing the Javascript and HTML."
 			]
@@ -64,7 +64,7 @@
 			"summary": "Lead a diverse team of engineers to develop services for scalable, customizable, and personalized interactions with customers.",
 			"highlights": [
 				"Architect a cross-team platform that generates over 18% of company revenue by enabling open communication with millions of active customers.",
-				"Use Kafka, Storm, and HBase to ingest and act upon a large throughput of data through user definable rule sets.",
+				"Use Kafka, Storm, and HBase to apply user defined rules to billions of events per day.",
 				"Extensively utilize multiple frontend frameworks to create highly interactive user experiences."
 			]
 		},
@@ -110,8 +110,7 @@
 			"level": "Expert",
 			"keywords": [
 				"Laravel",
-				"Symfony",
-				"Extension Development"
+				"Symfony"
 			]
 		},
 		{
@@ -120,7 +119,8 @@
 			"keywords": [
 				"MySQL",
 				"T-SQL",
-				"PostgreSQL"
+				"PostgreSQL",
+				"CockroachDB"
 			]
 		},
 		{
@@ -142,8 +142,10 @@
 			"level": "Expert",
 			"keywords": [
 				"Django",
+				"AsyncIO",
 				"Twisted",
 				"Pandas",
+				"Flask",
 				"Keras",
 				"Tornado",
 				"Celery",
@@ -155,24 +157,31 @@
 			"level": "Advanced",
 			"keywords": [
 				"Linux",
-				"Windows",
-				"Chef",
+				"Terraform",
+				"Pulumi",
 				"Kubernetes",
 				"Docker",
-				"Helm"
+				"Helm",
+				"Puppet",
+				"Chef",
+				"AWS",
+				"Cloudformation"
 			]
 		},
 		{
 			"name": "Javascript",
 			"level": "Advanced",
 			"keywords": [
+				"Typescript",
 				"ES.Next",
 				"nodeJS",
+				"Webpack",
+				"Koa",
 				"Express",
 				"Tensorflow.js",
 				"React",
-				"React Native",
-				"Redux"
+				"Expo",
+				"React Native"
 			]
 		},
 		{
@@ -188,22 +197,12 @@
 			]
 		},
 		{
-			"name": "HTML",
-			"level": "Expert",
-			"keywords": [
-				"HTML5",
-				"XHTML",
-				"mustache"
-			]
-		},
-		{
 			"name": "CSS",
 			"level": "Expert",
 			"keywords": [
 				"CSS3",
 				"SASS",
-				"LESS",
-				"Responsive Design"
+				"LESS"
 			]
 		},
 		{
@@ -229,13 +228,7 @@
 				"C99",
 				"CMake"
 			]
-		},
-		{
-			"name": "R",
-			"level": "Intermediate",
-			"keywords": []
 		}
-
 	],
 	"languages":[
 		{
