@@ -61,13 +61,13 @@ function ResumeExperience ({ experience }) {
           </h4>
           <h5 style={{ margin: 0 }}>
             <span title={ experience.startDate }>
-              {experience.startYear}
+              {experience.startMonth} {experience.startYear}
             </span>
             {` `}
             &mdash;
             {` `}
             <span title={ experience.endDate || 'Current' }>
-              {experience.endYear || 'Current' }
+              {experience.endMonth} {experience.endYear || 'Current' }
             </span>
           </h5>
         </header>
@@ -336,10 +336,12 @@ export const pageQuery = graphql`
             work {
                 company
                 endDate
+                endMonth:endDate(formatString: "MMMM")
                 endYear:endDate(formatString: "YYYY")
                 highlights
                 position
                 startDate
+                startMonth:startDate(formatString: "MMMM")
                 startYear:startDate(formatString: "YYYY")
                 summary
                 website
