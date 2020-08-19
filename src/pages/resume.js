@@ -223,27 +223,17 @@ function ResumeIndex(
           <div
               style={{
                 display: `flex`,
+                gap: '42px',
                 flexDirection: `row`,
               }}
             >
 
-            <ResumeSection>
-              <ResumeSection>
-                <ResumeSectionHeader>
-                  Summary
-                </ResumeSectionHeader>
-                <blockquote
-                    style={{
-                      margin: 0,
-                      padding: 0,
-                      fontSize: `14px`,
-                      lineHeight: `22px`,
-                    }}
-                  >
-                  {resume.basics.summary.split("\n").map(l => (<>{l}<br /></>))}
-                </blockquote>
-              </ResumeSection>
-
+            <ResumeSection
+                style={{
+                  order: 0,
+                  flex: 1
+                }}
+            >
               <ResumeSection>
                 <ResumeSectionHeader style={{ marginBottom: '0px' }}>
                   Experience Points
@@ -257,14 +247,14 @@ function ResumeIndex(
             <ResumeSection
                 style={{
                   order: 1,
-                  marginLeft: `42px`,
-                  minWidth: `160px`,
+                  flex: 0,
+                  minWidth: `140px`,
                 }}
               >
               <ResumeSectionHeader
                   title={`In order of what makes the list visually pleasing`}
                 >
-                  Tools I Use
+                  Tools I Enjoy
               </ResumeSectionHeader>
               <ul style={{ padding: 0, margin: 0 }}>
                 { resume.skills.map(skill => (
@@ -343,7 +333,6 @@ export const pageQuery = graphql`
                 startDate
                 startMonth:startDate(formatString: "MMMM")
                 startYear:startDate(formatString: "YYYY")
-                summary
                 website
             }
             languages {
