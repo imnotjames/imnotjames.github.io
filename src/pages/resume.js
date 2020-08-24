@@ -5,12 +5,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const WORK_LIMIT = 4;
-const WORK_HIGHLIGHT_LIMIT = 2;
 
 function ResumeExperience ({ experience }) {
   const highlightsList = (
       <ul style={{padding: 0, marginBottom: 0}}>
-        {experience.highlights.slice(0, WORK_HIGHLIGHT_LIMIT).map(hl => (
+        {experience.highlights.map(hl => (
             <li
                 key={hl}
                 style={{
@@ -196,6 +195,10 @@ function ResumeIndex(
         location
     }
 ) {
+  const work = resume.work.slice(0, WORK_LIMIT);
+
+  const earliestDisplayedWork = work.length > 0 ? work[work.length - 1] : null;
+
   const extraXPAvailable = (
       <footer>
         <small
@@ -204,7 +207,9 @@ function ResumeIndex(
             }}
           >
           Experience points truncated for optimal viewing.
-          More available upon request.
+          Points prior to
+          {earliestDisplayedWork ? ` ${earliestDisplayedWork.startMonth} ${earliestDisplayedWork.startYear} ` : ' these '}
+          available upon request.
         </small>
       </footer>
   );
@@ -239,7 +244,7 @@ function ResumeIndex(
                   Experience Points
                 </ResumeSectionHeader>
 
-                {resume.work.slice(0, WORK_LIMIT).map(xp => (<ResumeExperience experience={xp} />))}
+                {work.map(xp => (<ResumeExperience experience={xp} />))}
 
               </ResumeSection>
             </ResumeSection>
