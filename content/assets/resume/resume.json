@@ -52,8 +52,8 @@
 			"endDate": "2018-09-01",
 			"summary": "Understanding the human element behind threats to manage the risks they pose.",
 			"highlights": [
-				"Built the Hivemind deception and threat intelligence platform using Node, Kafka, Tensorflow, Postgres, and ElasticSearch to support real-time personalization encouraging intruders.",
-				"Assisted both domestic and international law enforcement agencies on cybercrime cases, leading to the discontinuation of malicious activity against tens of thousands of victims."
+				"Built the Hivemind deception and threat intelligence platform using Node, Kafka, Tensorflow, Postgres, and ElasticSearch to support real-time personalization encouraging intruders to engage so they could be fingerprinted and tracked.",
+				"Assisted both domestic and international law enforcement agencies on cybercrime cases, leading to the discontinuation of malicious activity against 10,000+ of victims."
 			]
 		},
 		{
