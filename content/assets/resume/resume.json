@@ -27,7 +27,6 @@
 			"endDate": "2020-08-01",
 			"summary": "Brought together an engineering team to build a novel community engagement product, setting the cultural and technical vision for the company.",
 			"highlights": [
-				"Pre-Seed Technical Co-Founder - wrote the proof of concept and then lead development of the alpha product release.",
 				"Create React Native & React Native Web frontend for the user and end-user portions of the flagship community product utilizing React Hooks and CSS-in-JS.",
 				"Built NodeJS backend APIs and infrastructure to support rapid product feature iteration, rolling atomic deployments, as well as the ability to scale from 100 members to 100,000."
 			]
@@ -40,9 +39,9 @@
 			"endDate": "2019-12-01",
 			"summary": "Organized the Platform as a Service team - developing the mission, vision, capabilities, and roadmap to encourage a high performing team with a strong sense of ownership.",
 			"highlights": [
-				"Develop cross-functional initiatives to improve data flow between products to encourage a migration towards distributed architecture.",
-				"Provide technical leadership to bring service reliability from 90% to 99.999% - from 73 hours to less than 30 seconds of downtime per month - improving the experience for over 40 million users.",
-				"Coordinate multiple D&I recruiting initiatives to improve representation of traditionally underrepresented groups in hiring pipelines."
+				"Develop cross-functional initiatives migrating Venmo to a distributed architecture.",
+				"Provide technical leadership to bring service reliability from 90% to 99.999% - from 73 hours to less than 30 seconds of downtime per month.",
+				"Coordinate multiple D&I recruiting initiatives to improve representation of traditionally underrepresented groups in the Venmo hiring pipelines."
 			]
 		},
 		{
@@ -54,7 +53,6 @@
 			"summary": "Understanding the human element behind threats to manage the risks they pose.",
 			"highlights": [
 				"Built the Hivemind deception and threat intelligence platform using Node, Kafka, Tensorflow, Postgres, and ElasticSearch to support real-time personalization encouraging intruders.",
-				"Designed the customer narratives, workflows, and user experience of the Hivemind platform using design partner feedback and user testing.",
 				"Assisted both domestic and international law enforcement agencies on cybercrime cases, leading to the discontinuation of malicious activity against tens of thousands of victims."
 			]
 		},
@@ -67,7 +65,7 @@
 			"summary": "Lead a diverse team of engineers to develop services for scalable, customizable, and personalized interactions with customers.",
 			"highlights": [
 				"Architect a cross-team platform that generates over 18% of company revenue by enabling open communication with millions of active customers.",
-				"Utilized Kafka, Storm, and HBase to apply user defined rules to billions of events per day enabling marketing to build real-time engaging experiences for every Wayfair customer."
+				"Utilized Kafka, Storm, and HBase to apply user defined rules to billions of events per day enabling marketing teams to create real-time personalized experiences for customers."
 			]
 		},
 		{
