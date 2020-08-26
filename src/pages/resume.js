@@ -320,7 +320,6 @@ export const pageQuery = graphql`
                     url
                     username
                 }
-                summary
                 website
             }
             skills {
@@ -329,6 +328,7 @@ export const pageQuery = graphql`
                 name
             }
             work {
+                summary
                 company
                 endDate
                 endMonth:endDate(formatString: "MMMM")
