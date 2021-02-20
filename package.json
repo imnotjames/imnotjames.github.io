@@ -25,6 +25,7 @@
     "gatsby-remark-copy-linked-files": "^2.3.12",
     "gatsby-remark-emojis": "^0.4.3",
     "gatsby-remark-images": "^3.3.25",
+    "gatsby-remark-images-native-lazy-load": "^1.0.0",
     "gatsby-remark-normalize-paths": "^1.0.0",
     "gatsby-remark-numbered-footnotes": "^1.0.1",
     "gatsby-remark-prismjs": "^3.5.10",
@@ -68,6 +69,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "on-my-mind": "MIND_FILE=content/thoughts/$(date +'%Y-%m-%d').md; [ ! -f $MIND_FILE ] && echo '---\n'date:$(date +'%Y-%m-%d')'\n---' >> $MIND_FILE; nano $MIND_FILE",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }

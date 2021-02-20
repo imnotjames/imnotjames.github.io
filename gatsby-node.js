@@ -45,7 +45,7 @@ async function createBlogPages(graphql, actions) {
       `
       {
         allMarkdownRemark(
-          filter: {fields: {sourceName: { eq: "blog" } } }
+          filter: { fields: {sourceName: { eq: "blog" } } }
           sort: { fields: [ frontmatter___date ], order: DESC }
         ) {
           edges {
@@ -88,8 +88,59 @@ async function createBlogPages(graphql, actions) {
   })
 }
 
+async function createThoughtPages(graphql, actions) {
+  const { createPage } = actions;
+
+  const thoughtComponent = path.resolve(`./src/templates/on-my-mind-thought.js`)
+  const result = await graphql(
+      `
+      {
+        allMarkdownRemark(
+          filter: { fields:{ sourceName: { eq: "thoughts"} } },
+          sort: { fields: [ frontmatter___date ], order: DESC }
+        ) {
+          edges {
+            node {
+              id
+              fields {
+                slug
+                sourceName
+              }
+              frontmatter {
+                date
+              }
+            }
+          }
+        }
+      }
+    `
+  );
+
+  if (result.errors) {
+    throw result.errors
+  }
+
+  const thoughts = result.data.allMarkdownRemark.edges;
+
+  thoughts.forEach((thought, index) => {
+    const previous = index === thoughts.length - 1 ? null : thoughts[index + 1].node;
+    const next = index === 0 ? null : thoughts[index - 1].node;
+
+    createPage({
+      path: path.join('on-my-mind', thought.node.fields.slug),
+      component: thoughtComponent,
+      context: {
+        slug: thought.node.fields.slug,
+        previous: previous ? previous.fields.slug : null,
+        next: next ? next.fields.slug : null,
+      },
+    });
+  })
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   await createBlogPages(graphql, actions);
+  await createThoughtPages(graphql, actions);
 };
 
 exports.onCreateNode = async ({ node, actions, getNode }) => {
