@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 20 Feb 2021 06:18:50 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[The Perseverance rover confirmed a successful touchdown yesterday,
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 Feb 2021 00:16:04 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[There’s a nifty new Electron alternative called Tauri which purports
+to be more memory efficient than Electron!  Competition is awesome…]]></description><link>https://notjam.es/2021-02-20</link><guid isPermaLink="false">https://notjam.es/2021-02-20</guid><content:encoded>&lt;p&gt;There’s a nifty new Electron alternative called &lt;a href=&quot;https://tauri.studio/&quot;&gt;Tauri&lt;/a&gt; which purports
+to be more memory efficient than Electron!  Competition is awesome!&lt;/p&gt;
+&lt;p&gt;Tauri is written in Rust and &lt;a href=&quot;https://tauri.studio/en/docs/getting-started/technical-details#user-interface&quot;&gt;utilizes a webview instead of bundling&lt;/a&gt;
+the entire Chrome browser within it.&lt;/p&gt;
+&lt;p&gt;Using a webview isn’t a particularly new idea - &lt;a href=&quot;https://deskgap.com/&quot;&gt;DeskGap&lt;/a&gt;, &lt;a href=&quot;https://github.com/pojala/electrino&quot;&gt;Electrino&lt;/a&gt;,
+&lt;a href=&quot;https://github.com/neutralinojs/neutralinojs&quot;&gt;Neutralino&lt;/a&gt;, and others.  On Linux, this works pretty okay!  You get a
+webkit rendering engine (of an unknown version).  On MacOS you get
+the Safari flavor of webkit.  On Windows 7 you often get IE11 which..
+yikes.  Then on earlier Windows 10 you get the old non-Webkit Edge,
+newer versions mostly get Webkit Edge.  It’s.. a little all over.&lt;/p&gt;
+&lt;p&gt;The big thing that Electron brings is that you know exactly what version
+of Webkit you’re building against and can cut down on the pain you
+feel when testing.&lt;/p&gt;
+&lt;p&gt;I dunno, though, I feel that Electron being resource hungry isn’t the
+end of the world.  For the most part, you can cut down on memory in
+Electron in the same way you would a standard web app on Chrome -
+through &lt;a href=&quot;https://www.electronjs.org/docs/tutorial/performance&quot;&gt;profiling and optimization&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[The Perseverance rover confirmed a successful touchdown yesterday,
 February 19th at ~3:55PM EST.  The mission is one of the most ambitious…]]></description><link>https://notjam.es/2021-02-19</link><guid isPermaLink="false">https://notjam.es/2021-02-19</guid><pubDate>Fri, 19 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
             &lt;img src=&apos;https://media.giphy.com/media/nT8678QggafnBb5g8I/giphy.gif&apos; alt=&apos;null&apos; loading=&apos;lazy&apos; /&gt;
           &lt;/p&gt;
