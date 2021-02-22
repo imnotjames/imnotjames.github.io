@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 Feb 2021 00:20:11 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[There’s a nifty new Electron alternative called Tauri which purports
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 22 Feb 2021 17:59:09 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[There were two posts on the front page of Hacker News yesterday -
+Choose Boring Technology and Choose Exciting Technology.
+Both make are…]]></description><link>https://notjam.es/2021-02-22</link><guid isPermaLink="false">https://notjam.es/2021-02-22</guid><pubDate>Mon, 22 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/2A0jXvUa3KOufBYT53/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;There were two posts on the front page of Hacker News yesterday -
+&lt;a href=&quot;https://news.ycombinator.com/item?id=26211721&quot;&gt;Choose Boring Technology&lt;/a&gt; and &lt;a href=&quot;https://news.ycombinator.com/item?id=26212563&quot;&gt;Choose Exciting Technology&lt;/a&gt;.
+Both make are great points and are compelling on their own, but they’re
+completely at odds with one another.&lt;/p&gt;
+&lt;p&gt;Boring Technology gives examples like PHP, Postgres, Java, and all other
+sorts of technology that’s been around for a while and is.. well.. not as
+new and shiny.  Battle-tested technology.  Things that everyone on the team
+knows.  The argument for boring technology is generally that you won’t
+get anything that surprises you.&lt;/p&gt;
+&lt;p&gt;Exciting Technology is … uh.. okay, so bear with me: the examples given
+are Cassandra (at least 12 years old), MongoDB (&gt;11 years),
+Clojure (&gt;14 years), and NodeJS (..let’s not touch that).  For the sake of
+simplicity, let’s say Exciting Technology is technology that an
+engineer is less familiar with and as such cannot for certain say
+that it will solve the issues they currently have - but there are
+some shiny new features that they really like!&lt;/p&gt;
+&lt;p&gt;Let’s … not talk touch on my personal experiences with Cassandra, Mongo,
+and the like.  Let’s not touch on the issues that seemed to be the case
+at Etsy’s SRE &amp;#x26; maintenance of servers.  Let’s not even touch on all the
+fighting going on in the HN comments.&lt;/p&gt;
+&lt;p&gt;Instead, I think it’s interesting to talk about the kinds of people
+that do this because I don’t think that either of these articles will
+change people’s minds.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/Managing-Humans-Humorous-Software-Engineering-dp-1484221575/dp/1484221575/ref=dp_ob_title_bk&quot;&gt;Managing Humans by Michael Lopp&lt;/a&gt; is a book that’s not just about
+managing humans.  In it he writes about engineering culture, different
+personalities you might find, and communication skills.  Things that are
+sometimes considered tangential to management (but are very important!)&lt;/p&gt;
+&lt;p&gt;The chapter “Stables and Volatiles” details two archetypes that you’ll
+commonly see within engineering cultures. &lt;/p&gt;
+&lt;p&gt;Stables are engineers that happily work within a set of confines - even
+appreciating these confines such as direction and deadlines.  They assess
+risk, carefully mitigate failure, and aim for predictable outcomes.&lt;/p&gt;
+&lt;p&gt;Volatiles will show up, stomp on everything that exists, and leave a trail
+of disruption in their wake.  However, when they build.. they sure build a LOT.
+In some cases, what they make will be novel and would not have occurred
+otherwise.&lt;/p&gt;
+&lt;p&gt;Stables and Volatiles are at odds with one another.  They do not get along
+on everything but a team with both can be incredibly successful - even if
+there’s a bit of conflict along the way.  Volatiles become stables,
+and sometime stables become volatiles, and neither is really good or bad.
+They just &lt;em&gt;are&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;These archetypes are applicable to the argument about boring versus exciting
+technology.  Stables will more likely than not choose the familiar.
+Volatiles will sometimes choose the foreign.  Neither is right or wrong -
+at least not intrinsically.  Instead, it’s gotta be a balance and you’ve
+got to use the right tool for the right job.&lt;/p&gt;
+&lt;p&gt;If you lean too far towards boring technology nothing will be pushed forward.
+If you lean too far towards the exciting you’ll end up with a backend written
+in &lt;a href=&quot;https://www.little-lang.org/&quot;&gt;Little&lt;/a&gt; using a home-grown &lt;a href=&quot;https://dfithian.github.io/2021/02/15/database-implementation-part-1.html&quot;&gt;database written in Haskell&lt;/a&gt;.  That..
+does sound pretty exciting, though, doesn’t it?&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[There’s a nifty new Electron alternative called Tauri which purports
 to be more memory efficient than Electron!  Competition is awesome…]]></description><link>https://notjam.es/2021-02-20</link><guid isPermaLink="false">https://notjam.es/2021-02-20</guid><pubDate>Sat, 20 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/FPjbHO0jJxGsE/giphy.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;There’s a nifty new Electron alternative called &lt;a href=&quot;https://tauri.studio/&quot;&gt;Tauri&lt;/a&gt; which purports
 to be more memory efficient than Electron!  Competition is awesome!&lt;/p&gt;
@@ -13,6 +65,11 @@ newer versions mostly get Webkit Edge.  It’s.. a little all over.&lt;/p&gt;
 &lt;p&gt;The big thing that Electron brings is that you know exactly what version
 of Webkit you’re building against and can cut down on the pain you
 feel when testing.&lt;/p&gt;
+&lt;p&gt;The other thing is that Electron has a lot of batteries already included
+and while Tauri has a lot of features in the works - they just aren’t
+there yet!  However, the roadmap looks great and who knows -
+maybe it’d really hit that right balance between performance
+and features without having to write a native app version.&lt;/p&gt;
 &lt;p&gt;I dunno, though, I feel that Electron being resource hungry isn’t the
 end of the world.  For the most part, you can cut down on memory in
 Electron in the same way you would a standard web app on Chrome -
