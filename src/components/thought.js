@@ -20,6 +20,15 @@ const ThoughtBody = styled.section`
       }
     }
 
+    p:first-child + br {
+      display: none;
+    }
+
+    > br {
+      font-size: 0;
+      float: left;
+    }
+
     p:first-child img:first-child {
       float: right;
       max-width: 40%;
@@ -59,6 +68,10 @@ const ThoughtBody = styled.section`
 `;
 
 function Thought ({ frontmatter, slug, html, path }) {
+  if (typeof html === 'string') {
+    html = html.replace(/<\/p>/g, '</p><br />');
+  }
+
   return (
     <article>
       <ThoughtHeader>
