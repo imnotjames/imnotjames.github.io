@@ -70,6 +70,7 @@ const ThoughtBody = styled.section`
 function Thought ({ frontmatter, slug, html, path }) {
   if (typeof html === 'string') {
     html = html.replace(/<\/p>/g, '</p><br />');
+    html = html.replace(/<\/ul>/g, '</ul><br />');
   }
 
   return (
