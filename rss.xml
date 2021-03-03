@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 02 Mar 2021 21:40:16 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Regional Dialects are something of an interesting topic for me.  It’s not just
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 03 Mar 2021 19:09:05 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[The “far right” social media platform, Gab, was
+breached sometime last month and had public messages, private messages
+and password hashes…]]></description><link>https://notjam.es/2021-03-03</link><guid isPermaLink="false">https://notjam.es/2021-03-03</guid><pubDate>Wed, 03 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/3ov9jNziFTMfzSumAw/giphy.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The “far right” social media platform, Gab, was
+&lt;a href=&quot;https://arstechnica.com/information-technology/2021/03/gab-the-far-right-website-has-been-hacked-and-70gb-of-data-leaked/&quot;&gt;breached sometime last month&lt;/a&gt; and had public messages, private messages
+and password hashes leaked on March 1st.  &lt;/p&gt;
+&lt;p&gt;Let’s ignore the… uh… unprofessional (to put it lightly) statement the
+founder made and how they responded to this event in general.  It’s not worth
+unpacking all of that.  It really isn’t.  I promise you.&lt;/p&gt;
+&lt;p&gt;Instead, let’s chat about how this happened.  It’s pretty simple.&lt;/p&gt;
+&lt;p&gt;The site in question had &lt;a href=&quot;https://archive.vn/oxbck&quot;&gt;a commit&lt;/a&gt; from the Gab CTO which migrated a
+specific SQL query away from the library abstraction SQL and into raw SQL -
+the query language used to interact more directly with their database.
+This is often done because a custom SQL query can often be used to greatly
+improve performance.&lt;/p&gt;
+&lt;p&gt;However…&lt;/p&gt;
+&lt;p&gt;As part of this, they used string interpolation do craft the query.  String
+interpolation is kinda like saying &lt;code class=&quot;language-text&quot;&gt;VARIABLE_U&lt;/code&gt; is &lt;code class=&quot;language-text&quot;&gt;james&lt;/code&gt; and I want to
+interpolate that into &lt;code class=&quot;language-text&quot;&gt;SELECT * FROM user WHERE username = &amp;#39;$VARIABLE_U&amp;#39;&lt;/code&gt; so
+that I end up with the final string of &lt;code class=&quot;language-text&quot;&gt;SELECT * FROM WHERE username = &amp;#39;james&amp;#39;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Simple, right?&lt;/p&gt;
+&lt;p&gt;This way of crafting SQL can fail because of what is known as
+&lt;a href=&quot;https://owasp.org/www-community/attacks/SQL_Injection&quot;&gt;SQL Injection&lt;/a&gt;. In our example, what if &lt;code class=&quot;language-text&quot;&gt;VARIABLE_U&lt;/code&gt; was coming from an
+input field on a website?  In that case, a user could type whatever they wanted
+into that field.&lt;/p&gt;
+&lt;p&gt;If a user was to type in &lt;code class=&quot;language-text&quot;&gt;&amp;#39; OR &amp;#39;a&amp;#39; = &amp;#39;a&lt;/code&gt;, the final string would then look
+something like &lt;code class=&quot;language-text&quot;&gt;SELECT * FROM user WHERE username = &amp;#39;&amp;#39; OR &amp;#39;a&amp;#39; = &amp;#39;a&amp;#39;&lt;/code&gt;.
+Instead of limiting to a single &lt;code class=&quot;language-text&quot;&gt;username&lt;/code&gt; value, we’d instead retrieve any
+users.&lt;/p&gt;
+&lt;p&gt;This can be elaborated on to do even more - such as with
+&lt;a href=&quot;https://owasp.org/www-community/attacks/Blind_SQL_Injection&quot;&gt;Blind SQL Injection&lt;/a&gt; techniques.&lt;/p&gt;
+&lt;p&gt;How should they instead of handled this?  By using the library to “bind”
+parameters.  &lt;a href=&quot;https://api.rubyonrails.org/classes/ActiveRecord/Querying.html#method-i-find_by_sql&quot;&gt;Ruby on Rails&lt;/a&gt; supports this in the function used by the
+change that caused the breach.&lt;/p&gt;
+&lt;p&gt;In our example, we could instead write the query as
+&lt;code class=&quot;language-text&quot;&gt;SELECT * FROM user WHERE username = ?&lt;/code&gt; and then tell the library to bind
+&lt;code class=&quot;language-text&quot;&gt;VARIABLE_U&lt;/code&gt; to the first numbered parameter.  No string interpolation would
+be performed, and with most databases the query would be sent over completely
+separate from the bound parameters!&lt;/p&gt;
+&lt;p&gt;This should have been caught in code review.  I mean.. if they do code
+review, right?&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Regional Dialects are something of an interesting topic for me.  It’s not just
 an indicator of your originating geography but also the…]]></description><link>https://notjam.es/2021-03-02</link><guid isPermaLink="false">https://notjam.es/2021-03-02</guid><pubDate>Tue, 02 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/5niBMBXRnhmlmMWCun/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Regional Dialects are something of an interesting topic for me.  It’s not just
 an indicator of your originating geography but also the cultural upbringing
