@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 10 Mar 2021 00:31:42 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Last week I wrote about an American English dialect.  Regional dialects are
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 10 Mar 2021 19:21:25 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Oh no!  OVH had a small datacenter fire which affected their SBG datacenter.
+This is not that uncommon of a problem for a datacenter.  That…]]></description><link>https://notjam.es/2021-03-10</link><guid isPermaLink="false">https://notjam.es/2021-03-10</guid><pubDate>Wed, 10 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/8Ep2aFnTfs6TC/giphy.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Oh no!  OVH had a small &lt;a href=&quot;http://travaux.ovh.net/?do=details&amp;#x26;id=49471&amp;#x26;&quot;&gt;datacenter fire&lt;/a&gt; which affected their SBG datacenter.
+This is not that uncommon of a problem for a datacenter.  That’s why you should
+always have a Disaster Recovery Plan if your data is invaluable - beyond
+reliance on fire suppression systems.&lt;/p&gt;
+&lt;p&gt;Fire suppression in datacenters pose an interesting problem.  When you have
+so many things that can’t get wet and are incredibly expensive to replace
+you can’t use sprinklers, and any residue could be heavily damaging
+to the equipment as well.  &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Bromotrifluoromethane&quot;&gt;Bromotrifluoromethane&lt;/a&gt;, or Halon, was developed in the 1950s as a
+gaseous fire suppression agent for use with valuable materials - such
+as computers and telecommunications systems.  In the mid-90s we stopped
+using Halon because it is incredibly damaging to the ozone layer and
+contributes considerably towards global warming.  However much damage
+it causes to the planet, it’s relatively safe for humans.  While Halon
+may cause dizziness and tingling in the extremities at the low amounts
+it may be effective at, it is relatively safe to be used in close
+quarters.  This is why even now the FAA reccommends it for aircraft!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/1,1,1,2,3,3,3-Heptafluoropropane&quot;&gt;HFC-227ea&lt;/a&gt; is another gaseous fire suppression agent used in data centers.
+Generally, this is safe for humans at up to 9% concentration, which is the
+maximum most fire suppression systems would use.  It doesn’t deplete the ozone
+layer but does contribute to climate change in other ways.  At incredibly high
+heat, however, it does decompose into hydrogen fluoride - which can cause
+blindness and creates hydrofluoric acid on contact with moisture.&lt;/p&gt;
+&lt;p&gt;Most fire suppression systems have an alarm before they go off and may
+be manually prevented.  If you’re interested, there’s &lt;a href=&quot;https://youtu.be/QUZ83WcedK0&quot;&gt;a simulation video&lt;/a&gt;
+video which has some obnoxious music but is otherwise accurate.  I’ve been part
+of this before in a data center, and it’s not a fun time.  I was not inside when
+the fire suppression activated, thankfully!&lt;/p&gt;
+&lt;p&gt;Of course, not much of this matters once the datacenter gets to the point
+&lt;a href=&quot;https://twitter.com/xgarreau/status/1369559995491172354&quot;&gt;SGB2 just did&lt;/a&gt;.  Don’t worry, though!  That data center is still
+&lt;a href=&quot;http://status.ovh.com/vms/index_sbg2.html&quot;&gt;green across the board according to its status page&lt;/a&gt;!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Last week I wrote about an American English dialect.  Regional dialects are
 incredibly common!  Another well known regional dialect is the…]]></description><link>https://notjam.es/2021-03-09</link><guid isPermaLink="false">https://notjam.es/2021-03-09</guid><pubDate>Tue, 09 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/LNq9oMZNc8IINqOOlf/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Last week I wrote about an American English dialect.  Regional dialects are
 incredibly common!  Another well known regional dialect is the dialect from
