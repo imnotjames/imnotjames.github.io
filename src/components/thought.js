@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "@emotion/styled";
 
+const ThoughtArticle = styled.article`
+    clear: both;
+`;
+
 const ThoughtDate = styled.h1`
 
 `;
@@ -74,7 +78,7 @@ function Thought ({ frontmatter, slug, html, path }) {
   }
 
   return (
-    <article>
+    <ThoughtArticle>
       <ThoughtHeader>
         <ThoughtDate>
           <Link to={path}>
@@ -83,7 +87,7 @@ function Thought ({ frontmatter, slug, html, path }) {
         </ThoughtDate>
       </ThoughtHeader>
       <ThoughtBody dangerouslySetInnerHTML={{ __html: html }} />
-    </article>
+    </ThoughtArticle>
   );
 }
 
