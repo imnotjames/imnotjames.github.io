@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 15 Mar 2021 17:41:59 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[The UK is in talks to depart from using GDPR.  This likely means
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 15 Mar 2021 22:09:25 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Security.txt made the rounds again on HackerNews.  It’s a format,
+similar to robots.txt for making it clearer how to submit security
+issues…]]></description><link>https://notjam.es/2021-03-15</link><guid isPermaLink="false">https://notjam.es/2021-03-15</guid><pubDate>Mon, 15 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/dFpG6KdpSEzC0/giphy.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://securitytxt.org/&quot;&gt;Security.txt&lt;/a&gt; made the rounds again on HackerNews.  It’s a format,
+similar to &lt;a href=&quot;https://en.wikipedia.org/wiki/Robots_exclusion_standard&quot;&gt;robots.txt&lt;/a&gt; for making it clearer how to submit security
+issues to an organization.&lt;/p&gt;
+&lt;p&gt;In theory, this is great!  It’s noted by &lt;a href=&quot;https://cyber.dhs.gov/bod/20-01/&quot;&gt;the DHS&lt;/a&gt; as a helpful way for
+researchers to communicate their findings.  At one point, it was required
+for agencies to have it, but was removed from that draft.   Because it’s at a
+normalized location, it can be found by scraping sites like &lt;a href=&quot;https://www.shodan.io/search?query=http.securitytxt%3Acontact&quot;&gt;SHODAN&lt;/a&gt; and
+&lt;a href=&quot;https://data.disclose.io/&quot;&gt;Disclose.io&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In practice, however, &lt;a href=&quot;https://news.ycombinator.com/item?id=19152145&quot;&gt;some members of the cyber security community&lt;/a&gt; find it
+to leads to a poor signal-to-noise ratio.  &lt;/p&gt;
+&lt;p&gt;Some entrepeneurial members of the cybersecurity community will grab the
+domain lists with &lt;code class=&quot;language-text&quot;&gt;security.txt&lt;/code&gt; files, fetch the email, run &lt;a href=&quot;https://www.osti.gov/servlets/purl/1639985&quot;&gt;burpsuite&lt;/a&gt; or
+&lt;a href=&quot;https://blog.rapid7.com/2011/12/08/six-ways-to-automate-metasploit/&quot;&gt;metasploit&lt;/a&gt; to get some low effort security issues, and dump it all into
+excel.  For extra credit, then do a &lt;a href=&quot;https://support.microsoft.com/en-us/office/use-mail-merge-for-bulk-email-letters-labels-and-envelopes-f488ed5b-b849-4c11-9cff-932c49474705&quot;&gt;mail-merge&lt;/a&gt;.  Minimal effort, and if
+you get answers back you ask for a bug bounty.&lt;/p&gt;
+&lt;p&gt;I don’t think that &lt;code class=&quot;language-text&quot;&gt;security.txt&lt;/code&gt; on its own will cause this, though.  It’s
+just as easy to search for Vulnerability Disclosure Policies and use those as
+inputs for automated security testing.  It takes a bit more manual work, but
+even with that you end up with odd security reports now and then.&lt;/p&gt;
+&lt;p&gt;All of this is to explain how we ended up with the security report for a site
+that shared the same first two letters of ours instead.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[The UK is in talks to depart from using GDPR.  This likely means
 one of two outcomes - neither of which are positive. Option A - come up…]]></description><link>https://notjam.es/2021-03-12</link><guid isPermaLink="false">https://notjam.es/2021-03-12</guid><pubDate>Fri, 12 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/7zoAI7BIrzT1e/giphy.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;a href=&quot;https://www.lawgazette.co.uk/news/uk-to-depart-from-gdpr/5107685.article&quot;&gt;UK is in talks to depart from using GDPR&lt;/a&gt;.  This likely means
 one of two outcomes - neither of which are positive.&lt;/p&gt;
