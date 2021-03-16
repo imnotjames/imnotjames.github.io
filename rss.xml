@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 15 Mar 2021 22:09:25 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Security.txt made the rounds again on HackerNews.  It’s a format,
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 16 Mar 2021 19:05:13 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Docker announced a Series B raise of $23M today - which is definitely impressive
+for a company focused around Open-Source, right?  Well…]]></description><link>https://notjam.es/2021-03-16</link><guid isPermaLink="false">https://notjam.es/2021-03-16</guid><pubDate>Tue, 16 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/cUMNWzWZ5n75LvcCIe/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.docker.com/press-release/Docker-Series-B&quot;&gt;Docker announced a Series B raise of $23M&lt;/a&gt; today - which is definitely impressive
+for a company focused around Open-Source, right?  Well, maybe.  In 2015, Docker
+&lt;a href=&quot;https://venturebeat.com/2015/04/14/docker-raises-95m-led-by-insight-venture-partners/&quot;&gt;had announced a $95M Series D raise of funding at a $1B valuation&lt;/a&gt;.  Best
+guess was a reset after Mirantis acquired part of the company?&lt;/p&gt;
+&lt;p&gt;What’s Docker the software?  Let’s start with the basics.&lt;/p&gt;
+&lt;p&gt;Containers.  Containers are effectively packaging to create a running process
+with encapsulation features applied to keep it isolated from when
+running on a host computer.  Containers as a concept have been around for
+decades - older examples would be &lt;a href=&quot;https://en.wikipedia.org/wiki/OpenVZ&quot;&gt;OpenVZ&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Containers are helpful for developing software because they provide portability,
+reproducibility, and isolation.  Portability helps you run your app anywhere -
+irregardless of the system you’re running on.  Isolation is so that state in
+the host and state in other Containers won’t impact your app.&lt;/p&gt;
+&lt;p&gt;This is different from virtual machines that have full virtualization.
+Containers will often utilize OS virtualization &amp;#x26; isolation features to
+share multiple containers safely in one OS - instead of a full VM where the
+OS is duplicated.&lt;/p&gt;
+&lt;p&gt;That leads to Docker the Software.  Docker the software brings container
+tooling, an abstraction layer wrapping multiple Virtualization APIs, and a
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Domain-specific_language&quot;&gt;Domain Specific Language&lt;/a&gt; for Container Filesystems.&lt;/p&gt;
+&lt;p&gt;Docker’s “images” include everything needed to start a container - the code or
+binary, runtimes, dependencies, and any other filesystem objects required.
+Docker images and containers are supported by most of the big cloud providers -
+AMZN AWS, GOOG Cloud, MSFT Azure, Heroku, Glitch, and others.  The same docker
+image can be run across all of them.&lt;/p&gt;
+&lt;p&gt;But what does Docker Inc do?  Docker, Inc primarily develops Docker Hub and
+Docker Desktop at this point in time.  Per their &lt;a href=&quot;https://www.docker.com/blog/helping-dev-teams-get-ship-done/&quot;&gt;blog post&lt;/a&gt; about their
+plans for the funding it seems like they’re focusing on improving dev
+experience, tooling around security, and API development.&lt;/p&gt;
+&lt;p&gt;I’ve got high hopes for the company into the 2020s.  Here’s hoping that this
+time investor interests are more closely aligned with the direction of the
+company.  If not, I’m sure we’ll see Docker repeat the past decade again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Security.txt made the rounds again on HackerNews.  It’s a format,
 similar to robots.txt for making it clearer how to submit security
 issues…]]></description><link>https://notjam.es/2021-03-15</link><guid isPermaLink="false">https://notjam.es/2021-03-15</guid><pubDate>Mon, 15 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/dFpG6KdpSEzC0/giphy.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://securitytxt.org/&quot;&gt;Security.txt&lt;/a&gt; made the rounds again on HackerNews.  It’s a format,
