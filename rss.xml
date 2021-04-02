@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 01 Apr 2021 18:43:11 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Today, running 5KM took a lot out of me.  This can be squarely blamed
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 02 Apr 2021 20:02:06 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[There’s a really neat stack overflow post about the
+Amiga OS Kickstart image.  They ask why the image included during the
+bootstrapping…]]></description><link>https://notjam.es/2021-04-02</link><guid isPermaLink="false">https://notjam.es/2021-04-02</guid><pubDate>Fri, 02 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/hsxg9x2LrmTNC/giphy.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;There’s a really neat &lt;a href=&quot;https://retrocomputing.stackexchange.com/questions/13897/why-was-the-kickstart-1-x-insert-floppy-graphic-so-bad/13901&quot;&gt;stack overflow post&lt;/a&gt; about the
+&lt;a href=&quot;https://en.wikipedia.org/wiki/AmigaOS&quot;&gt;Amiga OS&lt;/a&gt; Kickstart image.  They ask why the image included during the
+bootstrapping sequence of the Amiga computers - known as “Kickstart” - was so
+ugly.  The image showed up and instructed the user to insert the Kickstart
+floppy so the computer could start.&lt;/p&gt;
+&lt;p&gt;The short version is that they were severely resource constrained.  A bitmap
+payload would have been around 4KiB, but vector art data for the Kickstart
+image weighed in at only 412 bytes.  This was very important when they only
+had 8KiB of space to work with for the pre-boot ROM.&lt;/p&gt;
+&lt;p&gt;The vector art data is as follows:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;hex&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-hex line-numbers&quot;&gt;&lt;code class=&quot;language-hex&quot;&gt;FF 01 23 0B 3A 0B 3A 21 71 21 71 0B 7D 0B 88 16 88 5E 7F 5E 7F 38 40 38
+3E 36 35 36 34 38 2D 38 2D 41 23 48 23 0B FE 02 25 45 FF 01 21 48 21 0A
+7E 0A 8A 16 8A 5F 56 5F 56 64 52 6C 4E 71 4A 74 44 7D 3C 81 3C 8C 0A 8C
+0A 6D 09 6D 09 51 0D 4B 14 45 15 41 19 3A 1E 37 21 36 21 36 1E 38 1A 3A
+16 41 15 45 0E 4B 0A 51 0A 6C 0B 6D 0B 8B 28 8B 28 76 30 76 34 72 34 5F
+32 5C 32 52 41 45 41 39 3E 37 3B 37 3E 3A 3E 41 3D 42 36 42 33 3F 2A 46
+1E 4C 12 55 12 54 1E 4B 1A 4A 17 47 1A 49 1E 4A 21 48 FF 01 32 3D 34 36
+3C 37 3D 3A 3D 41 36 41 32 3D FF 01 33 5C 33 52 42 45 42 39 7D 39 7D 5E
+34 5E 33 5A FF 01 3C 0B 6F 0B 6F 20 3C 20 3C 0B FF 01 60 0E 6B 0E 6B 1C
+60 1C 60 0E FE 03 3E 1F FF 01 62 0F 69 0F 69 1B 62 1B 62 0F FE 02 63 1A
+FF 01 2F 39 32 39 32 3B 2F 3F 2F 39 FF 01 29 8B 29 77 30 77 35 72 35 69
+39 6B 41 6B 41 6D 45 72 49 72 49 74 43 7D 3B 80 3B 8B 29 8B FF 01 35 5F
+35 64 3A 61 35 5F FF 01 39 62 35 64 35 5F 4A 5F 40 69 3F 69 41 67 3C 62
+39 62 FF 01 4E 5F 55 5F 55 64 51 6C 4E 70 49 71 46 71 43 6D 43 6A 4E 5F
+FF 01 44 6A 44 6D 46 70 48 70 4C 6F 4D 6C 49 69 44 6A FF 01 36 68 3E 6A
+40 67 3C 63 39 63 36 65 36 68 FF 01 7E 0B 89 16 89 5E FE 01 22 0B FE 01
+3B 0B FE 01 61 0F FE 01 6A 1B FE 01 70 0F FE 01 7E 5E FE 01 4B 60 FE 01
+2E 39 FF FF&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The way it was interpreted followed pretty simple rules:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Read two bytes at a time.&lt;/li&gt;
+&lt;li&gt;If both bytes are &lt;code class=&quot;language-text&quot;&gt;FF&lt;/code&gt;, end the program.&lt;/li&gt;
+&lt;li&gt;If the first byte is &lt;code class=&quot;language-text&quot;&gt;FF&lt;/code&gt; and the second byte is not, start drawing a polyline with the color index given in the second byte. Treat any subsequent two bytes as &lt;code class=&quot;language-text&quot;&gt;x,y&lt;/code&gt; coordinates belonging to that polyline except if the first byte is &lt;code class=&quot;language-text&quot;&gt;FF&lt;/code&gt; (see rules 2 and 3) or &lt;code class=&quot;language-text&quot;&gt;FE&lt;/code&gt; (see rule 4), which is where you stop drawing the line.&lt;/li&gt;
+&lt;li&gt;If the first byte is &lt;code class=&quot;language-text&quot;&gt;FE&lt;/code&gt;, flood fill an area using the color index given in the second byte, starting from the point whose coordinates are given in the next two bytes.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://eab.abime.net/showpost.php?p=1159886&amp;#x26;postcount=52&quot;&gt;Sheryl Knowles&lt;/a&gt;, the first Amiga artist, noted that there were no real
+tools on the Amiga to make many of these images aside from when they
+eventually wrote &lt;a href=&quot;https://en.wikipedia.org/wiki/Amiga_software&quot;&gt;Graphicraft&lt;/a&gt;.  At that point, using graphicraft she
+held the floppy in her left hand and painstakingly created the drawing with
+her right hand.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt; The drawing was limited in size and in the number of pixels that could be
+used, by the programming requirements of the time. All of which should
+explain why it’s a bad drawing. But it was deemed a sufficient icon.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Which is very true!  Even if it’s ugly, it’s clear what it’s supposed to be.
+It’s not supposed to be high art - it’s supposed to be an icon you see for a
+couple seconds at most.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Today, running 5KM took a lot out of me.  This can be squarely blamed
 on a more sedentary lifestyle than is ideal.  This doesn’t mean I can…]]></description><link>https://notjam.es/2021-04-01</link><guid isPermaLink="false">https://notjam.es/2021-04-01</guid><pubDate>Thu, 01 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/6Z3D5t31ZdoNW/giphy.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Today, running 5KM took a lot out of me.  This can be squarely blamed
 on a more sedentary lifestyle than is ideal.  This doesn’t mean I can’t.
