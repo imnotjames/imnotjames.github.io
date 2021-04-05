@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 05 Apr 2021 15:54:19 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[The Supreme Court has come to a decision on the Google v Oracle case
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 05 Apr 2021 15:56:19 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[The Supreme Court has come to a decision on the Google v Oracle case
 regarding Google’s usage of the Java SE API in Android’s Android…]]></description><link>https://notjam.es/2021-04-05</link><guid isPermaLink="false">https://notjam.es/2021-04-05</guid><pubDate>Mon, 05 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/l0MYA6gVfB7CcdkR2/giphy.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;The Supreme Court has &lt;a href=&quot;https://www.supremecourt.gov/opinions/20pdf/18-956_d18f.pdf&quot;&gt;come to a decision&lt;/a&gt; on the Google v Oracle case
 regarding Google’s usage of the Java SE API in Android’s Android Runtime,
@@ -37,8 +37,8 @@ small.  The total set of Sun Java API computer code, includ-
 ing  implementing  code,  amounted  to  2.86  million  lines,  of
 which the copied 11,500 lines were only 0.4 percent&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;However, my favorite part of the entire decision is that they retell the
-world’s shortest short stories:&lt;/p&gt;
+&lt;p&gt;However, my favorite part of the entire decision is that they retell one of
+the world’s shortest short stories:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;When he awoke, the dinosaur was still there.&lt;/p&gt;
 &lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[There’s a really neat stack overflow post about the
