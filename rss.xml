@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 02 Apr 2021 20:02:06 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[There’s a really neat stack overflow post about the
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 05 Apr 2021 15:54:19 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[The Supreme Court has come to a decision on the Google v Oracle case
+regarding Google’s usage of the Java SE API in Android’s Android…]]></description><link>https://notjam.es/2021-04-05</link><guid isPermaLink="false">https://notjam.es/2021-04-05</guid><pubDate>Mon, 05 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/l0MYA6gVfB7CcdkR2/giphy.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The Supreme Court has &lt;a href=&quot;https://www.supremecourt.gov/opinions/20pdf/18-956_d18f.pdf&quot;&gt;come to a decision&lt;/a&gt; on the Google v Oracle case
+regarding Google’s usage of the Java SE API in Android’s Android Runtime,
+as well as Dalvik VM before it.  This has been ongoing since August 2010.&lt;/p&gt;
+&lt;p&gt;TLDR: It’s fair use, the declaring code is very small and is not
+implementation, but instead a general organization.  As such, it’s fair use.&lt;/p&gt;
+&lt;p&gt;Let’s read a couple excerpts!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Google copied these lines not because of their creativity or beauty but
+because they would allow programmers to bring their skills to a new
+smartphone computing environment.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;use  is  inherently  bound  together  with  uncopyrightable
+ideas (general task division and organization) and new cre-
+ative  expression  (Android’s  implementing  code).    Unlike
+many other programs, its value in significant part derives
+from the  value  that  those  who  do  not  hold  copyrights,
+namely, computer  programmers,  invest  of  their  own  time
+and effort to learn the API’s system.  And unlike many other
+programs, its value lies in its efforts to encourage program-
+mers to learn and to use that system so that they will use
+(and continue to use) Sun-related implementing programs
+that Google did not copy.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If one considers the declaring code in isolation, the quan-
+titative  amount  of  what  Google  copied  was  large.    Google
+copied the declaring code for 37 packages of the Sun Java
+API,  totaling  approximately  11,500  lines  of  code.    Those
+lines  of  code  amount  to  virtually  all  the  declaring  code
+needed to call up hundreds of different tasks.  On the other
+hand, if one considers the entire set of software material in
+the  Sun  Java  API,  the  quantitative  amount  copied  was
+small.  The total set of Sun Java API computer code, includ-
+ing  implementing  code,  amounted  to  2.86  million  lines,  of
+which the copied 11,500 lines were only 0.4 percent&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;However, my favorite part of the entire decision is that they retell the
+world’s shortest short stories:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When he awoke, the dinosaur was still there.&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[There’s a really neat stack overflow post about the
 Amiga OS Kickstart image.  They ask why the image included during the
 bootstrapping…]]></description><link>https://notjam.es/2021-04-02</link><guid isPermaLink="false">https://notjam.es/2021-04-02</guid><pubDate>Fri, 02 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/hsxg9x2LrmTNC/giphy.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;There’s a really neat &lt;a href=&quot;https://retrocomputing.stackexchange.com/questions/13897/why-was-the-kickstart-1-x-insert-floppy-graphic-so-bad/13901&quot;&gt;stack overflow post&lt;/a&gt; about the
