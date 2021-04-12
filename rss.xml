@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 11 Apr 2021 19:52:24 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Amazon employees in Bessemer, Alabama voted against unionizing their
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 12 Apr 2021 17:09:27 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Yet another great step for cryptocurrency enthusiasts, there’s now an
+implementation of  backed by crytpo NFTs!  Exciting.
+What does that…]]></description><link>https://notjam.es/2021-04-12</link><guid isPermaLink="false">https://notjam.es/2021-04-12</guid><pubDate>Mon, 12 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/CDTUqFaYWBssS929Ou/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Yet another great step for cryptocurrency enthusiasts, there’s now an
+implementation of &lt;code class=&quot;language-text&quot;&gt;std::unique_ptr&lt;/code&gt; &lt;a href=&quot;https://github.com/zhuowei/nft_ptr&quot;&gt;backed by crytpo NFTs&lt;/a&gt;!  Exciting.
+What does that mean in practice?&lt;/p&gt;
+&lt;p&gt;The &lt;code class=&quot;language-text&quot;&gt;std::unique_ptr&lt;/code&gt; in C++ is a smart &lt;a href=&quot;https://en.wikipedia.org/wiki/Pointer_(computer_programming)&quot;&gt;pointer&lt;/a&gt; that manages another
+object via a pointer (a reference to a memory address).  What it does that
+makes it “smart” is that it disposes of the object when the pointer goes out of
+scope.  This is most often done using the &lt;code class=&quot;language-text&quot;&gt;delete&lt;/code&gt; operator, but can also be
+supplied by the developer.&lt;/p&gt;
+&lt;p&gt;This NFT pointer implementation has the same semantics and usability of a
+traditional smart pointer, but also is on the Ethereum blockchain, making it
+superior.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As we all know, adding blockchain to a problem automatically
+makes it simple, transparent, and cryptographically secure.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The difference in performance between the two is negligible
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Age_of_the_universe&quot;&gt;in the grand scheme of things&lt;/a&gt;, with &lt;code class=&quot;language-text&quot;&gt;std::unique_ptr&lt;/code&gt; running in
+0.005 seconds, followed quickly behind by &lt;code class=&quot;language-text&quot;&gt;nft_ptr&lt;/code&gt; at 3 minutes per call.&lt;/p&gt;
+&lt;p&gt;I applaud Zhuowei Zhang’s efforts to bring crytocurrency to more widespread
+appeal.  &lt;a href=&quot;https://raw.githubusercontent.com/zhuowei/nft_ptr/main/white_paper.pdf&quot;&gt;For more information, check out their whitepaper&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Amazon employees in Bessemer, Alabama voted against unionizing their
 workplace.  There’s a lot that could be said about this - whether there…]]></description><link>https://notjam.es/2021-04-09</link><guid isPermaLink="false">https://notjam.es/2021-04-09</guid><pubDate>Fri, 09 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/l0IyfjTLCd31N7xHq/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Amazon employees in Bessemer, Alabama &lt;a href=&quot;https://www.wsj.com/articles/amazon-is-ahead-in-union-vote-as-tallying-set-to-resume-11617960604&quot;&gt;voted against unionizing&lt;/a&gt; their
 workplace.  There’s a lot that could be said about this - whether there was
