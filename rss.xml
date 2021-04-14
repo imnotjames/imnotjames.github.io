@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 13 Apr 2021 18:49:18 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Another Google product is being put out to pasture.  In particular,
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 14 Apr 2021 19:09:56 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[On November 18th, 2008, Heide Stefanyshyn-Piper looked out into the blue of
+the ocean from 250 miles away.  Above it.  She kicked off for…]]></description><link>https://notjam.es/2021-04-14</link><guid isPermaLink="false">https://notjam.es/2021-04-14</guid><pubDate>Wed, 14 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/xT5LMBATJuDO48jD44/giphy.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;On November 18th, 2008, Heide Stefanyshyn-Piper looked out into the blue of
+the ocean from 250 miles away.  Above it.  She kicked off for her third EVA for
+mission &lt;a href=&quot;https://en.wikipedia.org/wiki/STS-126&quot;&gt;STS-126&lt;/a&gt;.  She was out there with fellow astronaut Stephen Bowen
+to fix the rotation assembly that allows the solar arrays to follow the sun.
+It had failed and was not operating optimally.  The solution that the
+those ground control folks came up with?  Go out there with some grease
+and some wipes to clean it up and grease it up.  No sweat.&lt;/p&gt;
+&lt;p&gt;Looking into her airlock bag with these advanced tools she sees something
+very concerning.  “I think we had a grease gun explode in the large bag.
+There’s grease in the bag.”&lt;/p&gt;
+&lt;p&gt;She heard Steve Bown observe dryly over her headset, “Ah. it must have been
+the pressure changes.”  Putting that MIT engineering degree to work.&lt;/p&gt;
+&lt;p&gt;The flight controllers peered through her helmet camera uplink and calmly
+assessed the situation, with suggestions.  She grabbed a dry wipe and did her
+best to clean up the grease.  The EVA suit’s not known for being dextrous,
+though, and one movement too exxagerated knocked the bag.  It tumbled away,
+off on its own.  Out of reach.&lt;/p&gt;
+&lt;p&gt;“Oh, great. We have a lost tool, uh, I guess one of my crew lock bags was not
+transferred and it’s loose.”&lt;/p&gt;
+&lt;p&gt;This is &lt;a href=&quot;https://spaceflightnow.com/shuttle/sts126/081118fd5/index2.html&quot;&gt;how one more piece of space debris&lt;/a&gt; ended up in orbit.  There are
+&lt;a href=&quot;https://orbitaldebris.jsc.nasa.gov/faq/#faq03&quot;&gt;more than 23,000 pieces of debris larger than 10cm in orbit&lt;/a&gt;.  This number
+grows every day.  Even something as small as Heide’s tool bag can be identified
+and &lt;a href=&quot;https://www.youtube.com/watch?v=NJF8m0KbDZQ&quot;&gt;seen from the ground&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Space debris becomes more and more of a concern as we look outwards from our
+own planet.  This is a problem known as &lt;a href=&quot;https://en.wikipedia.org/wiki/Kessler_syndrome&quot;&gt;Kessler syndrom&lt;/a&gt;.  The thought is
+that a time could come where there’s such a density of space debris that
+we avoiding collision would be impossible.  Even in the early 2000s we found
+&lt;a href=&quot;https://web.archive.org/web/20001121234600/http://www.space.com/scienceastronomy/planetearth/space_junk_000901.html&quot;&gt;evidence of small debris embedding itself in shuttle windows&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An impact with a piece of space debris is on average a collision with the
+relative difference in velocity of 10-15km/s.  This is 10x the speed of even
+the fastest bullets.  At that speed, even a bolt no bigger than your thumb will
+tear through steel like paper.&lt;/p&gt;
+&lt;p&gt;There’s many &lt;a href=&quot;http://stuffin.space/&quot;&gt;projects to track and visualize space debris&lt;/a&gt;, but what do we
+do to make this better?&lt;/p&gt;
+&lt;p&gt;One approach is to stop putting things in higher orbits.  Low earth orbit has
+a small amount of atmosphere which causes drag on items.  This means that,
+without assistance, items in low earth orbit will leave orbit and return
+to earth.  This is great because it puts a much shorter time limit on debris:
+years instead of millenia.  This is why Starlink is considered less of a
+negative impact on space debris.&lt;/p&gt;
+&lt;p&gt;However, that still leaves thousands of tons of space junk in higher orbit.
+Some of these will take many, many lifetimes before they would deorbit on their
+own - perhaps longer.  Actively removing these takes ingenuity.  Science
+fiction has looked into this active removal via &lt;a href=&quot;https://www.imdb.com/video/vi1534902553&quot;&gt;movies&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/Planetes&quot;&gt;comics&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In reality, it’s more likely that we’ll use ground-based or sattelite-based
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Laser_broom&quot;&gt;Laser Brooms&lt;/a&gt; to control and deorbit smaller debris (1cm-10cm in size).
+This works by targeting a piece of debris and firing a high-power laser to heat
+one side of the debris to produce thrust.  This would make the orbit unstable,
+quickening the eventual deorbit.&lt;/p&gt;
+&lt;p&gt;Oh, and Heide’s toolbag.  It was in a low orbit on its own around Earth until
+it lost enough velocity to return on August 3, 2009.  It was vaporized
+during reentry.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Another Google product is being put out to pasture.  In particular,
 “Google Play Movies & TV”.  Previously available content will be on…]]></description><link>https://notjam.es/2021-04-13</link><guid isPermaLink="false">https://notjam.es/2021-04-13</guid><pubDate>Tue, 13 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/aOPINgmqpVXNK/giphy.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Another Google product is being put out to pasture.  In particular,
 “Google Play Movies &amp;#x26; TV”.  Previously available content will be on
