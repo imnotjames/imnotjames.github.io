@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 14 Apr 2021 19:09:56 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[On November 18th, 2008, Heide Stefanyshyn-Piper looked out into the blue of
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 15 Apr 2021 16:59:59 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[John Wilander, principal engineer on Intelligent Tracking Prevneting in Safari,
+opened an issue on the WICG FLoC github pointing out how…]]></description><link>https://notjam.es/2021-04-15</link><guid isPermaLink="false">https://notjam.es/2021-04-15</guid><pubDate>Thu, 15 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/l1Etd95mJdO2OkcHC/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;John Wilander, principal engineer on Intelligent Tracking Prevneting in Safari,
+&lt;a href=&quot;https://github.com/WICG/floc/issues/100&quot;&gt;opened an issue on the WICG FLoC github&lt;/a&gt; pointing out how FLoC can be used
+to create cross-site tracking.  What this would mean is that the purported
+privacy benefits of FLoC would be moot.  In fact, it would make it easier
+to track a user.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To take this to the crowd metaphor: Before the pandemic and some time back,
+I attended a Mew concert, a Ghost concert, Disney on Ice, and a Def Leppard
+concert. At each of those events I was part of a large crowd. But I bet you
+I was the only one to attend all four.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Indeed, de-anonymizing users is a huge problem.
+&lt;a href=&quot;https://www.cnbc.com/2019/07/23/anonymous-data-might-not-be-so-anonymous-study-shows.html&quot;&gt;99% of Americans can be identified by 15 demographic attributes&lt;/a&gt;.
+As part of this research, they &lt;a href=&quot;https://cpg.doc.ic.ac.uk/individual-risk/&quot;&gt;created a tool&lt;/a&gt; using just three
+data points - ZIP code, gender, and birth date - which has an 83% chance
+of identification.&lt;/p&gt;
+&lt;p&gt;We aren’t as anonymous as we’d like to think because we’re all wonderful and special
+little snowflakes.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[On November 18th, 2008, Heide Stefanyshyn-Piper looked out into the blue of
 the ocean from 250 miles away.  Above it.  She kicked off for…]]></description><link>https://notjam.es/2021-04-14</link><guid isPermaLink="false">https://notjam.es/2021-04-14</guid><pubDate>Wed, 14 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/xT5LMBATJuDO48jD44/giphy.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;On November 18th, 2008, Heide Stefanyshyn-Piper looked out into the blue of
 the ocean from 250 miles away.  Above it.  She kicked off for her third EVA for
