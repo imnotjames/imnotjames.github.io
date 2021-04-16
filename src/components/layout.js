@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled";
 import { css } from '@emotion/core'
+import { Helmet } from 'react-helmet'
 
 import { rhythm } from "../utils/typography"
 
@@ -139,6 +140,9 @@ function Layout ({ location, title, children }) {
           `
       }
     >
+      <Helmet defer={false}>
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+      </Helmet>
       <LayoutHeader
           location={location}
           title={title}
