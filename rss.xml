@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 16 Apr 2021 06:44:05 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[John Wilander, principal engineer on Intelligent Tracking Prevneting in Safari,
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 16 Apr 2021 17:27:46 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Someone called out allowing disposable email as a security concern today. I disagree.  Disposable email is just another term for… email…]]></description><link>https://notjam.es/2021-04-16</link><guid isPermaLink="false">https://notjam.es/2021-04-16</guid><pubDate>Fri, 16 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/3oz8xSwIOv5FGhZFjq/giphy.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Someone called out allowing disposable email as a security concern today.&lt;/p&gt;
+&lt;p&gt;I disagree.  Disposable email is just another term for… email.  Any email
+service that you can sign up to.  Just that some are easier to sign up to than
+others.&lt;/p&gt;
+&lt;p&gt;These lighter-weight sign up email services are important for people that are
+privacy concious and want to control how they are interacted with more readily.&lt;/p&gt;
+&lt;p&gt;What about gmail?  Okay, I sign up once with example@gmail.com - then the next day
+I sign up with e.xample@gmail.com - then e.x.a.mple@gmail.com - then example+1@gmail.com …&lt;/p&gt;
+&lt;p&gt;“Disposable” email services are not the issue, here.  I don’t care if you use
+a service that is “disposable” or “real” or not.  I can use any address @my-domain
+and it will all work.&lt;/p&gt;
+&lt;p&gt;Does that mean I run a disposable email service and I should be blocked?&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[John Wilander, principal engineer on Intelligent Tracking Prevneting in Safari,
 opened an issue on the WICG FLoC github pointing out how…]]></description><link>https://notjam.es/2021-04-15</link><guid isPermaLink="false">https://notjam.es/2021-04-15</guid><pubDate>Thu, 15 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/l1Etd95mJdO2OkcHC/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;John Wilander, principal engineer on Intelligent Tracking Prevneting in Safari,
 &lt;a href=&quot;https://github.com/WICG/floc/issues/100&quot;&gt;opened an issue on the WICG FLoC github&lt;/a&gt; pointing out how FLoC can be used
