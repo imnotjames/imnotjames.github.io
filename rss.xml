@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 16 Apr 2021 17:29:45 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Someone called out allowing disposable email as a security concern today. I disagree.  Disposable email is just another term for… email…]]></description><link>https://notjam.es/2021-04-16</link><guid isPermaLink="false">https://notjam.es/2021-04-16</guid><pubDate>Fri, 16 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/3oz8xSwIOv5FGhZFjq/giphy.gif&quot;&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 21 Apr 2021 18:25:32 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[University of Minnesota published a paper about vulnerabilities being
+introduced to open source by malicious actors contributing commits…]]></description><link>https://notjam.es/2021-04-21</link><guid isPermaLink="false">https://notjam.es/2021-04-21</guid><pubDate>Wed, 21 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/d2ZcfODrNWlA5Gg0/giphy.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/QiushiWu/QiushiWu.github.io/blob/main/papers/OpenSourceInsecurity.pdf&quot;&gt;University of Minnesota published a paper about vulnerabilities&lt;/a&gt; being
+introduced to open source by malicious actors contributing commits.  They did
+this by intentionally introducing bad code via merge requests to the Linux
+kernel, leading to vulnerabilities.  Some of the 190 commits have
+&lt;a href=&quot;https://github.com/torvalds/linux/commit/8e949363f017&quot;&gt;even landed in stable branches&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ethically, this is an
+unacceptable behavior for experimentation, and has been reported to the UMN
+Institutional Review Board on these cases.  Ethics complaints have also been
+filed to IEEE to have the publication revoked, but it’s unlikely that it will
+be.  They’ve also been &lt;a href=&quot;https://lore.kernel.org/linux-nfs/YH%2FfM%2FTsbmcZzwnX@kroah.com/&quot;&gt;banned, as a University, from contributing&lt;/a&gt; to the
+Linux kernel, as well as from communicating through many Linux kernel mailing
+lists.&lt;/p&gt;
+&lt;p&gt;Their experiments prove that humans are fallible.  Good job, folks.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;*plonk*&lt;/code&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Someone called out allowing disposable email as a security concern today. I disagree.  Disposable email is just another term for… email…]]></description><link>https://notjam.es/2021-04-16</link><guid isPermaLink="false">https://notjam.es/2021-04-16</guid><pubDate>Fri, 16 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/3oz8xSwIOv5FGhZFjq/giphy.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Someone called out allowing disposable email as a security concern today.&lt;/p&gt;
 &lt;p&gt;I disagree.  Disposable email is just another term for… email.  Any email
 service that you can sign up to.  Just that some are easier to sign up to than
