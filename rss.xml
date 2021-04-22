@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 21 Apr 2021 18:25:32 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[University of Minnesota published a paper about vulnerabilities being
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 22 Apr 2021 19:24:34 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[There’s a Unicode proposal for Textile Care instructions.  This adds 40
+new characters which represent instructions on how to wash your…]]></description><link>https://notjam.es/2021-04-22</link><guid isPermaLink="false">https://notjam.es/2021-04-22</guid><pubDate>Thu, 22 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/6C5GbY5kB1pGeNXpRN/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;There’s a &lt;a href=&quot;https://github.com/Crissov/unicode-proposals/issues/410&quot;&gt;Unicode proposal for Textile Care instructions&lt;/a&gt;.  This adds 40
+new characters which represent instructions on how to wash your clothes.
+These are from &lt;a href=&quot;https://www.iso.org/standard/42918.html&quot;&gt;ISO3758&lt;/a&gt;, which is the same as other international
+standards that can be used.&lt;/p&gt;
+&lt;p&gt;Much of this is based on work by &lt;a href=&quot;https://www.ginetex.net/&quot;&gt;GINETEX&lt;/a&gt;, an association for textile care
+labels in Europe, South America, Africa, and Asia.  They’ve been working
+on care labels since the late 60s &amp;#x26; pushing for regulation since the 70s.
+If a nation is part of GINETEX, they mandate that the washing care instructions
+follow correct use.&lt;/p&gt;
+&lt;p&gt;Unfortunately, many of the GINETEX symbols are trademarked, thus can’t be used
+freely in many European countries as part of the ISO3758 standard.  This is
+partly because GINETEX wants to mandate the correct use of these symbols.&lt;/p&gt;
+&lt;p&gt;But, seriously, how do I wash my coat?&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[University of Minnesota published a paper about vulnerabilities being
 introduced to open source by malicious actors contributing commits…]]></description><link>https://notjam.es/2021-04-21</link><guid isPermaLink="false">https://notjam.es/2021-04-21</guid><pubDate>Wed, 21 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/d2ZcfODrNWlA5Gg0/giphy.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/QiushiWu/QiushiWu.github.io/blob/main/papers/OpenSourceInsecurity.pdf&quot;&gt;University of Minnesota published a paper about vulnerabilities&lt;/a&gt; being
 introduced to open source by malicious actors contributing commits.  They did
