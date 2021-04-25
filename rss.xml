@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 22 Apr 2021 19:24:34 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[There’s a Unicode proposal for Textile Care instructions.  This adds 40
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Apr 2021 20:19:22 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[There’s a Unicode proposal for Textile Care instructions.  This adds 40
 new characters which represent instructions on how to wash your…]]></description><link>https://notjam.es/2021-04-22</link><guid isPermaLink="false">https://notjam.es/2021-04-22</guid><pubDate>Thu, 22 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/6C5GbY5kB1pGeNXpRN/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;There’s a &lt;a href=&quot;https://github.com/Crissov/unicode-proposals/issues/410&quot;&gt;Unicode proposal for Textile Care instructions&lt;/a&gt;.  This adds 40
 new characters which represent instructions on how to wash your clothes.
@@ -39,9 +39,9 @@ I sign up with e.xample@gmail.com - then e.x.a.mple@gmail.com - then example+1@g
 &lt;p&gt;“Disposable” email services are not the issue, here.  I don’t care if you use
 a service that is “disposable” or “real” or not.  I can use any address @my-domain
 and it will all work.&lt;/p&gt;
-&lt;p&gt;Does that mean I run a disposable email service and I should be blocked?&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[John Wilander, principal engineer on Intelligent Tracking Prevneting in Safari,
+&lt;p&gt;Does that mean I run a disposable email service and I should be blocked?&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[John Wilander, principal engineer on Intelligent Tracking Prevention in Safari,
 opened an issue on the WICG FLoC github pointing out how…]]></description><link>https://notjam.es/2021-04-15</link><guid isPermaLink="false">https://notjam.es/2021-04-15</guid><pubDate>Thu, 15 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/l1Etd95mJdO2OkcHC/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
-&lt;p&gt;John Wilander, principal engineer on Intelligent Tracking Prevneting in Safari,
+&lt;p&gt;John Wilander, principal engineer on Intelligent Tracking Prevention in Safari,
 &lt;a href=&quot;https://github.com/WICG/floc/issues/100&quot;&gt;opened an issue on the WICG FLoC github&lt;/a&gt; pointing out how FLoC can be used
 to create cross-site tracking.  What this would mean is that the purported
 privacy benefits of FLoC would be moot.  In fact, it would make it easier
