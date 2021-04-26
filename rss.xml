@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Apr 2021 20:19:22 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[There’s a Unicode proposal for Textile Care instructions.  This adds 40
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 26 Apr 2021 17:31:54 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Google Cloud is terrifying to some people because of Google’s policy of axeing products
+all around. Steve Yegge penned an interesting blog…]]></description><link>https://notjam.es/2021-04-26</link><guid isPermaLink="false">https://notjam.es/2021-04-26</guid><pubDate>Mon, 26 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/HgycnYQCMeJXO/giphy.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Google Cloud is terrifying to some people because of Google’s policy of axeing products
+all around.&lt;/p&gt;
+&lt;p&gt;Steve Yegge penned an &lt;a href=&quot;https://steve-yegge.medium.com/dear-google-cloud-your-deprecation-policy-is-killing-you-ee7525dc05dc&quot;&gt;interesting blog post&lt;/a&gt; about their experiences with Google
+deprecation both from inside google and outside google.  In their case, they ran into
+some of the same deprecation issues outside as they saw culturally on the inside.
+Comparing it to AWS, there is a pretty stark difference in the deprecation policy
+of old technology that isn’t actively being developed on.&lt;/p&gt;
+&lt;p&gt;Deprecation isn’t the only oddity.  Quota increases can be weird, too - AWS asked me
+to get my quota upped why and I wrote something, I don’t think they read it, and then
+they upped it.  With Google, it was faster than AWS but I did have to talk to someone
+on the phone in sales.  It felt weird.  Perhaps it’s a way to increase touch points
+and push people to use more at GCP?&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.theinformation.com/articles/google-brass-set-2023-as-deadline-to-beat-amazon-microsoft-in-cloud&quot;&gt;Google has gone on record saying that they’ll end the GCP projects&lt;/a&gt; if they don’t
+outclass Azure or AWS or the like.  That’s a tall order, and would require a much heavier
+marketing and engineering push than I’ve been seeing.  They set the deadline to 2023,
+so I’m sure we’ll see Google Cloud shutting down before 2025.&lt;/p&gt;
+&lt;p&gt;Who knows, though, I’ve heard rumors of folks dog-fooding Google Cloud internally.
+If Google Cloud could sign a deal as big as Google onto their cloud, I’m sure they’d
+quickly outrank AWS, right?&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[There’s a Unicode proposal for Textile Care instructions.  This adds 40
 new characters which represent instructions on how to wash your…]]></description><link>https://notjam.es/2021-04-22</link><guid isPermaLink="false">https://notjam.es/2021-04-22</guid><pubDate>Thu, 22 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/6C5GbY5kB1pGeNXpRN/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;There’s a &lt;a href=&quot;https://github.com/Crissov/unicode-proposals/issues/410&quot;&gt;Unicode proposal for Textile Care instructions&lt;/a&gt;.  This adds 40
 new characters which represent instructions on how to wash your clothes.
