@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 May 2021 18:21:23 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Microgravity always looks really fun.  It’s all fun and games until someone
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 May 2021 18:26:31 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[A paper submitted to ACM in 2019 reviewed the privacy implications of
+accelerometer data as of that time. Behavior tracking can go beyond…]]></description><link>https://notjam.es/2021-05-06</link><guid isPermaLink="false">https://notjam.es/2021-05-06</guid><pubDate>Thu, 06 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/86yvoQ2TEi2ic/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&quot;https://dl.acm.org/doi/pdf/10.1145/3309074.3309076&quot;&gt;paper submitted to ACM in 2019&lt;/a&gt; reviewed the privacy implications of
+accelerometer data as of that time.&lt;/p&gt;
+&lt;p&gt;Behavior tracking can go beyond the traditional step counter people think
+of when it comes to behavioral analysis.  &lt;a href=&quot;https://doi.org/10.1145/2750858.2807545&quot;&gt;Eating, drinking&lt;/a&gt;, and &lt;a href=&quot;https://dl.acm.org/doi/10.4108/icst.pervasivehealth.2014.254978&quot;&gt;smoking&lt;/a&gt;,
+can be determined from wrist-mounted accelerometers.  Further, gait can be inferred
+and &lt;a href=&quot;https://pubmed.ncbi.nlm.nih.gov/29236078/&quot;&gt;level of intoxication&lt;/a&gt; can be interpreted.  This can also give a guess
+on &lt;a href=&quot;https://ieeexplore.ieee.org/document/7299356&quot;&gt;how heavy of a load a person is carrying&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Taking all of this a bit further, you can even determine what is being said or
+written via these devices.  Determining specifc &lt;a href=&quot;https://dl.acm.org/doi/abs/10.1145/2742647.2742658&quot;&gt;spoken “hotwords” could be done&lt;/a&gt;
+via accelerometer alone.  It’s also possible to figure out what someone has typed
+on their phone’s virtual keyboard without actually having access to the keyboard
+through &lt;a href=&quot;https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.359.9767&amp;#x26;rep=rep1&amp;#x26;type=pdf&quot;&gt;only the movements of the phone&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.452.8357&amp;#x26;rep=rep1&amp;#x26;type=pdf&quot;&gt;Inference beyond this can be done&lt;/a&gt; to get fuzzier understanding of who someone is
+without actually know who they are.  Someone’s physical activity and timing can
+infer someone’s socioeconomic status, openness, and extraversion.  It can be used
+to understand someone’s mood, their relationships with others, and overall stress
+levels.  It can also be used to determine age and gender based on gait, movement
+parameters, and activity.&lt;/p&gt;
+&lt;p&gt;The short version, though?  We really need to enforce the privacy related to
+wearable devices.  It’s an imperative for our safety.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Microgravity always looks really fun.  It’s all fun and games until someone
 gets hurt, right? In space and in micro-gravity we lose the…]]></description><link>https://notjam.es/2021-05-04</link><guid isPermaLink="false">https://notjam.es/2021-05-04</guid><pubDate>Tue, 04 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/OWqeWXcsWNgI0/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Microgravity always looks really fun.  It’s all fun and games until someone
 gets hurt, right?&lt;/p&gt;
