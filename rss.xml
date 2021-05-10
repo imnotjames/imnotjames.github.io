@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 May 2021 20:07:10 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Cloudflare has a really interesting blog post about branch prediction and the
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 10 May 2021 22:17:56 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[The Seagaia Ocean Dome was a really, really big pool. Well, it was more than a relaly big pool:
+It was 6 times the size of an olympic pool…]]></description><link>https://notjam.es/2021-05-10</link><guid isPermaLink="false">https://notjam.es/2021-05-10</guid><pubDate>Mon, 10 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/12ffdI8DuUi2RO/giphy.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://www.seagaia.co.jp/index_en.html&quot;&gt;Seagaia Ocean Dome&lt;/a&gt; was a really, really big pool.&lt;/p&gt;
+&lt;p&gt;Well, it was more than a relaly big pool:
+It was 6 times the size of an olympic pool, had 12,000 square meters of simulated beach,
+and was filled with more than 3.5 million gallons of water kept at 82F year round.
+In the case of bad weather they had the world’s largest retractable roof to keep
+everything going year round.&lt;/p&gt;
+&lt;p&gt;The Ocean dome was opened in 1993 and demolished in 2017 after multiple bankruptcies
+and related hotel closures.&lt;/p&gt;
+&lt;p&gt;It wasn’t that bad of a waterpark, all things considered!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Cloudflare has a really interesting blog post about branch prediction and the
 cost of  jumps in code.  If it’s C, I’m unsure why you’d have…]]></description><link>https://notjam.es/2021-05-07</link><guid isPermaLink="false">https://notjam.es/2021-05-07</guid><pubDate>Fri, 07 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/E1Bs4Ml7VJtsY/giphy.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Cloudflare has a really interesting &lt;a href=&quot;https://blog.cloudflare.com/branch-predictor/&quot;&gt;blog post about branch prediction&lt;/a&gt; and the
 cost of &lt;code class=&quot;language-text&quot;&gt;if&lt;/code&gt; jumps in code.  If it’s C, I’m unsure why you’d have non-macro debug &lt;code class=&quot;language-text&quot;&gt;if&lt;/code&gt;
