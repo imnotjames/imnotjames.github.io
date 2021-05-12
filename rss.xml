@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 12 May 2021 22:13:23 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Yoko Taro is an incredibly talented video game director and writer.  Games that he’s worked
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 12 May 2021 22:17:32 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Yoko Taro is an incredibly talented video game director and writer.  Games that he’s worked
 on include Drakengard, SINoALICE, Nier, and Nier…]]></description><link>https://notjam.es/2021-05-12</link><guid isPermaLink="false">https://notjam.es/2021-05-12</guid><pubDate>Wed, 12 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/l0IykAvjSGcHLogAU/giphy.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Yoko Taro is an incredibly talented video game director and writer.  Games that he’s worked
 on include Drakengard, SINoALICE, Nier, and Nier: Automata.  He’s pushed video games in
@@ -17,9 +17,9 @@ for the amount of music they have it was nearly untenable.  Part of this has to 
 with some of the systems they had around mixing different tracks together.
 They instead developed a system that automatically created the chiptune music from
 the traditional orchestral score.&lt;/p&gt;
-&lt;p&gt;This was done by creating determing 48 tones filtered out of the score via a sine
-wave, more or less bucketing the octaves, distorting them aggressively, and then
-removing anything that was below a specific level to make the output clearer.&lt;/p&gt;
+&lt;p&gt;This was done by bucketing 48 tones across 4 octaves out of the score, distoring
+them aggressively, removing anything that was below a specific level to make the
+output clearer, and applying it back over the original song.&lt;/p&gt;
 &lt;p&gt;You can see how it &lt;a href=&quot;https://youtu.be/pBD8zo-M9rs&quot;&gt;worked in practice on their Youtube channel&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[The Seagaia Ocean Dome was a really, really big pool. Well, it was more than a relaly big pool:
 It was 6 times the size of an olympic pool…]]></description><link>https://notjam.es/2021-05-10</link><guid isPermaLink="false">https://notjam.es/2021-05-10</guid><pubDate>Mon, 10 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/12ffdI8DuUi2RO/giphy.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;a href=&quot;https://www.seagaia.co.jp/index_en.html&quot;&gt;Seagaia Ocean Dome&lt;/a&gt; was a really, really big pool.&lt;/p&gt;
