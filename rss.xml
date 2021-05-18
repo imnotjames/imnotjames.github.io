@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 17 May 2021 15:37:57 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Sometimes new technology and transit goes haywire, as seen earlier this morning when
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 18 May 2021 20:48:12 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[SQLite is a self-contained, high-reliability, and very very fast SQL database engine.
+It’s known as the most widely deployed database engine…]]></description><link>https://notjam.es/2021-05-18</link><guid isPermaLink="false">https://notjam.es/2021-05-18</guid><pubDate>Tue, 18 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/sRFEa8lbeC7zbcIZZR/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;SQLite is a self-contained, high-reliability, and very very fast SQL database engine.
+It’s known as the &lt;a href=&quot;https://sqlite.org/mostdeployed.html&quot;&gt;most widely deployed database engine&lt;/a&gt; in the world.  It’s
+absolutely the most deployed database engine &lt;a href=&quot;https://ntrs.nasa.gov/search?q=sqlite&quot;&gt;off-world, too&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There’s a really cool blog post &lt;a href=&quot;https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/&quot;&gt;about hosting SQLite online&lt;/a&gt;, with a virtual
+file system that uses range requests to cut down on fetches.  In this way, you can
+read from a database of nearly any size and query it efficiently!  With a properly
+written query you can do instant lookups against gigabyte+ SQLite tables.&lt;/p&gt;
+&lt;p&gt;If you mix this with &lt;a href=&quot;https://sqlite.org/fts5.html#the_experimental_trigram_tokenizer&quot;&gt;trigram indexing&lt;/a&gt; you can do a lot of Full-Text search needs
+via an S3 bucket and the web!  While it won’t have nearly as many features
+this could potentially replace quite a lot of the features Algolia provides.&lt;/p&gt;
+&lt;p&gt;Would I suggest replacing a mission-critical log aggregation and query for
+a top-100 tech company?  Nope.  Is it good enough &lt;a href=&quot;https://nickb.dev/blog/replacing-elasticsearch-with-rust-and-sqlite&quot;&gt;for smaller use-cases&lt;/a&gt;?
+You betcha it is.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Sometimes new technology and transit goes haywire, as seen earlier this morning when
 a reboot caused turnstiles to lock up and prevent entry…]]></description><link>https://notjam.es/2021-05-17</link><guid isPermaLink="false">https://notjam.es/2021-05-17</guid><pubDate>Mon, 17 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/EN52u6O1bn2DK/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Sometimes new technology and transit goes haywire, as seen &lt;a href=&quot;https://twitter.com/nyctsubway/status/1394258614475497475&quot;&gt;earlier this morning&lt;/a&gt; when
 a reboot caused turnstiles to lock up and prevent entry.  In most cases the turnstiles are
