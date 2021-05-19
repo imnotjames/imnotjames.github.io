@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 18 May 2021 20:48:12 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[SQLite is a self-contained, high-reliability, and very very fast SQL database engine.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 19 May 2021 20:04:28 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Microsoft is retiring Internet Explorer June 15, 2022. If you’re a web developer working on a modern website or app, we know you’ve
+been…]]></description><link>https://notjam.es/2021-05-19</link><guid isPermaLink="false">https://notjam.es/2021-05-19</guid><pubDate>Wed, 19 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/10WeHUw6AuxWWQ/giphy.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/&quot;&gt;Microsoft is retiring Internet Explorer June 15, 2022&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you’re a web developer working on a modern website or app, we know you’ve
+been waiting for this day for a long time. Internet Explorer has increasingly
+been difficult to support side-by-side with modern browsers. With this change,
+enterprises and consumers will be able to limit their use of Internet Explorer
+to only those legacy sites that absolutely need it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;They even have a &lt;a href=&quot;https://docs.microsoft.com/en-us/microsoft-edge/web-platform/ie-to-microsoft-edge-redirection&quot;&gt;feature to nag people&lt;/a&gt; to stop using IE for your site!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[SQLite is a self-contained, high-reliability, and very very fast SQL database engine.
 It’s known as the most widely deployed database engine…]]></description><link>https://notjam.es/2021-05-18</link><guid isPermaLink="false">https://notjam.es/2021-05-18</guid><pubDate>Tue, 18 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/sRFEa8lbeC7zbcIZZR/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;SQLite is a self-contained, high-reliability, and very very fast SQL database engine.
 It’s known as the &lt;a href=&quot;https://sqlite.org/mostdeployed.html&quot;&gt;most widely deployed database engine&lt;/a&gt; in the world.  It’s
