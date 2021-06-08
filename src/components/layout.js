@@ -113,6 +113,12 @@ function LayoutHeader() {
               Let's Chat
             </Link>
           </NavigationItem>
+
+          <NavigationItem>
+            <Link to={`/on-my-mind/`}>
+              On My Mind..
+            </Link>
+          </NavigationItem>
         </ul>
       </nav>
     </header>
