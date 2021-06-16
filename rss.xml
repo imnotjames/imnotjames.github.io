@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 09 Jun 2021 22:17:01 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Fastly had a bit of an incident on June 8th which you might’ve seen.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[DEFINITIVELY NOT JAMES]]></title><description><![CDATA[WORD WORDS WORDS WORDS]]></description><link>https://notjam.es</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 16 Jun 2021 21:58:34 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[President Biden signed an Executive Order to improve the
+Nation’s Cybersecurity posture.  This is a pretty big deal
+because it signals to…]]></description><link>https://notjam.es/2021-06-16</link><guid isPermaLink="false">https://notjam.es/2021-06-16</guid><pubDate>Wed, 16 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/3eSN9F2MEiwC6nyV7V/giphy.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;President Biden signed an Executive Order to improve the
+&lt;a href=&quot;https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/&quot;&gt;Nation’s Cybersecurity posture&lt;/a&gt;.  This is a pretty big deal
+because it signals to every organization across the
+government that they need to divert funding to implement
+this order.&lt;/p&gt;
+&lt;p&gt;This Executive Order covers a pretty wide variety of tasks,
+but a few things specifically stand out to me:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;incorporation of NIST guidelines and standards as part of a playbook&lt;/li&gt;
+&lt;li&gt;enforcement of Multi-Factor Authentication everywhere in government&lt;/li&gt;
+&lt;li&gt;additional expectations of a Software Bill of Materials&lt;/li&gt;
+&lt;li&gt;required movement towards a Zero Trust architecture&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The NIST guidelines are not that “out there” all things considered.
+However, there’s a number of which that most government agencies don’t
+seem to follow.  Suggestions against Password expiration and arbitrary
+password composition rules are high up on that list.  Government
+sites also often make it difficult ot use password managers which
+is discouraged by the NIST rules.  NIST has a really handy
+&lt;a href=&quot;https://pages.nist.gov/800-63-FAQ/&quot;&gt;FAQ&lt;/a&gt; if you’d like the short version.&lt;/p&gt;
+&lt;p&gt;Multi-factor Authentication is pretty clear in NIST to not
+be SMS and not be email.  This is to be adopted by agencies
+within 180 days of the order - and if they can’t adopt it within
+that time frame they must explain why not every 60 days to
+DHS / CISA / etc.  Hopefully, most organizations will choose
+existing solutions like login.gov to implement this.&lt;/p&gt;
+&lt;p&gt;Software Bill of Materials is less clear as to what
+it’s really requiring.  The executive order does not
+define this, but does set in place the requirement
+that a definition must be published within 60 days
+by the Secretary of Commerce.&lt;/p&gt;
+&lt;p&gt;Zero-Trust architecture is where there will be a huge
+amount of work to be done.  This is designing systems in
+a way that encourages defense with both public and private
+interactions of systems.  Expect that there’s a potential
+threat actor that’s breached your network.  With that in
+mind, you can’t give full access to just anyone and everything.
+Instead, you have to clearly define access and privileges,
+enforcing controls on who gets what and why.&lt;/p&gt;
+&lt;p&gt;I’m excited to see an executive order that takes cyber security
+seriously.  Thanks to Beau Woods for tipping me off
+about this, I hadn’t even heard of it!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Fastly had a bit of an incident on June 8th which you might’ve seen.
 The outage lasted around one hour, but it meant that loads of sites…]]></description><link>https://notjam.es/2021-06-09</link><guid isPermaLink="false">https://notjam.es/2021-06-09</guid><pubDate>Wed, 09 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/3oKGzgNfssFG1xlwC4/giphy-downsized.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://techcrunch.com/2021/06/08/numerous-popular-websites-are-facing-an-outage/&quot;&gt;Fastly had a bit of an incident on June 8th&lt;/a&gt; which you might’ve seen.
 The outage lasted around one hour, but it meant that loads of sites that rely
