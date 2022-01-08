@@ -20,6 +20,13 @@
 	},
 	"work": [
 		{
+			"company": "HumanFirst",
+			"position": "Software Engineer",
+			"website": "https://gohumanfirst.com/",
+			"startDate": "2020-10-15",
+			"summary": "Building software to enable safe, effective, and equitable healthcare operations at home."
+		},
+		{
 			"company": "Common Room",
 			"position": "Co-Founder",
 			"website": "https://commonroom.io/",
