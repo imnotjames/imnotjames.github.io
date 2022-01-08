@@ -7,9 +7,11 @@ import SEO from "../components/seo"
 const WORK_LIMIT = 4;
 
 function ResumeExperience ({ experience }) {
+  const highlights = experience.highlights || [];
+
   const highlightsList = (
       <ul style={{padding: 0, marginBottom: 0}}>
-        {experience.highlights.map(hl => (
+        {highlights.map(hl => (
             <li
                 key={hl}
                 style={{
@@ -80,7 +82,7 @@ function ResumeExperience ({ experience }) {
           >
           { experience.summary }
         </blockquote>
-        { experience.highlights.length > 0 ? highlightsList : `` }
+        { highlights.length > 0 ? highlightsList : `` }
       </article>
   );
 }
