@@ -43,7 +43,7 @@
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
     "react-typography": "^0.16.19",
-    "reveal.js": "^4.1.0",
+    "reveal.js": "^4.3.0",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
     "typeface-prociono": "0.0.72",
