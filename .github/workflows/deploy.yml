@@ -10,7 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
       - name: install dependencies
         run: npm install
 
@@ -18,7 +20,7 @@ jobs:
         run: npm run build
 
       - name: deploy to github pages branch
-        uses: JamesIves/github-pages-deploy-action@4.0.0
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           BRANCH: gh-pages
           FOLDER: "public/"
