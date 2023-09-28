@@ -25,7 +25,12 @@
 			"position": "Software Engineer",
 			"website": "https://gohumanfirst.com/",
 			"startDate": "2020-10-15",
-			"summary": "Building software to enable safe, effective, and equitable healthcare operations at home."
+			"summary": "Building software to enable safe, effective, and equitable healthcare operations at home.",
+			"highlights": [
+				"Developed best practices for both the Typescript backend and React frontend as well as automations to keep the team aligned to those practices.",
+				"Led the engineering team to SOC2 and HIPAA readiness via creation of disaster recovery plans using infrastructure as code, incident preparedness playbooks, and features to support the principles of least privilege.",
+				"Kept the engineering team's technical strategy aligned with business goals to deliver products driven by both data and user feedback - from the first lines of code of our public API to delivering lines of features that closed sales."
+			]
 		},
 		{
 			"company": "Common Room",
