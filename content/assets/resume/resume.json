@@ -27,9 +27,9 @@
 			"startDate": "2020-10-15",
 			"summary": "Building software to enable safe, effective, and equitable healthcare operations at home.",
 			"highlights": [
-				"Developed best practices for both the Typescript backend and React frontend as well as automations to keep the team aligned to those practices.",
+				"Kept the engineering team's technical strategy aligned with business goals to deliver products driven by both data and user feedback - from the first lines of code of our public API to delivering lines of features that closed sales.",
 				"Led the engineering team to SOC2 and HIPAA readiness via creation of disaster recovery plans using infrastructure as code, incident preparedness playbooks, and features to support the principles of least privilege.",
-				"Kept the engineering team's technical strategy aligned with business goals to deliver products driven by both data and user feedback - from the first lines of code of our public API to delivering lines of features that closed sales."
+				"Developed best practices for both the Typescript backend and React frontend as well as automations to keep the team aligned to those practices."
 			]
 		},
 		{
@@ -40,8 +40,8 @@
 			"endDate": "2020-08-01",
 			"summary": "Brought together an engineering team to build a novel community engagement product, setting the cultural and technical vision for the company.",
 			"highlights": [
-				"Create React Native & React Native Web frontend for the user and end-user portions of the flagship community product utilizing React Hooks and CSS-in-JS.",
-				"Built NodeJS backend APIs and infrastructure to support rapid product feature iteration, rolling atomic deployments, as well as the ability to scale from 100 members to 100,000."
+				"Developed React Native & React Native Web frontend for the user and end-user portions of the flagship community product utilizing React Hooks and CSS-in-JS.",
+				"Created plan and approach to hire the first three engineers to the team to build an MVP product."
 			]
 		},
 		{
@@ -65,8 +65,7 @@
 			"endDate": "2018-09-01",
 			"summary": "Understanding the human element behind threats to manage the risks they pose.",
 			"highlights": [
-				"Built the Hivemind deception and threat intelligence platform using Node, Kafka, Tensorflow, Postgres, and ElasticSearch to support real-time personalization encouraging intruders to engage so they could be fingerprinted and tracked.",
-				"Assisted both domestic and international law enforcement agencies on cybercrime cases, leading to the discontinuation of malicious activity against 10,000+ of victims."
+				"Built the Hivemind deception and threat intelligence platform using Node, Kafka, Tensorflow, Postgres, and ElasticSearch to support real-time personalization encouraging intruders to engage so they could be fingerprinted and tracked."
 			]
 		},
 		{
