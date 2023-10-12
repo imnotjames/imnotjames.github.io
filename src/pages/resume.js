@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const WORK_LIMIT = 4;
 
-function ResumeExperience ({ experience }) {
+function ResumeExperience ({ experience, truncated }) {
   const highlights = experience.highlights || [];
 
   const highlightsList = (
@@ -15,8 +15,8 @@ function ResumeExperience ({ experience }) {
             <li
                 key={hl}
                 style={{
-                  fontSize: `14px`,
-                  lineHeight: `22px`,
+                  fontSize: `12px`,
+                  lineHeight: `16px`,
                   marginBottom: `4px`,
                 }}>
               {hl}
@@ -25,8 +25,65 @@ function ResumeExperience ({ experience }) {
       </ul>
   );
 
+  if (truncated) {
+      return (
+          <article
+            style={{
+                marginBottom: '8px',
+            }}
+          >
+              <header>
+                  <h3
+                      style={{
+                          fontSize: `12px`,
+                          display: "inline-block",
+                          margin: 0,
+                          marginRight: `14px`,
+                          padding: 0,
+                      }}
+                  >
+                      {experience.position}
+                  </h3>
+                  <h4
+                      style={{
+                          display: "inline-block",
+                          margin: 0,
+                          padding: 0,
+                          fontSize: '12px',
+                      }}
+                  >
+                      <a
+                          style={{
+                              color: `inherit`,
+                              textDecoration: `none`,
+                          }}
+                          href={experience.website || '#'}
+                      >
+                          {experience.company}
+                      </a>
+                  </h4>
+                  <h5 style={{ margin: 0, fontSize: '12px', paddingLeft: '32px', }}>
+                    <span title={ experience.startDate }>
+                      {experience.startMonth} {experience.startYear}
+                    </span>
+                    {` `}
+                    &mdash;
+                    {` `}
+                    <span title={ experience.endDate || 'Current' }>
+                      {experience.endMonth} {experience.endYear || 'Current' }
+                    </span>
+                  </h5>
+              </header>
+          </article>
+      )
+  }
+
   return (
-      <article>
+      <article
+          style={{
+              marginBottom: '12px',
+          }}
+      >
         <header
             style={{
               marginBottom: `14px`,
@@ -48,6 +105,7 @@ function ResumeExperience ({ experience }) {
                 display: "inline-block",
                 margin: 0,
                 padding: 0,
+                fontSize: '20px',
               }}
             >
             <a
@@ -60,7 +118,7 @@ function ResumeExperience ({ experience }) {
               {experience.company}
             </a>
           </h4>
-          <h5 style={{ margin: 0 }}>
+          <h5 style={{ margin: 0, fontSize: '12px' }}>
             <span title={ experience.startDate }>
               {experience.startMonth} {experience.startYear}
             </span>
@@ -93,7 +151,7 @@ function ResumeHeader({ name, label, email, profiles }) {
           style={{
             display: "flex",
             width: "100%",
-            marginBottom: `18px`,
+            marginBottom: `12px`,
           }}
         >
         <div style={{
@@ -143,6 +201,7 @@ function ResumeSectionHeader({ style, children, ...props }) {
           style={{
             height: `8px`,
             lineHeight: `12px`,
+            marginBottom: '16px',
             borderBottom: `1px solid black`,
             ...style,
           }}
@@ -175,7 +234,6 @@ function ResumeSection ({ style, children, ...props }) {
           style={{
             display: `flex`,
             flexDirection: `column`,
-            rowGap: `16px`,
             ...style
           }}
       >
@@ -197,9 +255,7 @@ function ResumeIndex(
         location
     }
 ) {
-  const work = resume.work.slice(0, WORK_LIMIT);
-
-  const earliestDisplayedWork = work.length > 0 ? work[work.length - 1] : null;
+  const earliestDisplayedWork = resume.work.length >= WORK_LIMIT ? resume.work[WORK_LIMIT - 1] : null;
 
   const extraXPAvailable = (
       <footer>
@@ -209,7 +265,7 @@ function ResumeIndex(
             }}
           >
           Experience points truncated for optimal viewing.
-          Points prior to
+          Detailed points prior to
           {earliestDisplayedWork ? ` ${earliestDisplayedWork.startMonth} ${earliestDisplayedWork.startYear} ` : ' these '}
           available upon request.
         </small>
@@ -242,11 +298,11 @@ function ResumeIndex(
                 }}
             >
               <ResumeSection>
-                <ResumeSectionHeader style={{ marginBottom: '0px' }}>
+                <ResumeSectionHeader>
                   Experience Points
                 </ResumeSectionHeader>
 
-                {work.map(xp => (<ResumeExperience experience={xp} />))}
+                {resume.work.map((xp, index) => (<ResumeExperience key={xp} experience={xp} truncated={index >= WORK_LIMIT} />))}
 
               </ResumeSection>
             </ResumeSection>
@@ -289,7 +345,7 @@ function ResumeIndex(
             </ResumeSection>
           </div>
 
-          { resume.work.length > WORK_LIMIT ? extraXPAvailable : ``}
+          { resume.work.length >= WORK_LIMIT ? extraXPAvailable : ``}
         </div>
       </Layout>
   )
