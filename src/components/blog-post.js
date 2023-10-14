@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import styled from "@emotion/styled";
-import { css } from "@emotion/react";
+import styled from 'styled-components';
 
 import { rhythm } from "../utils/typography";
 
@@ -10,13 +9,12 @@ const BlogPostTimestampContainer = styled.h2`
   position: absolute;
   display: block;
   overflow: hidden;
-  margin-bottom: ${rhythm(1)};
   width: 100px;
   height: 1.2em;
   top: -0.2em;
   right: 0;
-  margin: 0;
-  
+  margin: 0 0 ${rhythm(1)};
+
   .date, .time {
     padding-left: 8px;
     background-color: #FFF;
@@ -24,22 +22,134 @@ const BlogPostTimestampContainer = styled.h2`
     right: 0;
     transition: top 0.2s;
   }
-  
+
   .date {
     top: 0;
   }
-  
+
   .time {
     top: 100%;
   }
-  
+
   &:hover, &:focus {
     .date {
       top: -100%;
     }
+
     .time {
       top: 0;
     }
+  }
+`;
+
+const BlogPostHeaderContainer = styled.header`
+  position: relative;
+  height: 8px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid #222;
+`;
+
+const BlogPostHeaderH1 = styled.h1`
+  background-color: #FFF;
+  float: left;
+  line-height: 14px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-right: 6px;
+  margin: 0;,
+`;
+
+const BlogPostHeaderLink = styled(Link)`
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+const BlogPostReadMoreLink = styled(Link)`
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  background: white;
+
+  position: relative;
+  display: block;
+  text-align: right;
+
+  &:hover:after {
+    height: 26px;
+    font-size: 26px;
+    line-height: 26px;
+    top: -7px;
+    width: 20px;
+    opacity: 1;
+    transition: all 0.3s, opacity 0.1s 0.05s;
+    -moz-transition: all 0.3s, opacity 0.1s 0.05s;
+    -ms-transition: all 0.3s, opacity 0.1s 0.05s;
+    -webkit-transition: all 0.3s, opacity 0.1s 0.05s;
+    -o-transition: all 0.3s, opacity 0.1s 0.05s;
+  }
+
+  &:after {
+    height: 12px;
+    font-size: 12px;
+    line-height: 12px;
+    top: 0px;
+    left: 100%;
+    content: "\\00BB";
+    display: inline-block;
+    width: 0px;
+    overflow: hidden;
+    z-index: 1;
+    text-align: right;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.2s, opacity 0.1s;
+    -moz-transition: all 0.2s, opacity 0.1s;
+    -ms-transition: all 0.2s, opacity 0.1s;
+    -webkit-transition: all 0.2s, opacity 0.1s;
+    -o-transition: all 0.2s, opacity 0.1s;
+  }
+`;
+
+const BlogPostContent = styled.section`
+  p {
+    code {
+      padding: 3px 6px;
+    }
+  }
+
+  .gatsby-highlight {
+    &:before {
+      content: "Code";
+      display: inline-block;
+      position: absolute;
+      top: -7px;
+      left: 0;
+      text-transform: uppercase;
+      font-size: 10px;
+      line-height: 12px;
+      padding-right: 8px;
+      letter-spacing: 2px;
+
+      background: #FFF;
+    }
+
+    &[data-language]:before {
+      content: attr(data-language);
+    }
+
+    pre {
+      margin-bottom: 0;
+    }
+
+    position: relative;
+    margin-bottom: 1.75rem;
+    padding: 16px 0;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
   }
 `;
 
@@ -59,39 +169,14 @@ function BlogPostTimestamp ({ date, time } ) {
 function BlogPostHeader ({ title, path, date, time }) {
 
   return (
-      <header style={{
-        position: "relative",
-        height: `8px`,
-        marginBottom: `36px`,
-        borderBottom: `1px solid #222`,
-      }}>
-        <h1
-            style={{
-              backgroundColor: `#FFF`,
-              float: "left",
-              lineHeight: `14px`,
-              fontSize: `12px`,
-              letterSpacing: `2px`,
-              textTransform: `uppercase`,
-              paddingRight: `6px`,
-              margin: 0,
-            }}
-        >
-          <Link
-              css={css`
-              text-decoration: none;
-
-              &:hover {
-                text-decoration: underline;
-              }
-              `}
-              to={path}
-            >
+      <BlogPostHeaderContainer>
+        <BlogPostHeaderH1>
+          <BlogPostHeaderLink to={path}>
             {title}
-          </Link>
-        </h1>
+          </BlogPostHeaderLink>
+        </BlogPostHeaderH1>
         <BlogPostTimestamp date={date} time={time} />
-      </header>
+      </BlogPostHeaderContainer>
   )
 }
 
@@ -125,56 +210,9 @@ function BlogPostPreview ({frontmatter, path, slug, excerpt}) {
           />
         </section>
 
-        <Link
-            css={css`
-              text-transform: uppercase;
-              text-decoration: none;
-              font-size: 12px;
-              background: white;
-
-              position: relative;
-              display: block;
-              text-align: right;
-
-              &:hover:after {
-                height: 26px;
-                font-size: 26px;
-                line-height: 26px;
-                top: -7px;
-                width: 20px;
-                opacity: 1;
-                transition: all 0.3s, opacity 0.1s 0.05s;
-                -moz-transition: all 0.3s, opacity 0.1s 0.05s;
-                -ms-transition: all 0.3s, opacity 0.1s 0.05s;
-                -webkit-transition: all 0.3s, opacity 0.1s 0.05s;
-                -o-transition: all 0.3s, opacity 0.1s 0.05s;
-              }
-
-              &:after {
-                height: 12px;
-                font-size: 12px;
-                line-height: 12px;
-                top: 0px;
-                left: 100%;
-                content: "\\00BB";
-                display: inline-block;
-                width: 0px;
-                overflow: hidden;
-                z-index: 1;
-                text-align: right;
-                position: absolute;
-                opacity: 0;
-                transition: all 0.2s, opacity 0.1s;
-                -moz-transition: all 0.2s, opacity 0.1s;
-                -ms-transition: all 0.2s, opacity 0.1s;
-                -webkit-transition: all 0.2s, opacity 0.1s;
-                -o-transition: all 0.2s, opacity 0.1s;
-              }
-              `}
-            to={path}
-          >
+        <BlogPostReadMoreLink to={path}>
           Read More
-        </Link>
+        </BlogPostReadMoreLink>
       </article>
   )
 }
@@ -192,47 +230,7 @@ function BlogPost ({ frontmatter, slug, html, path }) {
           slug={slug}
           path={path}
       />
-      <section
-          css={css`
-            p {
-              code {
-                padding: 3px 6px;
-              }
-            }
-
-            .gatsby-highlight {
-              &:before {
-                content: "Code";
-                display: inline-block;
-                position: absolute;
-                top: -7px;
-                left: 0;
-                text-transform: uppercase;
-                font-size: 10px;
-                line-height: 12px;
-                padding-right: 8px;
-                letter-spacing: 2px;
-                
-                background: #FFF;
-              }
-
-              &[data-language]:before {
-                content: attr(data-language);
-              }
-
-              pre {
-                margin-bottom: 0;
-              }
-
-              position: relative;       
-              margin-bottom: 1.75rem;
-              padding: 16px 0;
-              border-top: 1px solid #222;
-              border-bottom: 1px solid #222;
-            }
-          `}
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+      <BlogPostContent dangerouslySetInnerHTML={{ __html: html }} />
       <footer>
       </footer>
     </article>

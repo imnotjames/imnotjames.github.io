@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import styled from "@emotion/styled";
+import styled from 'styled-components';
 
 const ThoughtArticle = styled.article`
     clear: both;
