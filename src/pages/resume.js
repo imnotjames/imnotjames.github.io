@@ -27,29 +27,36 @@ function ResumeExperience ({ experience, truncated }) {
 
   if (truncated) {
       return (
-          <article
-            style={{
-                marginBottom: '8px',
-            }}
-          >
-              <header>
+          <article style={{
+              marginBottom: '12px',
+          }}>
+              <header style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  gap: '8px',
+                  alignItems: 'center',
+                  fontSize: '14px',
+              }}>
                   <h3
                       style={{
-                          fontSize: `12px`,
-                          display: "inline-block",
+                          fontSize: `inherit`,
                           margin: 0,
-                          marginRight: `14px`,
                           padding: 0,
                       }}
                   >
                       {experience.position}
                   </h3>
+
+
+                  <span style={{ fontSize: '60%' }}>
+                      &#x25B6;
+                  </span>
+
                   <h4
                       style={{
-                          display: "inline-block",
                           margin: 0,
                           padding: 0,
-                          fontSize: '12px',
+                          fontSize: 'inherit',
                       }}
                   >
                       <a
@@ -62,18 +69,18 @@ function ResumeExperience ({ experience, truncated }) {
                           {experience.company}
                       </a>
                   </h4>
-                  <h5 style={{ margin: 0, fontSize: '12px', paddingLeft: '32px', }}>
+              </header>
+              <h5 style={{ margin: 0, fontSize: '12px', }}>
                     <span title={ experience.startDate }>
                       {experience.startMonth} {experience.startYear}
                     </span>
-                    {` `}
-                    &mdash;
-                    {` `}
-                    <span title={ experience.endDate || 'Current' }>
+                  {` `}
+                  &mdash;
+                  {` `}
+                  <span title={ experience.endDate || 'Current' }>
                       {experience.endMonth} {experience.endYear || 'Current' }
                     </span>
-                  </h5>
-              </header>
+              </h5>
           </article>
       )
   }
@@ -81,31 +88,37 @@ function ResumeExperience ({ experience, truncated }) {
   return (
       <article
           style={{
-              marginBottom: '12px',
+              marginBottom: '14px',
           }}
       >
         <header
             style={{
-              marginBottom: `14px`,
+                display: 'flex',
+                flexDirection: 'row',
+                gap: '8px',
+                alignItems: 'center',
+                fontSize: '20px',
             }}
           >
           <h3
               style={{
-                fontSize: `20px`,
-                display: "inline-block",
+                fontSize: `inherit`,
                 margin: 0,
-                marginRight: `14px`,
                 padding: 0,
               }}
             >
             {experience.position}
           </h3>
+
+          <span style={{ fontSize: '60%' }}>
+            &#x25B6;
+          </span>
+
           <h4
               style={{
-                display: "inline-block",
                 margin: 0,
                 padding: 0,
-                fontSize: '20px',
+                fontSize: 'inherit',
               }}
             >
             <a
@@ -118,22 +131,24 @@ function ResumeExperience ({ experience, truncated }) {
               {experience.company}
             </a>
           </h4>
-          <h5 style={{ margin: 0, fontSize: '12px' }}>
-            <span title={ experience.startDate }>
-              {experience.startMonth} {experience.startYear}
-            </span>
-            {` `}
-            &mdash;
-            {` `}
-            <span title={ experience.endDate || 'Current' }>
-              {experience.endMonth} {experience.endYear || 'Current' }
-            </span>
-          </h5>
         </header>
+        <h5 style={{ margin: 0, fontSize: '12px' }}>
+          <span title={ experience.startDate }>
+            {experience.startMonth} {experience.startYear}
+          </span>
+          {` `}
+          &mdash;
+          {` `}
+          <span title={ experience.endDate || 'Current' }>
+            {experience.endMonth} {experience.endYear || 'Current' }
+          </span>
+        </h5>
+
         <blockquote
             style={{
               margin: 0,
               padding: 0,
+              marginTop: '8px',
               fontSize: `14px`,
               lineHeight: `22px`,
             }}
@@ -201,7 +216,7 @@ function ResumeSectionHeader({ style, children, ...props }) {
           style={{
             height: `8px`,
             lineHeight: `12px`,
-            marginBottom: '16px',
+            marginBottom: '18px',
             borderBottom: `1px solid black`,
             ...style,
           }}
@@ -302,7 +317,7 @@ function ResumeIndex(
                   Experience Points
                 </ResumeSectionHeader>
 
-                {resume.work.map((xp, index) => (<ResumeExperience key={xp} experience={xp} truncated={index >= WORK_LIMIT} />))}
+                {resume.work.map((xp, index) => (<ResumeExperience key={`${xp?.company}-${xp?.position}-${xp?.startDate}`} experience={xp} truncated={index >= WORK_LIMIT} />))}
 
               </ResumeSection>
             </ResumeSection>
