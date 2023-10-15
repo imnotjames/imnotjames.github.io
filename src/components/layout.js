@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from 'styled-components';
-import { css } from '@emotion/react'
 import { Helmet } from 'react-helmet'
 
 import { rhythm } from "../utils/typography"
@@ -30,20 +29,34 @@ a {
 }
 `;
 
+const LayoutHeaderContainer = styled.header`
+  position: relative;
+  margin-top: -42px;
+  
+  @media print {
+    display: none;
+  }
+`;
+
+const LayoutContainer = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: ${rhythm(30)};
+  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+
+  @page {
+    margin: 0 0;
+  }
+  @media print {
+    max-width: max-content;
+    padding: 8mm 10mm !important;
+    margin: 0 !important;
+  }
+`;
+
 function LayoutHeader() {
   return (
-    <header
-        style={{
-          position: "relative",
-          marginTop: "-42px",
-        }}
-        css={css`
-          @media print {
-             display: none;
-          }
-          `
-        }
-      >
+    <LayoutHeaderContainer>
       <h1
           className="title"
           style={{
@@ -121,31 +134,13 @@ function LayoutHeader() {
           </NavigationItem>
         </ul>
       </nav>
-    </header>
+    </LayoutHeaderContainer>
   )
 }
 
 function Layout ({ location, title, children }) {
   return (
-    <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(30),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-      }}
-      css={css`
-          @page {
-            margin: 0 0;
-          }
-          @media print {
-            max-width: auto;
-            padding: 8mm 10mm !important;
-            margin: 0 !important;
-          }
-          `
-      }
-    >
+    <LayoutContainer>
       <Helmet defer={false}>
         <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
       </Helmet>
@@ -154,7 +149,7 @@ function Layout ({ location, title, children }) {
           title={title}
         />
       <main>{children}</main>
-    </div>
+    </LayoutContainer>
   );
 }
 

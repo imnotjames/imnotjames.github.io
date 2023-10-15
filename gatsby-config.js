@@ -78,7 +78,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-styled-components',
-    `gatsby-plugin-emotion`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
