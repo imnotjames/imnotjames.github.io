@@ -3,27 +3,26 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styled from "styled-components";
+import {When} from "react-if";
 
 const WORK_LIMIT = 4;
 
-function ResumeExperience ({ experience, truncated }) {
-  const highlights = experience.highlights || [];
+const ExperiencePointsList = styled.ul`
+  padding: 0 0 0 0.75rem;
+  margin-bottom: 0;
+  list-style: '▶';
+`;
 
-  const highlightsList = (
-      <ul style={{padding: 0, marginBottom: 0}}>
-        {highlights.map(hl => (
-            <li
-                key={hl}
-                style={{
-                  fontSize: `12px`,
-                  lineHeight: `16px`,
-                  marginBottom: `4px`,
-                }}>
-              {hl}
-            </li>
-        ))}
-      </ul>
-  );
+const ExperiencePointsListItem = styled.li`
+  font-size: 0.85rem;
+  line-height: 1rem;
+  margin-bottom: 0.25rem;
+  padding-left: 0.25rem;
+`;
+
+function ResumeExperience ({ experience, truncated }) {
+  const highlights = Array.isArray(experience.highlights) ? experience.highlights : [];
 
   if (truncated) {
       return (
@@ -155,7 +154,16 @@ function ResumeExperience ({ experience, truncated }) {
           >
           { experience.summary }
         </blockquote>
-        { highlights.length > 0 ? highlightsList : `` }
+
+        <When condition={highlights.length > 0}>
+            <ExperiencePointsList>
+                {highlights.map(hl => (
+                    <ExperiencePointsListItem key={hl}>
+                        {hl}
+                    </ExperiencePointsListItem>
+                ))}
+            </ExperiencePointsList>
+        </When>
       </article>
   );
 }
@@ -178,6 +186,7 @@ function ResumeHeader({ name, label, email, profiles }) {
               style={{
                 fontSize: `28px`,
                 margin: 0,
+                paddingBottom: '8px',
               }}
             >
             {name}
@@ -189,6 +198,9 @@ function ResumeHeader({ name, label, email, profiles }) {
         <div
             style={{
               order: 1,
+              display: 'flex',
+                flexDirection: 'column',
+                gap: '8px',
             }}
         >
           <div className="contact contact-email">
@@ -208,37 +220,35 @@ function ResumeHeader({ name, label, email, profiles }) {
   );
 }
 
-function ResumeSectionHeader({ style, children, ...props }) {
+const ResumeSectionHeaderContainer = styled.header`
+  height: 8px;
+  line-height: 12px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid black;
+`;
+
+const ResumeSectionHeading = styled.h2`
+  margin: 0;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #FFF;
+  padding-right: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+`;
+
+function ResumeSectionHeader({ children }) {
 
   return (
-      <header
-          {...props}
-          style={{
-            height: `8px`,
-            lineHeight: `12px`,
-            marginBottom: '18px',
-            borderBottom: `1px solid black`,
-            ...style,
-          }}
-        >
-        <h2
-            style={{
-              margin: 0,
-              display: `inline-block`,
-              fontSize: `12px`,
-              lineHeight: `16px`,
-              letterSpacing: `2px`,
-              textTransform: `uppercase`,
-              fontWeight: `bold`,
-              backgroundColor: `#FFF`,
-              paddingRight: `4px`,
-              whiteSpace: `nowrap`,
-              overflow: `hidden`,
-            }}
-          >
+      <ResumeSectionHeaderContainer>
+        <ResumeSectionHeading>
           {children}
-        </h2>
-      </header>
+        </ResumeSectionHeading>
+      </ResumeSectionHeaderContainer>
   )
 }
 
@@ -272,21 +282,6 @@ function ResumeIndex(
 ) {
   const earliestDisplayedWork = resume.work.length >= WORK_LIMIT ? resume.work[WORK_LIMIT - 1] : null;
 
-  const extraXPAvailable = (
-      <footer>
-        <small
-            style={{
-              fontSize: '12px'
-            }}
-          >
-          Experience points truncated for optimal viewing.
-          Detailed points prior to
-          {earliestDisplayedWork ? ` ${earliestDisplayedWork.startMonth} ${earliestDisplayedWork.startYear} ` : ' these '}
-          available upon request.
-        </small>
-      </footer>
-  );
-
   return (
       <Layout location={location} title={siteTitle}>
         <SEO title="Resume - James Ward" />
@@ -312,14 +307,11 @@ function ResumeIndex(
                   flex: 1
                 }}
             >
-              <ResumeSection>
-                <ResumeSectionHeader>
-                  Experience Points
-                </ResumeSectionHeader>
+              <ResumeSectionHeader>
+                Experience Points
+              </ResumeSectionHeader>
 
-                {resume.work.map((xp, index) => (<ResumeExperience key={`${xp?.company}-${xp?.position}-${xp?.startDate}`} experience={xp} truncated={index >= WORK_LIMIT} />))}
-
-              </ResumeSection>
+              {resume.work.map((xp, index) => (<ResumeExperience key={`${xp?.company}-${xp?.position}-${xp?.startDate}`} experience={xp} truncated={index >= WORK_LIMIT} />))}
             </ResumeSection>
 
             <ResumeSection
@@ -334,6 +326,7 @@ function ResumeIndex(
                 >
                   Tools I Enjoy
               </ResumeSectionHeader>
+
               <ul style={{ padding: 0, margin: 0 }}>
                 { resume.skills.map(skill => (
                     <li
@@ -360,7 +353,20 @@ function ResumeIndex(
             </ResumeSection>
           </div>
 
-          { resume.work.length >= WORK_LIMIT ? extraXPAvailable : ``}
+          <When condition={resume.work.length >= WORK_LIMIT}>
+              <footer>
+                  <small
+                      style={{
+                          fontSize: '12px'
+                      }}
+                  >
+                      Experience points truncated for optimal viewing.
+                      Detailed points prior to
+                      {earliestDisplayedWork ? ` ${earliestDisplayedWork.startMonth} ${earliestDisplayedWork.startYear} ` : ' these '}
+                      available upon request.
+                  </small>
+              </footer>
+          </When>
         </div>
       </Layout>
   )

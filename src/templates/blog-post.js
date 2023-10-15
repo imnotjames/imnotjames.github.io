@@ -1,10 +1,42 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import styled from "styled-components";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import {BlogPost} from "../components/blog-post";
+
+const BlogPostPaginationUl = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+`;
+
+const BlogPostNavigation = ({ previous, next }) => {
+    return (
+        <nav>
+            <BlogPostPaginationUl>
+                <li>
+                    {previous && (
+                        <Link to={`/blog${previous.fields.slug}`} rel="prev">
+                            ← {previous.frontmatter.title}
+                        </Link>
+                    )}
+                </li>
+                <li>
+                    {next && (
+                        <Link to={`/blog${next.fields.slug}`} rel="next">
+                            {next.frontmatter.title} →
+                        </Link>
+                    )}
+                </li>
+            </BlogPostPaginationUl>
+        </nav>
+    )
+}
 
 export default function BlogPostTemplate(
     {
@@ -34,32 +66,7 @@ export default function BlogPostTemplate(
           html={post.html}
         />
 
-      <nav>
-        <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
-          <li>
-            {previous && (
-              <Link to={`/blog${previous.fields.slug}`} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={`/blog${next.fields.slug}`} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+        <BlogPostNavigation previous={previous} next={next} />
     </Layout>
   );
 }

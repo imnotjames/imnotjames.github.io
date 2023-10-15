@@ -1,9 +1,46 @@
 import React from "react"
 import { Link } from "gatsby"
-import styled from 'styled-components';
+import styled, { createGlobalStyle} from 'styled-components';
+import { Reset } from 'styled-reset';
 import { Helmet } from 'react-helmet'
+/*
+-  baseFontSize: "16px",
+    -  baseLineHeight: 1.75,
+    -  scaleRatio: 5 / 2,
+    -  googleFonts: [{
+-    name: "Prociono",
+    -    styles: ["400", "400i", "700", "700i", "900", "900i"]
+-  }],
+-  headerFontFamily: ["Prociono", "Helvetica", "serif"],
+    -  bodyFontFamily: ["Prociono", "Helvetica", "serif"],
+    -  bodyColor: "#222",
+    -  headerWeight: 900,
+    -  bodyWeight: 400,
+    -  boldWeight: 700,
+    -  overrideStyles: ({ adjustFontSizeTo, scale, rhythm }) => {
+    -    return {
+        -      a: {
+        -        color: `#222`,
+            -      }
+    -    }
+*/
+const LayoutStyle = createGlobalStyle`
+  body {
+    font-size: 16px;
+    font-family: Prociono, Helvetica, serif;
+    color: #222;
+    font-weight: 400;
+  }
+  
+  b {
+    font-weight: 700;
+  }
+  
+  a {
+    color: #222;
+  }
 
-import { rhythm } from "../utils/typography"
+`;
 
 const NavigationItem = styled.li`
 list-style: none;
@@ -41,8 +78,8 @@ const LayoutHeaderContainer = styled.header`
 const LayoutContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
-  max-width: ${rhythm(30)};
-  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+  max-width: 50rem;
+  padding: 2.625rem 1.3125rem;
 
   @page {
     margin: 0 0;
@@ -54,61 +91,59 @@ const LayoutContainer = styled.div`
   }
 `;
 
+const LayoutHeaderHeading = styled.h1`
+  line-height: 70px;
+  padding-bottom: 1.75rem;
+  font-size: 50px;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+`;
+
+const LayoutHeaderHeadingLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+  margin: 0 auto;
+  position: relative;
+  white-space: nowrap;
+  padding-right: 30px;
+`;
+
+const MyName = styled.span`
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  right: -14px;
+  transform: rotate(-90deg);
+`;
+
+const LayoutNav = styled.nav`
+  margin-top: 8px;
+  margin-bottom: 32px;
+  line-height: 6px;
+  height: 6px;
+  border-bottom: 1px solid black;
+`;
+
+const LayoutNavList = styled.ul`
+  text-align: center;
+  margin: 0;
+  padding: 0;
+`;
+
 function LayoutHeader() {
   return (
     <LayoutHeaderContainer>
-      <h1
-          className="title"
-          style={{
-            lineHeight: `70px`,
-            fontSize: `50px`,
-            fontWeight: 200,
-            textTransform: `uppercase`,
-            textAlign: `center`,
-          }}
-      >
-        <Link
-            to={`/`}
-            style={{
-              textDecoration: `none`,
-              color: `inherit`,
-              margin: `0 auto`,
-              position: `relative`,
-              whiteSpace: `nowrap`,
-              paddingRight: `30px`,
-            }}
-        >
+      <LayoutHeaderHeading>
+        <LayoutHeaderHeadingLink to={`/`}>
           <span className="long-word">Definitively</span> Not
-          <span
-              className="my-name"
-              style={{
-                fontSize: `12px`,
-                position: `absolute`,
-                top: '0',
-                right: `-14px`,
-                transform: "rotate(-90deg)"
-              }}
-          >
+          <MyName>
             ( James )
-          </span>
-        </Link>
-      </h1>
-      <nav
-          style={{
-            marginTop: `8px`,
-            marginBottom: `32px`,
-            lineHeight: `6px`,
-            height: `6px`,
-            borderBottom: `1px solid black`,
-          }}
-        >
-        <ul
-            style={{
-              textAlign: `center`,
-              margin: 0,
-              padding: 0,
-            }}
-          >
+          </MyName>
+        </LayoutHeaderHeadingLink>
+      </LayoutHeaderHeading>
+      <LayoutNav>
+        <LayoutNavList>
           <NavigationItem>
             <Link to={`/blog/`}>
               Blog
@@ -132,8 +167,8 @@ function LayoutHeader() {
               On My Mind..
             </Link>
           </NavigationItem>
-        </ul>
-      </nav>
+        </LayoutNavList>
+      </LayoutNav>
     </LayoutHeaderContainer>
   )
 }
@@ -141,6 +176,8 @@ function LayoutHeader() {
 function Layout ({ location, title, children }) {
   return (
     <LayoutContainer>
+      <Reset />
+      <LayoutStyle/>
       <Helmet defer={false}>
         <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
       </Helmet>

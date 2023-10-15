@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from 'styled-components';
-
-import { rhythm } from "../utils/typography";
+import { MarkdownContent } from "./markdown";
 
 const BlogPostTimestampContainer = styled.h2`
   font-size: 16px;
@@ -13,7 +12,7 @@ const BlogPostTimestampContainer = styled.h2`
   height: 1.2em;
   top: -0.2em;
   right: 0;
-  margin: 0 0 ${rhythm(1)};
+  margin: 0 0 1.75rem;
 
   .date, .time {
     padding-left: 8px;
@@ -114,45 +113,6 @@ const BlogPostReadMoreLink = styled(Link)`
   }
 `;
 
-const BlogPostContent = styled.section`
-  p {
-    code {
-      padding: 3px 6px;
-    }
-  }
-
-  .gatsby-highlight {
-    &:before {
-      content: "Code";
-      display: inline-block;
-      position: absolute;
-      top: -7px;
-      left: 0;
-      text-transform: uppercase;
-      font-size: 10px;
-      line-height: 12px;
-      padding-right: 8px;
-      letter-spacing: 2px;
-
-      background: #FFF;
-    }
-
-    &[data-language]:before {
-      content: attr(data-language);
-    }
-
-    pre {
-      margin-bottom: 0;
-    }
-
-    position: relative;
-    margin-bottom: 1.75rem;
-    padding: 16px 0;
-    border-top: 1px solid #222;
-    border-bottom: 1px solid #222;
-  }
-`;
-
 function BlogPostTimestamp ({ date, time } ) {
   return (
       <BlogPostTimestampContainer>
@@ -180,16 +140,22 @@ function BlogPostHeader ({ title, path, date, time }) {
   )
 }
 
+const BlogPostPreviewArticle = styled.article`
+  margin-bottom: 32px;
+`;
+
+const BlogPostPreviewText = styled.p`
+  padding: 0;
+  margin: 0;
+
+  line-height: 1.75rem;
+`;
+
 function BlogPostPreview ({frontmatter, path, slug, excerpt}) {
   const title = frontmatter.title || slug;
 
   return (
-      <article
-          key={slug}
-          style={{
-            marginBottom: `32px`,
-          }}
-        >
+      <BlogPostPreviewArticle>
         <BlogPostHeader
             title={title}
             date={frontmatter.date}
@@ -199,11 +165,7 @@ function BlogPostPreview ({frontmatter, path, slug, excerpt}) {
         />
 
         <section>
-          <p
-              style={{
-                padding: 0,
-                margin: 0,
-              }}
+          <BlogPostPreviewText
               dangerouslySetInnerHTML={{
                 __html: frontmatter.description || excerpt,
               }}
@@ -213,7 +175,7 @@ function BlogPostPreview ({frontmatter, path, slug, excerpt}) {
         <BlogPostReadMoreLink to={path}>
           Read More
         </BlogPostReadMoreLink>
-      </article>
+      </BlogPostPreviewArticle>
   )
 }
 
@@ -230,7 +192,7 @@ function BlogPost ({ frontmatter, slug, html, path }) {
           slug={slug}
           path={path}
       />
-      <BlogPostContent dangerouslySetInnerHTML={{ __html: html }} />
+      <MarkdownContent content={html} />
       <footer>
       </footer>
     </article>

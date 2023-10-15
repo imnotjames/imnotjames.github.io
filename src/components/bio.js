@@ -7,8 +7,12 @@
 
 import React from "react"
 
-import { rhythm } from "../utils/typography"
 import { useStaticQuery, graphql } from "gatsby";
+import styled from "styled-components";
+
+const BioContainer = styled.div`
+  margin-bottom: 4.375rem;
+`;
 
 const Bio = () => {
   const { site } = useStaticQuery(
@@ -31,11 +35,7 @@ const Bio = () => {
   const social = site.siteMetadata.social;
 
   return (
-    <div
-      style={{
-        marginBottom: rhythm(2.5),
-      }}
-    >
+    <BioContainer>
       <p>
         I'm not <i>the</i> James, just a James.
       </p>
@@ -67,7 +67,7 @@ const Bio = () => {
         or <a href={`https://github.com/${social.github}`}>check out my Github</a>.
 
       </p>
-    </div>
+    </BioContainer>
   );
 };
 

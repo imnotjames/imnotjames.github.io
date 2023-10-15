@@ -1,10 +1,41 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import styled from "styled-components";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
 import {Thought} from "../components/thought";
+
+const ThoughtNavigationUl = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+`;
+
+const ThoughtNavigation = ({ previous, next }) => {
+    return (
+        <nav>
+            <ThoughtNavigationUl>
+                <li>
+                    {previous && (
+                        <Link to={`/on-my-mind${previous.fields.slug}`} rel="prev">
+                            ← {previous.frontmatter.date}
+                        </Link>
+                    )}
+                </li>
+                <li>
+                    {next && (
+                        <Link to={`/on-my-mind${next.fields.slug}`} rel="next">
+                            {next.frontmatter.date} →
+                        </Link>
+                    )}
+                </li>
+            </ThoughtNavigationUl>
+        </nav>
+    )
+}
 
 export default function ThoughtTemplate(
     {
@@ -34,32 +65,7 @@ export default function ThoughtTemplate(
           html={thought.html}
         />
 
-      <nav>
-        <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
-          <li>
-            {previous && (
-              <Link to={`/on-my-mind${previous.fields.slug}`} rel="prev">
-                ← {previous.frontmatter.date}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={`/on-my-mind${next.fields.slug}`} rel="next">
-                {next.frontmatter.date} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+      <ThoughtNavigation previous={previous} next={next} />
     </Layout>
   );
 }
