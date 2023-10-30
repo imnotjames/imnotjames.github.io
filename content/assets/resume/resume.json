@@ -33,24 +33,12 @@
 			]
 		},
 		{
-			"company": "Common Room",
-			"position": "Co-Founder",
-			"website": "https://commonroom.io/",
-			"startDate": "2020-01-28",
-			"endDate": "2020-08-01",
-			"summary": "Brought together an engineering team to build a novel community engagement product, setting the cultural and technical vision for the company.",
-			"highlights": [
-				"Developed React Native & React Native Web frontend for the user and end-user portions of the flagship community product utilizing React Hooks and CSS-in-JS.",
-				"Created plan and approach to hire the first three engineers to the team to build an MVP product."
-			]
-		},
-		{
 			"company": "Venmo",
 			"position": "Senior Engineering Manager",
 			"website": "https://venmo.com/",
 			"startDate": "2018-10-01",
 			"endDate": "2019-12-01",
-			"summary": "Organized the Platform as a Service team - developing the mission, vision, capabilities, and roadmap to encourage a high performing team with a strong sense of ownership.",
+			"summar": "Organized the Platform as a Service team - developing the mission, vision, capabilities, and roadmap to encourage a high performing team with a strong sense of ownership.",
 			"highlights": [
 				"Develop cross-functional initiatives migrating Venmo to a distributed architecture.",
 				"Brought reliability from 90% to 99.999% - from 73 hours to less than 30 seconds of downtime per month.",
