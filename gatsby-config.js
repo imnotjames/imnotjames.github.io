@@ -6,7 +6,6 @@ module.exports = {
     siteUrl: `https://notjam.es`,
     social: {
       email: `james@notjam.es`,
-      twitter: `trulynotjames`,
       github: `imnotjames`,
       linkedin: `imnotjames`,
     },
