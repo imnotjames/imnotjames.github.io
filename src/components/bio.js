@@ -62,8 +62,6 @@ const Bio = () => {
         {` `}
         <a href={`https://linkedin.com/in/${social.linkedin}`}>connect on LinkedIn</a>,
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>tweet at me</a>,
-        {` `}
         or <a href={`https://github.com/${social.github}`}>check out my Github</a>.
 
       </p>
