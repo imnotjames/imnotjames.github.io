@@ -29,6 +29,9 @@ function Thought ({ frontmatter, slug, html, path }) {
   if (typeof html === 'string') {
     html = html.replace(/<\/p>/g, '</p><br />');
     html = html.replace(/<\/ul>/g, '</ul><br />');
+
+    // Such a hack but I mean maybe it'll work
+    html = html.replace(/<img /g, '<img loading="lazy" ');
   }
 
   return (
