@@ -6,6 +6,9 @@ on:
 name: build gatsby
 jobs:
   build_gatsby:
+    concurrency:
+      group: build_gatsby
+      cancel-in-progress: true
     name: build
     runs-on: ubuntu-latest
     steps:
