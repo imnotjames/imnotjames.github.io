@@ -95,7 +95,7 @@ const LetsChatPage = ({ data, location }) => {
             <Heading level={3}>I like Meeting People</Heading>
 
             <Text>
-              If you're in New York City and want to talk about tech -
+              If you're in New York City or Boston and want to talk about tech -
               <b> I'll buy you coffee, no questions asked</b>.
             </Text>
 
