@@ -22,7 +22,7 @@ async function printPDF(pageName, options) {
 
   const server = await app.listen(3000);
 
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
   const page = await browser.newPage();
 
   await page.goto(`http://localhost:3000/${pageName}`, { waitUntil: 'networkidle0' });
