@@ -21,10 +21,22 @@
 	},
 	"work": [
 		{
+			"company": "Vidrovr",
+			"position": "Director of Engineering",
+			"website": "https://vidrovr.com/",
+			"startDate": "2024-02-17",
+			"summary": "Automating video analysis to support better decision making.",
+			"highlights": [
+				"Improved the operational maturity of the engineering team to support compliance and business goals.",
+				"Created a strong hiring structure and pipeline to bring the best talent on board"
+			]
+		},
+		{
 			"company": "HumanFirst",
 			"position": "Engineering",
 			"website": "https://gohumanfirst.com/",
 			"startDate": "2020-10-15",
+			"endDate": "2024-02-09",
 			"summary": "Building software to enable safe, effective, and equitable healthcare operations at home.",
 			"highlights": [
 				"Kept the engineering team's technical strategy aligned with business goals to deliver products driven by both data and user feedback - from the first lines of code of our public API to delivering lines of features that closed sales.",
