@@ -1,4 +1,5 @@
 {
+	"$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/refs/heads/v1.0.0/schema.json",
 	"basics": {
 		"name": "James Ward",
 		"label": "Software Engineer",
