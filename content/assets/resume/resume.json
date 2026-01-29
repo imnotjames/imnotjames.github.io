@@ -22,11 +22,22 @@
 	},
 	"work": [
 		{
+			"company": "CesiumAstro",
+			"position": "Engineering Manager",
+			"startDate": "2025-09-22",
+			"summary": "Providing software-defined communication systems and mission-ready satellites.",
+			"highlights": [
+				"Supported the acquisition of Vidrovr.",
+				"Manager for flight and ground software on the Element Satellite project."
+			]
+		},
+		{
 			"company": "Vidrovr",
 			"position": "Director of Engineering",
 			"website": "https://vidrovr.com/",
 			"startDate": "2024-02-17",
-			"summary": "Automating video analysis to support better decision making.",
+			"endDate": "2025-09-19",
+			"summary": "Automating video analysis to support better decision making. (Acquired by CesiumAstro)",
 			"highlights": [
 				"Provided guidance for technical and professional growth to all members of the engineering team.",
 				"Improved the operational maturity of the engineering team to support compliance and business goals.",
