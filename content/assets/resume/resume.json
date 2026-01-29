@@ -132,6 +132,7 @@
 			"level": "Expert",
 			"keywords": [
 				"MySQL",
+				"MariaDB",
 				"T-SQL",
 				"PostgreSQL",
 				"CockroachDB"
@@ -155,15 +156,14 @@
 			"name": "Python",
 			"level": "Expert",
 			"keywords": [
+				"FastAPI",
+				"SQLAlchemy",
 				"Django",
-				"AsyncIO",
 				"Twisted",
 				"Pandas",
-				"Flask",
 				"Keras",
 				"Tornado",
-				"Celery",
-				"Heron"
+				"Celery"
 			]
 		},
 		{
@@ -171,15 +171,13 @@
 			"level": "Expert",
 			"keywords": [
 				"Linux",
-				"Terraform",
-				"Pulumi",
 				"Kubernetes",
 				"Docker",
 				"Helm",
 				"Puppet",
-				"Chef",
-				"AWS",
-				"Cloudformation"
+				"Terraform",
+				"Pulumi",
+				"AWS"
 			]
 		},
 		{
@@ -187,15 +185,14 @@
 			"level": "Expert",
 			"keywords": [
 				"Typescript",
-				"ES.Next",
-				"nodeJS",
+				"NextJS",
+				"Node",
 				"Webpack",
-				"Koa",
 				"Express",
 				"Tensorflow.js",
 				"React",
-				"Expo",
-				"React Native"
+				"React Native",
+				"Expo"
 			]
 		},
 		{
@@ -206,6 +203,7 @@
 				"MongoDB",
 				"DynamoDB",
 				"Redis",
+				"ValKey",
 				"DynamoDB",
 				"Cassandra"
 			]
@@ -240,14 +238,16 @@
 			"keywords": [
 				"C11",
 				"C99",
-				"CMake"
+				"CMake",
+				"ncurses",
+				"Unity"
 			]
 		}
 	],
 	"languages":[
 		{
 			"language": "English",
-			"fluency": "Fluent?"
+			"fluency": "Fluent"
   		}
   	]
 }
