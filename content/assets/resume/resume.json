@@ -27,8 +27,8 @@
 			"startDate": "2025-09-22",
 			"summary": "Providing software-defined communication systems and mission-ready satellites.",
 			"highlights": [
-				"Supported the acquisition of Vidrovr.",
-				"Manager for flight and ground software on the Element Satellite project."
+				"Supported the acquisition of Vidrovr and integration of the Vidrovr platform with CesiumAstro's missions.",
+				"Manager for flight and ground software on the Element Satellite mission."
 			]
 		},
 		{
@@ -40,7 +40,9 @@
 			"summary": "Automating video analysis to support better decision making. (Acquired by CesiumAstro)",
 			"highlights": [
 				"Provided guidance for technical and professional growth to all members of the engineering team.",
-				"Improved the operational maturity of the engineering team to support compliance and business goals.",
+				"Implemented observability and automated recovery in Kubernetes to reduce mean time to recovery from hours to minutes.",
+				"Introduced unit testing and integration testing, reducing deployed unexpected defects from 50 monthly to less than 3 average monthly.",
+				"Improved the operational maturity of the engineering team to match NIST SP 800-171r3 compliance controls, achieving a DoD Authorization to Operate.",
 				"Created a strong hiring structure and pipeline to build out a software engineering team."
 			]
 		},
