@@ -42,7 +42,7 @@
 				"Provided guidance for technical and professional growth to all members of the engineering team.",
 				"Implemented observability and automated recovery in Kubernetes to reduce mean time to recovery from hours to minutes.",
 				"Introduced unit testing and integration testing, reducing deployed unexpected defects from 50 monthly to less than 3 average monthly.",
-				"Improved the operational maturity of the engineering team to match NIST SP 800-171r3 compliance controls, achieving a DoD Authorization to Operate.",
+				"Improved the operational maturity of the engineering team to match NIST SP 800-171r3 compliance controls, achieving a DoD Authorization to Operate to fulfill USAF contracts.",
 				"Created a strong hiring structure and pipeline to build out a software engineering team."
 			]
 		},
