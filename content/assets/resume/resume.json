@@ -114,17 +114,6 @@
 	],
 	"skills": [
 		{
-			"name": "SQL",
-			"level": "Expert",
-			"keywords": [
-				"MySQL",
-				"MariaDB",
-				"T-SQL",
-				"PostgreSQL",
-				"CockroachDB"
-			]
-		},
-		{
 			"name": "Python",
 			"level": "Expert",
 			"keywords": [
@@ -165,6 +154,17 @@
 				"React",
 				"React Native",
 				"Expo"
+			]
+		},
+		{
+			"name": "SQL",
+			"level": "Expert",
+			"keywords": [
+				"MySQL",
+				"MariaDB",
+				"T-SQL",
+				"PostgreSQL",
+				"CockroachDB"
 			]
 		},
 		{
