@@ -46,7 +46,7 @@
 			"endDate": "2024-02-09",
 			"summary": "Building software to enable safe, effective, and equitable healthcare operations at home. (Acquired by ICON)",
 			"highlights": [
-				"Kept the engineering team's technical strategy aligned with business goals to deliver products driven by both data and user feedback - from the first lines of code of our public API to delivering lines of features that closed sales.",
+				"Aligned the engineering team's technical strategy with business goals to deliver products driven by both data and user feedback - from the first lines of code of our public API to delivering features that closed sales.",
 				"Led the engineering team to SOC2 and HIPAA readiness via creation of disaster recovery plans using infrastructure as code, incident preparedness playbooks, and features to support the principles of least privilege.",
 				"Developed best practices for both the Typescript backend and React frontend as well as automations to keep the team aligned to those practices."
 			]
