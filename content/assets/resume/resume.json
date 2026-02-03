@@ -28,7 +28,7 @@
 			"summary": "Providing software-defined communication systems and mission-ready satellites.",
 			"highlights": [
 				"Supported the acquisition of Vidrovr and integration of the Vidrovr platform with CesiumAstro's missions.",
-				"Manager for flight and ground software on the Element Satellite mission."
+				"Manager for flight software and ground software on the Element Satellite mission."
 			]
 		},
 		{
@@ -41,7 +41,8 @@
 			"highlights": [
 				"Provided guidance for technical and professional growth to all members of the engineering team.",
 				"Implemented observability and automated recovery in Kubernetes to reduce mean time to recovery from hours to minutes.",
-				"Introduced unit testing, integration testing, and local environments for feature validation - leading to more reliabile deployments and a reduction in unexpected defects.",
+				"Architected a runner for machine learning pipelines in Python using FastAPI, Onyx, and SQLAlchemy to replace Celery-based analysis pipelines.",
+				"Introduced unit testing, integration testing, type checking, and local environments for feature validation - allowing for more frequent deployments with a reduction in unexpected defects.",
 				"Improved the operational maturity of the engineering team to match NIST SP 800-171r3 compliance controls, achieving a DoD Authorization to Operate to fulfill USAF contracts.",
 				"Created a strong hiring structure and pipeline to build out a software engineering team."
 			]
