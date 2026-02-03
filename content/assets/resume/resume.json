@@ -114,25 +114,6 @@
 	],
 	"skills": [
 		{
-			"name": "Java",
-			"level": "Advanced",
-			"keywords": [
-				"Spring",
-				"Hibernate",
-				"Dropwizard",
-				"Storm",
-				"Spark"
-			]
-		},
-		{
-			"name": "PHP",
-			"level": "Expert",
-			"keywords": [
-				"Laravel",
-				"Symfony"
-			]
-		},
-		{
 			"name": "SQL",
 			"level": "Expert",
 			"keywords": [
@@ -141,20 +122,6 @@
 				"T-SQL",
 				"PostgreSQL",
 				"CockroachDB"
-			]
-		},
-		{
-			"name": "Cobol",
-			"level": "Beginner",
-			"keywords": [
-				"COBOL-85"
-			]
-		},
-		{
-			"name": "Pascal",
-			"level": "Intermediate",
-			"keywords": [
-				"Delphi"
 			]
 		},
 		{
@@ -220,6 +187,39 @@
 				"CSS3",
 				"SASS",
 				"LESS"
+			]
+		},
+		{
+			"name": "Java",
+			"level": "Advanced",
+			"keywords": [
+				"Spring",
+				"Hibernate",
+				"Dropwizard",
+				"Storm",
+				"Spark"
+			]
+		},
+		{
+			"name": "PHP",
+			"level": "Expert",
+			"keywords": [
+				"Laravel",
+				"Symfony"
+			]
+		},
+		{
+			"name": "Cobol",
+			"level": "Beginner",
+			"keywords": [
+				"COBOL-85"
+			]
+		},
+		{
+			"name": "Pascal",
+			"level": "Intermediate",
+			"keywords": [
+				"Delphi"
 			]
 		},
 		{
