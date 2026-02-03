@@ -31,7 +31,7 @@
 			"highlights": [
 				"Provided guidance for technical and professional growth to all team members.",
 				"Implemented observability and automated recovery in Kubernetes to reduce mean time to recovery from hours to minutes.",
-				"Architected a runner for machine learning pipelines in Python using FastAPI, Onyx, and SQLAlchemy to replace Celery-based analysis pipelines.",
+				"Architected a runner for machine learning pipelines in Python using FastAPI, ONNX, and SQLAlchemy to replace Celery-based analysis pipelines.",
 				"Introduced unit testing, integration testing, type checking, and local environments for feature validation - allowing for more frequent deployments with a reduction in unexpected defects.",
 				"Improved the operational maturity of the engineering team to match NIST SP 800-171r3 compliance controls, achieving a DoD Authorization to Operate to fulfill USAF contracts.",
 				"Created a standardized hiring structure and candidate pipeline to build out the software product engineering team.",
